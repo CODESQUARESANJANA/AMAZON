@@ -1,0 +1,48 @@
+
+.text-rating{
+    font-size: 13px;
+}
+#priceHeader{
+    display: inline-block;
+}
+
+#discount{
+    color: rgb(160, 35, 35);
+    /* display: inline-flex; */
+    font-size: 25px;
+}
+#price{
+    display: inline-block;
+}
+#currency{
+    font-size: 18px;
+    vertical-align: top;
+    font-weight: 400;
+}
+#mrp{
+    font-size: 12px!important;
+}
+img{
+    vertical-align: top;
+}
+img:hover{
+    cursor: pointer;
+}
+.img-set{
+    width: 3vw;
+    height: 9vh;
+    border: 1px solid #00000047;
+    border-radius: 10%;
+    margin: 6%;
+}
+.img-set:hover{
+    box-shadow:0px 0px 4px 2px #ffb500b8;
+    cursor: pointer;
+}
+.img-center{
+    width: 100%!important;
+    height: auto!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+

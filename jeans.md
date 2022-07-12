@@ -1,0 +1,185 @@
+const Product_data = [
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1171 ",
+        product_name:"Jeans",
+        product_description:"",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT8jWgP9boSZS4v8nPzXLNeNSffxOn45VF0iWY_Q06su-isOZ7VOx776zOKsrFqHM2anBW5vTaty9GIwVC7BjnZAj9t5uwznDwHzYIg9w&usqp=CAE",
+        product_price: "799",
+        product_discount_price: "",
+        product_discount_percenteage: "",
+        product_color:"light blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+
+      {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1172 ",
+        product_name:"Skiny-Jeans",
+        product_description:"‘Fit like a glove’ is an expression that one can definitely use while describing skinny types of jeans for girls! They hug your curves perfectly, and are practically all-rounders. Whether it’s a shirt or a t-shirt, a blouse or a kurti and everything in between; skinny jeans do it all and do it well!",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-1-1613652294.jpg",
+        product_price: "1299",
+        product_discount_price: "1100",
+        product_discount_percenteage: "",
+        product_color:"light blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+
+    
+      {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1173 ",
+        product_name:"Skiny-Jeans",
+        product_description:"‘Fit like a glove’ is an expression that one can definitely use while describing skinny types of jeans for girls! They hug your curves perfectly, and are practically all-rounders. Whether it’s a shirt or a t-shirt, a blouse or a kurti and everything in between; skinny jeans do it all and do it well!",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-2-1613652295.jpg",
+        product_price: "1299",
+        product_discount_price: "1100",
+        product_discount_percenteage: "",
+        product_color:"Dark blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1174 ",
+        product_name:"Low Waist Jeans",
+        product_description:"Low-slung denims are back in fashion, as you may have noticed by now! This doesn’t go to say that high-waisted ones aren’t the ‘it thing’ anymore, but it just means that in the world of all types of jeans, each one is a hero and takes center stage.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-3-1613652295.jpg",
+        product_price: "1699",
+        product_discount_price: "1400",
+        product_discount_percenteage: "",
+        product_color:"Dark blue",
+        product_size:"29",
+        recentrly_view:true,
+        trending_product:true
+    },
+
+      {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1175 ",
+        product_name:"Boyfriend Jeans
+",
+        product_description:"When boyfriend jeans hit us, we couldn’t believe that denims could offer the same comfort as our favorite lounge pants and be uber-stylish for the outdoors!
+
+No, it’s nothing like slipping into your boyfriend’s jeans, but more about keeping it baggy yet fashionable.
+
+",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-5-1613652296.jpg",
+        product_price: "1699",
+        product_discount_price: "1599",
+        product_discount_percenteage: "",
+        product_color:"Gray Blue",
+        product_size:"27",
+        recentrly_view:true,
+        trending_product:true
+    },
+
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1176",
+        product_name: "High Waisted JEans",
+        product_description:"The exact opposite of everything low-hung jeans have to offer, high waisted ones are something of a sensation in the fashion world.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-7-1613652297.jpg",
+        product_price: "1699",
+        product_discount_price: "1400",
+        product_discount_percenteage: "",
+        product_color:"Dark blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1177",
+        product_name :Overalls 
+        product_description:"The exact opposite of everything low-hung jeans have to offer, high waisted ones are something of a sensation in the fashion world.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-9-1613652298.jpg",
+        product_price: "1699",
+        product_discount_price: "1400",
+        product_discount_percenteage: "",
+        product_color:"Dark blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1178",
+        product_name :Capri Pants", 
+        product_description:"Capris might not be flattering for all body types though, so be sure to try them out beforehand to see if they suit you, or if you should lean towards other types of jeans for girls instead.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-11-1613652299.jpg",
+        product_price: "1299",
+        product_discount_price: "999",
+        product_discount_percenteage: "",
+        product_color:"blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+{
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1179",
+        product_name :Flared Jeans ", 
+        product_description:"Capris might not be flattering for all body types though, so be sure to try them out beforehand to see if they suit you, or if you should lean towards other types of jeans for girls instead.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-13-1613652300.jpg",
+        product_price: "1299",
+        product_discount_price: "999",
+        product_discount_percenteage: "",
+        product_color:"blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+    {
+        cat_id: "2",
+        sub_cat_id: "108",
+        product_id: "1180",
+        product_name :Ripped Jeans
+", 
+        product_description:"Capris might not be flattering for all body types though, so be sure to try them out beforehand to see if they suit you, or if you should lean towards other types of jeans for girls instead.",
+        product_rating:"3.0",
+        product_rating_count:"234",
+        product_img: "https://images.bewakoof.com/web/Types-Of-Jeans-For-Girls-bewakoof-blog-17-1613652302.jpg",
+        product_price: "1199",
+        product_discount_price: "999",
+        product_discount_percenteage: "",
+        product_color:"blue",
+        product_size:"28",
+        recentrly_view:true,
+        trending_product:true
+    },
+    
+]
