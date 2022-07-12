@@ -103,10 +103,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg",
         product_price: "3,599",
         product_discount_price: "1,799",
-        product_discount_percenteage: "50 ",
+        product_discount_percentage: "50 ",
         product_color: "Yellow",
         product_size: "Regular fit",
-        recentrly_view: true,
+        recently_view: true,
         trending_product: true
     },
      {
@@ -120,10 +120,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/91hQBa9RUbL._UY879_.jpg",
         product_price: "2,999",
         product_discount_price: "1,499",
-        product_discount_percenteage: "50 ",
+        product_discount_percentage: "50 ",
         product_color:"Pink-orange",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -137,10 +137,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/91HAgnw2CTL._UX679_.jpg",
         product_price: "895",
         product_discount_price: "895",
-        product_discount_percenteage: "0 ",
+        product_discount_percentage: "0 ",
         product_color:"Pink",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -154,10 +154,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/710Gqx1n91L._UY879_.jpg",
         product_price: "2,999",
         product_discount_price: "749",
-        product_discount_percenteage: "75 ",
+        product_discount_percentage: "75 ",
         product_color:"Rama Green",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -171,10 +171,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71+1MFT-tvL._UX679_.jpg",
         product_price: "2,499.00",
         product_discount_price: "599.00",
-        product_discount_percenteage: "76 ",
+        product_discount_percentage: "76 ",
         product_color:"Dark Green",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -188,10 +188,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71w5gCBq7OL._SY879._SX._UX._SY._UY_.jpg",
         product_price: "2,199.00",
         product_discount_price: "799.00",
-        product_discount_percenteage: "64 ",
+        product_discount_percentage: "64 ",
         product_color:"Grey",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -205,10 +205,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/812nLExAIvS._UY879_.jpg",
         product_price: "4,999.00",
         product_discount_price: "1,000.00",
-        product_discount_percenteage: "80",
+        product_discount_percentage: "80",
         product_color:"Red",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -222,10 +222,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71pMN2t0nnL._UY879_.jpg",
         product_price: "899.00",
         product_discount_price: "499.00",
-        product_discount_percenteage: "44 ",
+        product_discount_percentage: "44 ",
         product_color:"Black",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -239,10 +239,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/31jzFQLaWfL.jpg",
         product_price: "6,999.00",
         product_discount_price: "799.00",
-        product_discount_percenteage: "89 ",
+        product_discount_percentage: "89 ",
         product_color:"Yellow & black",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -256,10 +256,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/713qMkLcfoS._UX679_.jpg",
         product_price: "2,799.00",
         product_discount_price: "799.00",
-        product_discount_percenteage: "71 ",
+        product_discount_percentage: "71 ",
         product_color:"White 4",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -273,10 +273,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61CD7jRIVRL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "389.00",
         product_price: "1,799.00",
-        product_discount_percenteage: "74 ",
+        product_discount_percentage: "74 ",
         product_color:"Green",
         product_size:"Regular fit",
-        recentrly_view:true, 
+        recently_view:true, 
         trending_product:true
     },
      {
@@ -290,10 +290,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71sm8MRnZ2L._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "259.00",
         product_price: "1,299.00",
-        product_discount_percenteage: "80 ",
+        product_discount_percentage: "80 ",
         product_color:"Dark-Pink",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -307,10 +307,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/7192ExRoKWL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "329.00",
         product_price: "999.00",
-        product_discount_percenteage: "67 ",
+        product_discount_percentage: "67 ",
         product_color:"Beige",
         product_size:"Slim fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -324,10 +324,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/51G5HkHfmOL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "379.00",
         product_price: "1999.00",
-        product_discount_percenteage: "81 ",
+        product_discount_percentage: "81 ",
         product_color:"White",
         product_size:"Slim fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -341,10 +341,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/51tcflY-fNL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "420.00",
         product_price: "1200.00",
-        product_discount_percenteage: "65 ",
+        product_discount_percentage: "65 ",
         product_color:"White",
         product_size:"Slim fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -358,10 +358,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71K3zXFkxDL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "399.00",
         product_price: "1599.00",
-        product_discount_percenteage: "75 ",
+        product_discount_percentage: "75 ",
         product_color:"Yellow",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -375,10 +375,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71ooEN04ZHL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "349.00",
         product_price: "1599.00",
-        product_discount_percenteage: "78 ",
+        product_discount_percentage: "78 ",
         product_color:"Black",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -392,10 +392,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/41CxywOyyML._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "299.00",
         product_price: "799.00",
-        product_discount_percenteage: "63 ",
+        product_discount_percentage: "63 ",
         product_color:"Frost White",
         product_size:"Slim fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -409,10 +409,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71TNhGWphrL._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "349.00",
         product_price: "1230.00",
-        product_discount_percenteage: "72",
+        product_discount_percentage: "72",
         product_color:"Multicolour",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
      {
@@ -426,10 +426,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/611E1a7ZM5L._AC_UL480_FMwebp_QL65_.jpg",
         product_discount_price: "399.00",
         product_price: "1599.00",
-        product_discount_percenteage: "75",
+        product_discount_percentage: "75",
         product_color:"Multicolour",
         product_size:"Regular fit",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -443,10 +443,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71fj3YjhqoL._UY695_.jpg",
         product_price: "1799",
         product_discount_price: "799",
-        product_discount_percenteage: "56",
+        product_discount_percentage: "56",
         product_color:"Blue",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
 
@@ -462,10 +462,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/91RIz6UeU0L._UY695_.jpg",
         product_price: "800",
         product_discount_price: "400",
-        product_discount_percenteage: "50",
+        product_discount_percentage: "50",
         product_color:"Blue",
         product_size:"7UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -479,10 +479,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61Uh7P5bIUL._SY695._SX._UX._SY._UY_.jpg",
         product_price: "1000",
         product_discount_price: "499",
-        product_discount_percenteage: "50",
+        product_discount_percentage: "50",
         product_color:"Black",
         product_size:"8UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -496,10 +496,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/617Gd+HQQQL._UY695_.jpg",
         product_price: "2000",
         product_discount_price: "999",
-        product_discount_percenteage: "50",
+        product_discount_percentage: "50",
         product_color:"White",
         product_size:"8UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -513,10 +513,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71+8xHNsdHL._UX695_.jpg",
         product_price: "2000",
         product_discount_price: "999",
-        product_discount_percenteage: "50",
+        product_discount_percentage: "50",
         product_color:"White",
         product_size:"8UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -530,10 +530,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71IxVUq8HTL._SX695._SX._UX._SY._UY_.jpg",
         product_price: "3299",
         product_discount_price: "2639",
-        product_discount_percenteage: "20",
+        product_discount_percentage: "20",
         product_color:"Red",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -547,10 +547,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/81E0uiZHnOL._UY695_.jpg",
         product_price: "1499",
         product_discount_price: "749",
-        product_discount_percenteage: "50",
+        product_discount_percentage: "50",
         product_color:"Blue",
         product_size:"8UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -564,10 +564,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/81UKVfIck-L._UX695_.jpg",
         product_price: "3895",
         product_discount_price: "2726",
-        product_discount_percenteage: "30",
+        product_discount_percentage: "30",
         product_color:"Blue",
         product_size:"8UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -581,10 +581,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71wbf76WYPL._UX695_.jpg",
         product_price: "3995",
         product_discount_price: "2596",
-        product_discount_percenteage: "30",
+        product_discount_percentage: "30",
         product_color:"Black",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -598,10 +598,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/615VR2lCp5L._UY695_.jpg",
         product_price: "1499",
         product_discount_price: "1275",
-        product_discount_percenteage: "15",
+        product_discount_percentage: "15",
         product_color:"Gray",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -615,10 +615,10 @@ const Product_data = [
         product_img: "https://footwearnews.com/wp-content/uploads/2019/02/diamond_loafers-1.jpg",
         product_price: "159147000",
         product_discount_price: "158147000",
-        product_discount_percenteage: "2",
+        product_discount_percentage: "2",
         product_color:"Silver",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -632,10 +632,10 @@ const Product_data = [
         product_img: "https://footwearnews.com/wp-content/uploads/2016/05/air-jordan-12-flu-game-1.jpg",
         product_price: "8336517",
         product_discount_price: "7935673",
-        product_discount_percenteage: "5",
+        product_discount_percentage: "5",
         product_color:"Red",
         product_size:"9UK",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true,
     },
     {
@@ -649,10 +649,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/41kOJDFXLNL._UY695_.jpg",
         product_price: "4563",
         product_discount_price: "1,597",
-        product_discount_percenteage: "65 ",
+        product_discount_percentage: "65 ",
         product_color:"Golden",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -666,10 +666,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61GaOnu4Z+L._UY695_.jpg",
         product_price: "2,849.00",
         product_discount_price: "997",
-        product_discount_percenteage: "65 ",
+        product_discount_percentage: "65 ",
         product_color:"Silver",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -683,10 +683,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61zjuf+rygL._UY575_.jpg",
         product_price: "599.00",
         product_discount_price: "499.00",
-        product_discount_percenteage: "17  ",
+        product_discount_percentage: "17  ",
         product_color:"	Multicolor",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -700,10 +700,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71upm73OSlS._UY575_.jpg",
         product_price: "999",
         product_discount_price: "119.00",
-        product_discount_percenteage: "88 ",
+        product_discount_percentage: "88 ",
         product_color:"White",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -717,10 +717,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/710dnChlpcS._UY695_.jpg",
         product_price: "1,999.00",
         product_discount_price: "197.00",
-        product_discount_percenteage: "90 ",
+        product_discount_percentage: "90 ",
         product_color:"Multicolor",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -734,10 +734,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61-FgEVebgL._UY575_.jpg",
         product_price: "1,199.00",
         product_discount_price: "245.00",
-        product_discount_percenteage: "80 ",
+        product_discount_percentage: "80 ",
         product_color:"Golden and silver",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -751,10 +751,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/71LLiqiFh6L._UY575_.jpg",
         product_price: "65,960.00",
         product_discount_price: "56,120.00",
-        product_discount_percenteage: "15 ",
+        product_discount_percentage: "15 ",
         product_color:"Gold",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -768,10 +768,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/714fIkdqr7L._UY575_.jpg",
         product_price:  "1,999.00",
         product_discount_price: "299.00",
-        product_discount_percenteage: "85 ",
+        product_discount_percentage: "85 ",
         product_color:"Other Color",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -785,10 +785,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/61Yi-0OfYDL._UY575_.jpg",
         product_price: " 5,999.00",
         product_discount_price: "1,499.00",
-        product_discount_percenteage: "75 ",
+        product_discount_percentage: "75 ",
         product_color:"Blue",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     },
     {
@@ -802,10 +802,10 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/41lbuBlxLLL.jpg",
         product_price: "2,62,000.00",
         product_discount_price: "1,31,000.00",
-        product_discount_percenteage: "50 ",
+        product_discount_percentage: "50 ",
         product_color:"Brown",
         product_size:"NA",
-        recentrly_view:true,
+        recently_view:true,
         trending_product:true
     }
 ]
