@@ -1,10 +1,9 @@
-img{
-    vertical-align: top;
+*{
+    font-size: 14px;
 }
-img:hover{
-    cursor: pointer;
-}
+
 .img-set{
+    vertical-align: top;
     width: 3vw;
     height: 9vh;
     border: 1px solid #00000047;
@@ -22,7 +21,7 @@ img:hover{
     margin-right: auto;
 }
 .text-rating{
-    font-size: 13px;
+    font-size: 13px!important;
 }
 #priceHeader{
     display: inline-block;
@@ -33,11 +32,14 @@ img:hover{
     /* display: inline-flex; */
     font-size: 25px;
 }
-#price{
+.price{
     display: inline-block;
 }
+.my-rounded-border{
+border-radius: 10px;
+}
 #currency{
-    font-size: 18px;
+    font-size: 18px!important;
     vertical-align: top;
     font-weight: 400;
 }
@@ -55,12 +57,30 @@ img:hover{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.delivery-options{
+.color-blue{
     color: #007185;
+}
+.color-secondary{
+    color:#B12704;
+}
+.color-success{
+    color: #007600!important;
+}
+.display-inline-block{
+    display: inline-block;
+}
+.delivery-options{
     font-size: 12px!important;
     line-height: 16px!important;
 
 }
+.free-delivery-section{
+    padding-left: 0px;
+}
+.free-delivery-section li{
+    list-style-type: none;
+}
+
 .border-bottom{
     border-bottom: 1px solid black;
 }
@@ -71,3 +91,17 @@ img:hover{
     border: 1px solid black;
     border-radius: 50%;
 }
+.border-round{
+    border-radius: 50px !important;
+}
+.buynow-btn-color{
+    background: #ff8c00;
+}
+.buynow-btn-color:hover{
+    background: #ff7300;
+}
+.deliveryOptions-roundImage{
+    height: 50px !important;
+    width: 50px !important;
+}
+
