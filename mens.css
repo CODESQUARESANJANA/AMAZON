@@ -1,0 +1,18 @@
+/* *{
+    padding:0%;
+    margin:0%;
+} */
+
+#catList{
+    padding-top: 2px;
+}
+#catList ul li{
+    list-style: none;
+    padding-top:2px ;
+
+}
+#list2 ,#list1{
+    padding-left: 8px;
+}
+
+
