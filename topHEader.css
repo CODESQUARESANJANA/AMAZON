@@ -1,4 +1,4 @@
-.nav-style{
+.nav-style {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,15 +9,15 @@
 /* section {
     height: 1000vh;
   } */
-nav {
+/* .nav-s { */
     /* height: 18vh; */
     /* flex-shrink: initial; */
-    background-color: #000;
-    display: flex;
+    /* background-color: #000; */
+    /* display: flex; */
     /* justify-content: space-between; */
     /* align-items: center; */
     /* padding: 3px 10px 2px 5px; */
-}
+/* } */
 
 .dflex {
     display: flex;
@@ -42,7 +42,7 @@ nav {
     height: 42px;
 }
 
-a {
+.nav-style a {
     display: flex;
     text-align: center;
     align-items: center;
@@ -50,13 +50,13 @@ a {
     padding: 5px 5px 5px;
 }
 
-a:hover {
-    border: 1px solid #fff;
+.nav-style a:hover {
+    border: 1px solid rgb(255, 255, 255);
     margin: -1px;
     border-radius: 3px;
 }
 
-a span {
+.nav-style a span {
     font-size: 14px;
     margin-left: -10px;
 }
@@ -70,7 +70,7 @@ p {
     padding: 0 3px;
 }
 
-nav input {
+#top-Header input {
     width: 550px;
     padding: 10px;
     font-size: 17px;
@@ -79,32 +79,35 @@ nav input {
     color: black;
 }
 
-nav button {
+#top-Header button {
     padding: 1px 10px;
-    color: black;
+    color: rgb(2, 0, 0);
     font-size: 12px;
     border: none;
+    /* text-decoration: #000; */
     /* border-radius: 5px 0px 0px 5px; */
     cursor: pointer;
 }
 
-nav .all {
-    background: #ddd;
-    height: 49px;
+#top-Header .all {
+    background: rgb(239, 232, 232);
+    height: 45px;
     width: 43px;
     font-size: 12px;
     border-radius: 5px 0px 0px 5px;
 }
 
-nav .search {
-    padding: 10px 17px;
+#top-Header .search {
+    /* padding: 10px 17px; */
+    height: 45px;
+    width: 40px;
     margin: -2px;
     background: rgb(247, 155, 80);
     border-radius: 0px 5px 5px 0px;
 }
 
-nav .search i,
-nav .all i {
+#top-Header .search i,
+#top-Header .all i {
     color: black;
 }
 
@@ -118,7 +121,7 @@ nav .all i {
     background-color: #232f3e;
     display: flex;
     font-size: 15px;
-   
+
 }
 
 .submenu {
@@ -130,13 +133,16 @@ nav .all i {
 }
 
 
-
-ul li {
+#Content li {
     list-style: none;
     font-weight: 500;
-   
+
     font-size: 12px;
-    list-style: none;
+    /* list-style: none; */
+}
+
+.item span {
+    font-size: 12px;
 }
 
 nav submenu i {
@@ -155,6 +161,7 @@ nav submenu i {
     margin-right: 10px;
     background-color: rgb(247, 155, 80);
 }
-.submenu a{
+
+.submenu a {
     color: white;
 }
