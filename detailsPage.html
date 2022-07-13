@@ -1,67 +1,178 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <div id="header"></div>
-        <div id="productRoute">
-        </div>
-       <div class="row my-4 pt-4 ml-0 mr-0">
-        <div class="col-sm-1 col-md-1 col-1">
-            <img class="img-set" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" >
-            <img class="img-set" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" >
-            <img class="img-set" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" >
-            <img class="img-set" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" >
-            <img class="img-set" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" >
-        </div>
-        <div class="col-sm-4 col-md-4 col-4 mt-4">
-            <img class="img-center" src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg" alt="" srcset="">
-        </div>
-        <div class="col-sm-4 col-md-4 col-4" id="details">
-            <h4 id="productName"></h4>
-            <div class="row p-0 mb-0">
-                <div class="col-sm-4">    
-                    <span  id="rating"></span>   
-                </div>
-                <div class="col-sm-3 text-rating border border-bottom-0 border-left-0 border-top-0">6,109 ratings</div>
-                <div class="col-sm-5 text-rating">70 answered questions</div>
-            </div>
-            <hr class="mt-0 mb-3">
-            <p id="priceHeader" class="mb-0">
-                <span id="discount"></span>
-                <span id="price" class="mb-0"></span>
-            </p>
-            <p id="mrp" class="text-secondary"></p>
-            <p id="firebase">Inclusive of all taxes</p>
-            <!-- Extra offers -->
-            <div id="box" class="border rounded mb-2">
-                <p class="remove-margin">Save Extra with 3 offers</p>
-                <hr class="remove-margin">
-                <p class="remove-margin">No Cost EMI: Avail No Cost EMI on select cards for orders above ₹3000 | Details</p>
-                <hr class="remove-margin">
-                <p class="remove-margin">Bank Offer: 5% Instant Discount up to INR 250 on HSBC Cashback Card Credit Card Transaction..... | Details</p>
-                <hr class="remove-margin">
-                <p class="remove-margin">See 1 more</p>
-            </div>
-            <!-- delievery options -->
-            <div class="row border-bottom" >
-                <div class="col-3">
-                    <a href="#" class="delivery-options">Pay on Delivery</a>
-                </div>
-                <div class="col-3">
-                    <a href="#" class="delivery-options">30 Days Returns & Exchange</a>
-                </div>
-                <div class="col-3">
-                    <a href="#" class="delivery-options">Amazon Delivered</a>
-                </div>
-                <div class="col-3">
-                    <a href="#" class="delivery-options">No-Contact Delivery</a>
-                </div>
-            </div>
-            <!-- Color options -->
-            <div class="mt-2 mb-2">
-                <div class="color-bubble"></div>
-            </div>
-        </div>
-        <div class="col-sm-3 col-md-3 col-3">col3</div>
-       </div>
-    <div id="footer"></div>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<div id="header"></div>
+<div id="productRoute"></div>
+<div class="row my-4 pt-4 ml-0 mr-0">
+  <div class="col-sm-1 col-md-1 col-1">
+    <img
+      class="img-set img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+    />
+    <img
+      class="img-set img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+    />
+    <img
+      class="img-set img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+    />
+    <img
+      class="img-set img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+    />
+    <img
+      class="img-set img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+    />
+  </div>
+  <div class="col-sm-4 col-md-4 col-4 mt-4">
+    <img
+      class="img-center img-set-gallery"
+      src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div class="col-sm-4 col-md-4 col-4" id="details">
+    <h4 id="productName"></h4>
+    <div class="row p-0 mb-0 color-blue">
+      <div class="col-sm-4">
+        <span id="rating"></span>
+      </div>
+      <div
+        class="col-sm-3 text-rating border border-bottom-0 border-left-0 border-top-0"
+      >
+        6,109 ratings
+      </div>
+      <div class="col-sm-5 text-rating">70 answered questions</div>
+    </div>
+    <hr class="mt-0 mb-3" />
+    <p id="priceHeader" class="mb-0">
+      <span id="discount"></span>
+      <span class="price" class="mb-0"></span>
+    </p>
+    <p id="mrp" class="text-secondary"></p>
+    <p id="firebase">Inclusive of all taxes</p>
+    <!-- Extra offers -->
+    <div id="box" class="border mb-2 my-rounded-border">
+      <p class="remove-margin p-3">
+        <strong class="color-secondary">Save Extra</strong> with 3 offers
+      </p>
+      <hr class="remove-margin" />
+      <p class="remove-margin p-3">
+        <strong class="color-secondary">No Cost EMI:</strong> Avail No Cost EMI
+        on select cards for orders above ₹3000 |
+        <a href="#" class="color-blue display-inline-block">Details</a>
+      </p>
+      <hr class="remove-margin" />
+      <p class="remove-margin p-3">
+        <strong class="color-secondary">Bank Offer:</strong> 5% Instant Discount
+        up to INR 250 on HSBC Cashback Card Credit Card Transaction..... |
+        <a href="#" class="color-blue display-inline-block">Details</a>
+      </p>
+      <hr class="remove-margin" />
+      <p class="remove-margin p-3">
+        <a href="#" class="color-blue">See 1 more</a>
+      </p>
+    </div>
+    <!-- delievery options -->
+    <div class="row border-bottom">
+      <div class="col-3">
+        <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-cod._CB485937110_.png" alt="">
+        <a href="#" class="delivery-options color-blue">Pay on Delivery</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="delivery-options color-blue"
+          >30 Days Returns & Exchange</a
+        >
+      </div>
+      <div class="col-3">
+        <a href="#" class="delivery-options color-blue">Amazon Delivered</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="delivery-options color-blue">No-Contact Delivery</a>
+      </div>
+    </div>
+    <!-- Color options -->
+    <div class="mt-2 mb-2">
+      <p id="color-name"></p>
+      <div class="color-bubble"></div>
+    </div>
+    <!-- product_description -->
+    <p id="product_description"></p>
+  </div>
+  <div class="col-sm-3 col-md-3 col-3">
+    <div class="border my-rounded-border p-3">
+      <p class="price"></p>
+      <ul class="free-delivery-section">
+        <li>
+          <a href="#" class="display-inline-block color-blue p-0"
+            >FREE delivery</a
+          ><strong> Saturday, 16 July.</strong>
+        </li>
+        <li>Order within <span class="color-success">4 hrs 18 mins.</span></li>
+        <li>
+          <a href="#" class="color-blue display-inline-block p-0">Details</a>
+        </li>
+      </ul>
+      <p class="color-blue">
+        <i class="fa-solid fa-location-dot"></i> Select delivery location
+      </p>
+      <h5 class="color-success">In stock.</h5>
+      <p class="display-inline-block">
+        Sold by
+        <a href="#" class="color-blue display-inline-block">Sidhidata Textile</a
+        >and
+        <a href="#" class="color-blue display-inline-block"
+          >Fulfilled by Amazon.</a
+        >
+      </p>
+      <p>
+        Quantity:
+        <select name="Quantity" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </p>
+
+      <button type="button" class="btn btn-warning btn-block border-round">Add to Cart</button>
+      <button type="button" class="btn btn-block buynow-btn-color border-round">Buy Now</button>
+
+      <p class="my-3">
+         <i class="fa-solid fa-lock"></i>
+        <a href="#" class="color-blue">Secure transaction</a>
+    </p>
+    <p  class="remove-margin">
+        <input type="checkbox" style="vertical-align:middle" id="addGiftOptions">
+        <label style="vertical-align:middle" class="remove-margin" for="addGiftOptions"> Add gift options</label>
+    </p>
+    <hr>
+    <button class="btn btn-block border border-dark text-left">Add to Wish List</button>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div id="footer"></div>
 
 <script src="detailsPage.js"></script>
-
