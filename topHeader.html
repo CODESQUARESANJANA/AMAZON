@@ -21,6 +21,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="public/css/detailsPage.css">
 
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color:#232F3E;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 5px;
+        }
+        
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 12px;
+          color: #000000;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+          color: #232F3E;
+        }
+        
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 12px;
+          margin-left: 50px;
+        }
+        
+        .openbtn {
+          font-size: 10px;
+          cursor: pointer;
+          background-color:#232F3E;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+        
+        .openbtn:hover {
+          background-color: #232F3E;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 5px;}
+          .sidebar a {font-size: 12px;}
+        }
+        </style>  
 </head>
 
 <body>
@@ -31,10 +94,35 @@
     <div id="mySidebar1" class="sidebar1">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#" id="hello"><i class="fa fa-user" aria-hidden="true"></i>Hello! Sign in</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#"><b>Trending</b></a>
+        <a href="#">Best Sellers</a>
+        <a href="#">New Releases</a>
+        <a href="#">Movers and Shakers</a>
+        <hr>
+        <a href=""><b>Digital Content And Devices</b></a>
+        <a href="">Echo & Alexa</a>
+        <a href="">Fire TV</a>
+        <a href="">Kindle E-Readers & eBooks</a>
+        <a href="">Audible Audiobooks</a>
+        <a href="">Amazon Prime Video</a>
+        <a href="">Amazon Prime Mussic</a>
+        <hr>
+        <a href=""><b>Shop By Deparment</b></a>
+        <a href="">Mobiles, Computers</a>
+        <a href="">TV, Appliancesm Electronics</a>
+        <a href="">Men's Fashion</a>
+        <a href="">Women's Fashion</a>
+        <hr>
+        <a href=""><b>Programs & Features</b></a>
+        <a href="">Gift Cards & Mobile Recharge</a>
+        <a href="">Flight Tickets</a>
+        <a href=""># FoundItOnAmazon</a>
+        <a href="">Clearance Store</a>
+        <hr>
+        <a href=""><b>Help & Settings</b></a>
+        <a href="">Your Account</a>
+        <a href="">Customer Service</a>
+        <a href="">Sign In</a>
     </div>
 
     <!-- <div id="main">
@@ -45,12 +133,12 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar1").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
         }
 
         function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mySidebar1").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
     </script>
@@ -125,9 +213,9 @@
     </nav>
     <nav class="subnavigation nav-style pt-2">
         <ul class="submenu d-flex">
-            <li class="justify-content-start" onclick="openNav()" id="openbtn"><a href="#"><i class="fa fa-bars"></i>
+            <!-- <li class="justify-content-start" onclick="openNav()" id="openbtn"><a href="#"><i class="fa fa-bars"></i> -->
                     <ul class="submenu d-flex" id="Content">
-                        <li class="justify-content-start" id="sidebarCollapse"><a href="#"><i
+                        <li class="justify-content-start" id="sidebarCollapse"><a href="#" id="openbtn" onclick="openNav()" ><i
                                     class="fa fa-bars mr-1"></i>
                                 All
                             </a></li>
