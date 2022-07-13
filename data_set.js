@@ -1583,7 +1583,7 @@ const Product_data = [
     {
         cat_id: "2",
         sub_cat_id: "109",
-        product_id: "1186",
+        product_id: "11111",
         product_name:"ROCKFIELD Men's Blue Denim Sneakers Casual Shoes",
         product_description:"Elevate your style with this classy pair of Casual Shoe from the house of ZOVIM brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade.",
         product_rating:"4.0",
@@ -1600,7 +1600,7 @@ const Product_data = [
     {
         cat_id: "2",
         sub_cat_id: "109",
-        product_id: "1186",
+        product_id: "22222",
         product_name:"Zovim Men's Casual Shoes",
         product_description:"Elevate your style with this classy pair of Casual Shoe from the house of ZOVIM brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade.",
         product_rating:"4.0",
