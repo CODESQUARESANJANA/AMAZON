@@ -165,3 +165,7 @@ p {
 .submenu a {
     color: white;
 }
+
+.submenu li{
+    list-style: none;
+}
