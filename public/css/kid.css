@@ -1,0 +1,36 @@
+.leftbar .cat .item h3{
+    font-size: 10px;
+    font-weight:700;
+}
+.leftbar .cat .item li{
+    font-size: 8px;
+    list-style: none;
+    line-height: normal;
+    cursor: pointer;
+}
+.leftbar .cat ul li :hover{
+    color: orangered;
+}
+img{
+    cursor: pointer;
+}
+img:hover{
+    opacity: 0.8;
+}
+.leftbar{
+    width: 20%;
+}
+.leftbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.leftbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.cat{margin: 0;
+padding: 0;}
+.imgcont{
+    display: flex;
+}
