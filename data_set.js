@@ -707,7 +707,7 @@ const Product_data = [
     },
     {
         cat_id: "1",
-        sub_cat_id: "104",
+        sub_cat_id : "104",
         product_id: "1036",
         product_name:"UNDER ARMOUR",
         product_description:"Men Red UA Sportstyle Windbreaker Jacket",
@@ -749,29 +749,29 @@ const Product_data = [
         product_rating_count:"912",
         product_img:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/7/452e2c86-ae38-44d5-93d9-33d19997a7361573068101666-1.jpg",
         product_price: "2699",
-        product_discount_price: "998,
+        product_discount_price: "998",
         product_discount_percenteage: "63%",
         product_color:"NAVY BLUE",
         product_size:"S,M,L,XL",
-        recentrly_view: false,
+        recentrly_view:false,
         trending_product:false
     },
     {
         cat_id: "1",
-        sub_cat_id: "104",
-        product_id: "1039",
-        product_name:"PUMA Motorsport",
-        product_description:"Men Blue & Black Colourblocked Cotton BMW MMS Sporty Jacket",
-        product_rating:"4.5",
-        product_rating_count:"55",
-        product_img:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15431036/2021/9/11/395d9448-bb46-49cc-9422-892c8ce7895b1631367659069PUMAMotorsportMenBlueSportyJacket1.jpg",
+        sub_cat_id : "104",
+        product_id : "1039",
+        product_name: "PUMA Motorsport",
+        product_description : "Men Blue & Black Colourblocked Cotton BMW MMS Sporty Jacket",
+        product_rating: "4.5",
+        product_rating_count: "55",
+        product_img: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15431036/2021/9/11/395d9448-bb46-49cc-9422-892c8ce7895b1631367659069PUMAMotorsportMenBlueSportyJacket1.jpg",
         product_price: "8999",
         product_discount_price: "3599",
         product_discount_percenteage: "60%",
-        product_color:"MEN BLUE",
-        product_size:"S,M,L,XL,XXL",
-        recentrly_view:false,
-        trending_product:false
+        product_color: "MEN BLUE",
+        product_size: "S,M,L,XL,XXL",
+        recentrly_view: false,
+        trending_product:  false
     },
     {
         cat_id: "1",
@@ -795,11 +795,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1041",
         product_name:"WildHorn",
-        product_description:"Maroon solid two-fold wallet, has a button closure.
-                             2 main compartments, have a non-detachable flap.
-                             5 card holders, 1 ID card holder, 2 slip pockets, has a flap coin pocket.
-                             Built-in RFID.
-                             Warranty: 6 months",
+        product_description:"Maroon solid two-fold wallet, has a button closure. 2 main compartments, have a non-detachable flap. 5 card holders, 1 ID card holder, 2 slip pockets, has a flap coin pocket. Built-in RFID. Warranty: 6 months",
         product_rating:"4.4",
         product_rating_count:"602",
         product_img: "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14904104/2021/7/22/00d7a93e-e911-41e8-acd2-137430d94ab71626967339498WILDHORNRFIDProtectedGenuineHighQualityLeatherWalletforMen1.jpg",
@@ -816,14 +812,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1042",
         product_name:"one8 x PUMA",
-        product_description:"Product design details:
-                             Premium PU wallet from One8 line. Easy opening, 2 main slot inside with several card slots. 
-                             One8 logo branding on the top.
-                             Black solid wallet
-                             2 main compartment
-                             6 card holderss
-                             Warranty: 3 months
-                             Warranty provided by brand/manufacturer",
+        product_description:"Product design details:Premium PU wallet from One8 line. Easy opening, 2 main slot inside with several card slots.  One8 logo branding on the top.Black solid wallet 2 main compartment6 card holderss Warranty: 3 months Warranty provided by brand/manufacturer",
         product_rating:"4.2",
         product_rating_count:"838",
         product_img:"https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11807884/2021/10/3/80f4438d-937e-4d6a-95ce-0e3667f6348d1633236034562-one8-x-PUMA-Unisex-Black-Solid-Premium-Two-Fold-Wallet-92316-14.jpg",
@@ -840,10 +829,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1043",
         product_name:"DAVIDOFF",
-        product_description:"Davidoff Cool Water Eau De Toilette for Men 125ml 
-                             Peppermint and lavender as top notes.
-                             spicy coriander, jasmine, oak moss and geranium that form the heart note
-                             warm and sensual flow of amber and musk as base note.",
+        product_description:"Davidoff Cool Water Eau De Toilette for Men 125ml Peppermint and lavender as top notes.spicy coriander, jasmine, oak moss and geranium that form the heart note warm and sensual flow of amber and musk as base note.",
         product_rating:"4.8",
         product_rating_count:"988",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18993852/2022/7/6/2e1c7be6-6d8c-4cf8-99e3-3fc4a76268d61657110875015PerfumeandBodyMist1.jpg",
@@ -877,9 +863,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1045",
         product_name:"Philips",
-        product_description:"BT3101/15 Series 3000 Beard Trimmer - White
-                             Warranty: 2+1 years
-                             Warranty provided by brand manufacturer",
+        product_description:"BT3101/15 Series 3000 Beard Trimmer - White Warranty: 2+1 years Warranty provided by brand manufacturer",
         product_rating:"4.3",
         product_rating_count:"6.8k",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11915238/2021/10/11/e97689dd-24fb-4336-bba7-8b1ea7bb302f1633932426722-Philips-Men-BT310115-Series-3000-Beard-Trimmer---White-25616-1.jpg",
@@ -896,11 +880,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1046",
         product_name:"MUTAQINOTI",
-        product_description:"This accessory gift set consists of a tie, a pocket square and a pair of cufflinks
-                             Blue patterned tie
-                             Blue patterned pocket square
-                             A pair of silver-toned, blue square cufflinks, secured with bullet back closure
-                             Comes in a signature Mutaqinoti case",
+        product_description:"This accessory gift set consists of a tie, a pocket square and a pair of cufflinks Blue patterned tie Blue patterned pocket square A pair of silver-toned, blue square cufflinks, secured with bullet back closure Comes in a signature Mutaqinoti case",
         product_rating:"4.5",
         product_rating_count:"35",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16658178/2022/1/4/3d84cb4b-b708-45e9-8285-21c8093582a01641273074642MensDarkBlueItalianSilkNecktieSuitAccessoriesSet1.jpg",
@@ -917,17 +897,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1047",
         product_name:"Daniel Klein",
-        product_description:"Display: Analogue
-                             Movement: Quartz
-                             Power source: Battery
-                             Dial style: Solid round stainless steel dial
-                             Features: Reset Time, Reset Time, Glow in the Dark Inlays
-                             Strap style: Brown regular, leather strap with a tang closure
-                             Water resistance: 50 m
-                             Warranty: 2 years
-                             Warranty provided by brand/manufacturer
-                             Manufactured by: Daniel Klein group
-                             Country of Origin: Hong Kong",
+        product_description:"Display: Analogue Movement: Quartz Power source: Battery Dial style: Solid round stainless steel dial Features: Reset Time, Reset Time, Glow in the Dark Inlays Strap style Brown regular, leather strap with a tang closur Water resistance: 50 m Warranty: 2 years Warranty provided by brand/manufacturer Manufactured by: Daniel Klein group Country of Origin: Hong Kong",
         product_rating:"4.2",
         product_rating_count:"4.8k",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2466430/2019/2/5/3fc19a1d-4d1b-483d-9671-bc1601eaa7d51549348453281-Daniel-Klein-Premium-Men-Coffee-Brown-Analogue-Watch-DK11599-1.jpg",
@@ -944,18 +914,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1048",
         product_name:"Fossil",
-        product_description:"Pack Contains: single watch
-                             Display: analogue
-                             Movement: quartz
-                             Power Source: battery
-                             Dial style: black skeleton round stainless steel dial
-                             Features: reset time,
-                             Strap Style: brown, regular, leather strap with a tang
-                             Water resistance: 50 m
-                             Comes in a signature Fossil case
-                             Warranty: 2 years
-                             Warranty provided by brand/ manuacturer
-                             Disclaimer - The Watch Cases might differ from the image shown.",
+        product_description:"Pack Contains: single watch Display: analogue Movement: quartz Power Source: battery Dial style: black skeleton round stainless steel dial Features: reset time, Strap Style: brown, regular, leather strap with a tang Water resistance: 50 m Comes in a signature Fossil case Warranty: 2 years Warranty provided by brand/ manuacturer Disclaimer - The Watch Cases might differ from the image shown.",
         product_rating:"4.2",
         product_rating_count:"79",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15321518/2022/3/30/cd0c1177-6fd4-4703-a626-cfe836bfa0321648643336743-Fossil-Men-Black-Skeleton-Dial--Brown-Leather-Straps-Analogu-1.jpg",
@@ -989,19 +948,7 @@ const Product_data = [
         sub_cat_id: "105",
         product_id: "1050",
         product_name:"Men Beige & Red Woven Design Mufflers",
-        product_description:"Beige and red woven design knitted muffler
-
-                             Size & Fit
-                             Length: 1.77 m
-                             Width: 0.3 m
-
-                             Material & Care
-                             Acrylic
-                             Regular machine wash as per tag
-
-                             Specifications
-                             Sustainable
-                             Regular",
+        product_description:"Beige and red woven design knitted muffler Size & Fit Length: 1.77 m Width: 0.3 m Material & Care Acrylic Regular machine wash as per tag Specifications Sustainable Regular",
         product_rating:"4.6",
         product_rating_count:"129",
         product_img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/11/23/8f8e4457-f186-4a1d-ae0a-2a720e4a425c1606149317894-1.jpg",
