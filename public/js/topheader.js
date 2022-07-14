@@ -3,16 +3,17 @@ $(document).ready(function () {
     $("#hiddenLi").hide();
 
     $("#mens_cat").mouseenter(function () {
-        $('#hiddenLi').css('display' , 'flex');
+        $('#hiddenLi').css('display' , 'flex')
         $("#hiddenLi").show();
     })
 
 
-    $("#mens_cat, #hiddenLi").mouseleave(function () {
+    $(" #hiddenLi").mouseleave(function () {
 
-        $("#hiddenLi").hide()
+        $("#hiddenLi").hide().fadeOut();
 
     });
+    
 
     $('#openbtn').on('click', function () {
         document.getElementById("mySidebar1").style.width = "300px";
@@ -27,7 +28,19 @@ $(document).ready(function () {
 
 
 
+    $("#hiddenLi2").hide();
 
+    $("#women_cat").mouseenter(function () {
+        $('#hiddenLi2').css('display' , 'flex')
+        $("#hiddenLi2").show();
+    })
+
+
+    $("#hiddenLi2").mouseleave(function () {
+
+        $("#hiddenLi2").hide().fadeOut()
+
+    });
 
 
 });
