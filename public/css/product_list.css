@@ -1,0 +1,23 @@
+h2 {
+    padding-top: 1%;
+}
+
+.b1 {
+    border: 40px solid ghostwhite;
+}
+
+.container-a {
+    background-color: lightgrey;
+    width: 100%;
+    border: 5px solid gainsboro;
+    padding: 20px;
+
+}
+#listing
+{
+    display: flex;
+}
+#listing1
+{
+    display: flex;
+}
