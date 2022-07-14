@@ -186,7 +186,7 @@
 }
 #sub-content a{
     text-decoration: none;
-    /* color: black; */
+    color: black;
 }
 
  #hiddenLi a{
@@ -207,6 +207,25 @@
 }
 
 #hiddenLi2 ul li{
+    list-style: none !important;
+   
+}
+
+
+#hiddenLi3{
+    display: none;
+   position: absolute;
+   padding: 4px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(225, 216, 216);
+}
+#hiddenLi3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#hiddenLi3 ul li{
     list-style: none !important;
    
 }

@@ -43,6 +43,21 @@ $(document).ready(function () {
     });
 
 
+    $("#hiddenLi3").hide();
+
+    $("#kids_cat").mouseenter(function () {
+        $('#hiddenLi3').css('display' , 'flex')
+        $("#hiddenLi3").show();
+    })
+
+
+    $("#hiddenLi3").mouseleave(function () {
+
+        $("#hiddenLi3").hide().fadeOut()
+
+    });
+
+
 });
 
 //mens_cat
