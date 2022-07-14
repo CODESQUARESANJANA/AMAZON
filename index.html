@@ -37,7 +37,7 @@
         <div class="d-block w-100 img-gr-3"></div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev "  href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
@@ -326,6 +326,8 @@
 
 <!-- Swiper -->
 <!-- Carousel -->
+<div style="padding:4px; border: 1px solid black; margin-bottom: 10px;">
+<h3>Today's Deal</h3>
 <div class="swiper mySwiper " id="my-swipe" style="height: 600px;">
   <div class="swiper-wrapper">
     <!-- slide 1 -->
@@ -437,6 +439,8 @@
       </div>
     </div>
      <!-- slide 10 -->
+     
+
      <div class="swiper-slide">
       <div class="container">
         <div class="card" style="max-width: fit-content;">
@@ -452,6 +456,7 @@
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
 </div>
+</div>
 <!-- Carousel end -->
 
 
@@ -463,9 +468,9 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5,
-    spaceBetween: 20,
-    slidesPerGroup: 5,
+    slidesPerView:6,
+    spaceBetween:10,
+    slidesPerGroup:2,
     loop: true,
     loopFillGroupWithBlank: true,
    
