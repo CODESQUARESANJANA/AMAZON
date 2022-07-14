@@ -1,83 +1,262 @@
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 <!-- Jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
 <link rel="stylesheet" href="/public/css/kid.css">
+<style>
+    
+.owl-prev {
+  background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938188/left-arrow_rlxamy.png') left center no-repeat;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.owl-next {
+  background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938220/right-arrow_zwe9sf.png') right center no-repeat;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  opacity: 0.5;
+}
+
+
+/* Owl Carousel */
+
+
+/* Popup Text */
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.popuptext {
+  display: table;
+}
+.popuptext p {
+  margin-bottom: 10px;
+}
+.popuptext span {
+  font-weight: bold;
+  float: right;
+}
+/* Popup Text */
+
+/* Icon CSS */
+.item {
+  position: relative;
+}
+.item i {
+  display: none;
+  font-size: 4rem;
+  color: #FFF;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.item a {
+  display: block;
+  width: 100%;
+}
+.item a:hover:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.item a:hover i {
+  display: block;
+  z-index: 2;
+}
+</style>
 
 <div id="header"></div>
-    <div class="w3-sidebar  w3-bar-block w3-light-grey leftbar">
-        <ul class="cat">
-            <ul class="item">
-                <h3>boys</h3>
-                <li>Clothing</li>
-                <li>Shoes</li>
-                <li>Watches</li>
-                <li>Glasses</li>
+<div class="row">
+    <div class="col-md-2">
+        <ul class="side">
+            <ul class="sideItems">
+                <p style="margin-right: 10%;" ><strong>Boys</strong></p>
+                <li><a class="listValue" href="#">Clothing</a></li>
+                <li><a class="listValue" href="#">Shoes</a></li>
+                <li><a class="listValue" href="#">Watches</a></li>
+                <li><a class="listValue" href="#">Sunglasses</a></li>
+                <li><a style="font-weight:400;" class="listValue" href="#">Baby Boy</a></li>
             </ul>
-            <ul class="item">
-
+            <ul class="sideItems">
+                <p><strong>Girls</strong></p>
+                <li><a class="listValue" href="#">Clothing</a></li>
+                <li><a class="listValue" href="#">Shoes</a></li>
+                <li><a class="listValue" href="#">Watches</a></li>
+                <li><a class="listValue" href="#">Sunglasses</a></li>
+                <li><a style="font-weight:400;"  class="listValue" href="#">Baby Girl</a></li>
             </ul>
-            <ul class="item">
-                <h3>Girls</h3>
-                <li>Clothing</li>
-                <li>Shoes</li>
-                <li>Watches</li>
-                <li>Glasses</li>
+            <ul class="sideItems">
+                <p><strong>Department</strong></p>
+                <li><p>< Fashion</p><a class="listValue" href="#"></a></li>
+                <li><a class="listValue" href="#">Kid's Fashion</a></li>
+                <li><a class="listValue" href="#">Kid's SS'22 Collection</a></li>
+                <li><a class="listValue" href="#">Boys & Girls</a></li>
+                <li><a class="listValue" href="#">Girls</a></li>
+                <li><a class="listValue" href="#">Boys</a></li>
             </ul>
-            <ul class="item">
-                <h3>Department</h3>
-                <li><a href="">>Fashion</a></li>
-                <h3>Kid's Fashion</h3>
-                <li>Kid's SS`22 Collection</li>
-                <li>Boys & Girls</li>
-                <li>Boys</li>
-                <li>Girls</li>
+            <ul class="sideItems" style="justify-content:space-between">
+                <p><strong>Amazone Prime</strong></p>
+                <li color="#007185" style="line-height:1.5rem;"><input type="checkbox">Prime</li>
+                
+                
             </ul>
-            <ul class="item">
-                <h3>Amazone Prime</h3>
-                <li>
-                    <i class="fa fa-square-o" aria-hidden="true"></i>Prime
-                </li>
-            </ul>
-            <ul class="item">
-                <h3>Pay on delivery</h3>
-                <li>
-                    <i class="fa fa-square-o" aria-hidden="true"></i>Eligible for pay on Delivery
-                </li>
-
-                <ul class="item" style="display: inline;">
-                    <h3>color</h3>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: blue; padding:1%; border: 1px solid; margin: 1%;" id="c1"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: green; padding:1%; border: 1px solid; margin: 1%;" id="c2"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: gray; padding:1%; border: 1px solid; margin: 1%;" id="c3"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: yellow; padding:1%; border: 1px solid; margin: 1%;" id="c4"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: red; padding:1%; border: 1px solid; margin: 1%;" id="c5"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: slategray; padding:1%; border: 1px solid; margin: 1%;" id="c6"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: slateblue; padding:1%; border: 1px solid; margin: 1%;" id="c8"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: rgb(57, 49, 49); padding:1%; border: 1px solid; margin: 1%;" id="c3"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: rgb(237, 173, 173); padding:1%; border: 1px solid; margin: 1%;" id="c3"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: rgb(128, 16, 16); padding:1%; border: 1px solid; margin: 1%;" id="c3"></div>
-                    <div style="width: 15%;cursor: pointer; height: 5vh;float: left; background-color: rgb(128, 128, 128); padding:1%; border: 1px solid; margin: 1%;" id="c3"></div>
-    
-                </ul>
-                <ul class="item">
-                    <h3>Pay on delivery</h3>
-                <li>
-                    <i class="fa fa-square-o" aria-hidden="true"></i>Eligible for pay on Delivery
-                </li>
-                </ul>
+            <ul class="sideItems">
+                <p><strong>Pay On Delivery</strong></p>
+                <li style="line-height:1.5rem;"><input type="checkbox">Eligible For Pay on Delivery</li>
                 
                 
             </ul>
             
+            <ul class="sideItems">
+                <p><strong>Colour</strong></p>
+                <div style="background-color: red;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: rgb(99, 234, 108);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: rgb(112, 130, 205);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: rgb(213, 83, 181);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: rgba(99, 91, 91, 0.162);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: rgb(92, 88, 88);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: gray;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                
+                <div style="background-color: coral;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: aqua;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div><br>
+                <div style="background-color: bisque;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: azure;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
+                <div style="background-color: orange;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div><br><br>
+                
+
+
+            </ul><br><br> <br><br>
+            <ul class="sideItems" >
+                <p><strong>Brands</strong></p>
+                <li style="line-height:1.5rem;"><input type="checkbox">Goldnize Fashion</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">To The Nines</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Matrix</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Nivia</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">SWADESHI STUFF</li> 
+            </ul>
+            <ul class="sideItems" style="align-items: space-between;">
+                <p><strong>Avg. Customer Reveiw</strong></p>
+                <li><a> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+</a></li>
+                <li><a> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+<span class="fa fa-star"></span></a></li>
+                <li><a> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span></a></li>
+                <li><a> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span></a></li>
+<li><a> <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span></a></li>
+             
+            </ul>
+            <ul class="sideItems">
+                <p><strong>New Arrivals</strong></p>
+
+                <li><a class="listValue" href="#">Last 30 Days</a></li>
+                <li><a class="listValue" href="#">Last 90 Days</a></li>
+            </ul>
+            <ul class="sideItems">
+                <p><strong>Item Condition</strong></p>
+                <li><a class="listValue" href="#">New</a></li>
+                <li><a class="listValue" href="#">Used</a></li>
+                
+            </ul>
+            <ul class="sideItems">
+                <p><strong>Price</strong></p>
+                <li><a class="listValue" href="#">Under ₹1000</a></li>
+                <li><a class="listValue" href="#">₹1000 - ₹5000</a></li>
+                <li><a class="listValue" href="#">₹5000 - ₹10,000</a></li>
+                <li><a class="listValue" href="#">₹10,000 - ₹20,000</a></li>
+                <li><a class="listValue" href="#">Over ₹20,000</a></li>
+            </ul>
+            <ul class="sideItems">
+                <p><strong>Deals</strong></p>
+                <li color="#007185" style="line-height:1.5rem;"><input type="checkbox">Today's Deals</li> 
+            </ul>
+            <ul class="sideItems">
+                <p><strong>Discount</strong></p>
+                <li><a class="listValue" href="#">10% off or more</a></li>
+                <li><a class="listValue" href="#">25% off or more</a></li>
+                <li><a class="listValue" href="#">35% off or more</a></li>
+                <li><a class="listValue" href="#">50% off or more</a></li>
+                <li><a class="listValue" href="#">60% off or more</a></li>
+                <li><a class="listValue" href="#">70% off or more</a></li>
+            </ul>
+            <ul class="sideItems" >
+                <p><strong>Seller</strong></p>
+                <li style="line-height:1.5rem;"><input type="checkbox">Cocoblu Retail</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Bixind(USA)</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Nitrous Stores</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Pratham Shop</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Groot_</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">Agrawal steel</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">CartIndia Online</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">Vedansh Interprises</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">MBM USA Stores</li> 
+
+            </ul>
+            <ul class="sideItems" >
+                <p><strong>Availability</strong></p>
+                <li style="line-height:1.5rem;"><input type="checkbox">Include Out Of Stock</li>
+              
+
+            </ul>
         </ul>
     </div>
-
-    <div style="margin-left:20%">
-
+    
+    <div class="col-md-10">
+    
         <div class="w3-container">
             <img src="/img/dresses/kid.jpg" style="width: 100%" alt="">
         </div>
@@ -92,33 +271,196 @@
                 <img src="/img/dresses/kidde.jpg" width="100%" alt="">
             </div>
         </div>
-
-        <div class="container1">   
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+    
+        <main id="slideproduct">
+            <h3>
+                Kids' Clothing | Up to 60% off
+            </h3>
+            <header id="toppro" class="toppro">
+                <p>
+                    <span style="margin-top:15%">&#139;</span>
+                    <span>&#155;</span>
+                </p>
+            </header>
+            <section id="slidesect">
+                
+                <div class="product" id="product">
+                    <picture class="dress">
+                        <img src="img/dresses/kurta&kurti.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                   
                 </div>
-        
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>   
-
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/jeans.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/trackpaints.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                  
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/tops.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                  
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/watch.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                    <div class="button">
+                        
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/glasses.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                    <div class="button">
+                        
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/jumpsuits.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/shirts.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                  
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/shorts.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/tshirts.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                 
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/tops.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                  
+                </div>
+                <div class="product">
+                    <picture class="dress">
+                        <img src="img/dresses/jeans.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Shop Now</b><br>
+                            <small></small>
+                        </p>
+                        
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+    
+    
+        <div class="swiper-pagination"></div>
+    
+        <div class="swiper-footer">
+        </div>
+        <div id="swipper">
+    
+        </div>
+    
         <div class="foot">
             <p style="font-size: 15px">kid's footwear</p>
-            <div class="w3-container" style="display: flex;">
+            <div class="container" style="display: flex;">
                 <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
                     <img width="100%" src="/img/dresses/f2.jpg" alt="">
                     <p style="font-size: 8px; text-align:center;">Girl's Footwear</p>
@@ -139,7 +481,7 @@
         </div>
         <div class="jwellary">
             <p style="font-size: 15px">Watches, jwellary and more...</p>
-            <div class="w3-container" style="display: flex;">
+            <div class="container" style="display: flex;">
                 <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
                     <img width="100%" src="/img/dresses/jullery.jpg" alt="">
                     <p style="font-size: 8px; text-align:center;">jwellary</p>
@@ -159,33 +501,13 @@
             </div>
         </div>
     </div>
-<div id="footer"></div>
-    <script>
-       $(document).ready(function() {
-// Swiper: Slider
-    new Swiper('.swiper-container', {
-        loop: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 20,
-        breakpoints: {
-            1920: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            1028: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            }
-        }
-    });
-});
-    </script>
+    
+</div>
 
-    <script src="/public/js/kids.js"></script>
+<div id="footer"></div>
+<script>
+
+    
+</script>
+
+<script src="/public/js/kids.js"></script>
