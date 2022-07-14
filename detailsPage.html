@@ -6,6 +6,9 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 <link rel="stylesheet" href="/public/css/detailsPage.css">
 <div id="header"></div>
 <!-- Product Route -->
@@ -98,19 +101,39 @@
     <!-- delievery options -->
     <div class="row border-bottom">
       <div class="col-3">
-        <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-cod._CB485937110_.png" alt="">
-        <a href="#" class="delivery-options color-blue">Pay on Delivery</a>
+        <div>
+          <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-cod._CB485937110_.png" alt="">
+        </div>
+        <div>
+          <a href="#" class="delivery-options color-blue text-center">Pay on Delivery</a>
+        </div> 
       </div>
+
       <div class="col-3">
-        <a href="#" class="delivery-options color-blue"
-          >30 Days Returns & Exchange</a
-        >
+        <div>
+          <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png" alt="">
+        </div>
+        <div>
+          <a href="#" class="delivery-options color-blue text-center">30 Days Returns & Exchange</a>
+        </div> 
       </div>
+
       <div class="col-3">
-        <a href="#" class="delivery-options color-blue">Amazon Delivered</a>
+        <div>
+          <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png" alt="">
+        </div>
+        <div>
+          <a href="#" class="delivery-options color-blue text-center">Amazon Delivered</a>
+        </div>
       </div>
+
       <div class="col-3">
-        <a href="#" class="delivery-options color-blue">No-Contact Delivery</a>
+        <div>
+          <img class="deliveryOptions-roundImage" src="https://images-na.ssl-images-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/No_contact_delivery_final._CB432269791_.png" alt="">
+        </div>
+        <div>
+          <a href="#" class="delivery-options color-blue text-center">No-Contact Delivery</a>
+        </div>
       </div>
     </div>
     <!-- Color options -->
@@ -234,7 +257,7 @@
 <!-- Product details section end-->
 <hr>
 <!-- Product Description section -->
-<div>    
+<div  class="m-2">    
   <h2> Product description  </h2>  
   <p  id="product-description-section" class="ml-5 mr-5"></p>          
 </div>
