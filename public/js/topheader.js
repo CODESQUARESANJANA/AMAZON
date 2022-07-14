@@ -1,5 +1,5 @@
 $(document).ready(function () {
-console.log(subcategory_data);
+// console.log(subcategory_data);
 
     $("#hiddenLi").hide();
 

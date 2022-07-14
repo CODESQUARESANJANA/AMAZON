@@ -26,17 +26,16 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
   //   console.log(value);
   // });
  
-  {
+//   {
   Product_data.forEach(function(value , index){
     if(value.cate_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
       console.log(value);
     }
+    
   });
-}
+
+});
 
 
 
-})
 
-
-// shirt
