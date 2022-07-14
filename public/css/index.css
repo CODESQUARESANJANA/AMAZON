@@ -47,12 +47,15 @@
     height: 50%;
     /* padding: 10px; */
     position: absolute;
-    top: 50%;
+    top: 70%;
     /* z-index: 40px; */
     /* transform: translate( ); */
     /* margin-top: -50px; */
 }
 
+.row_3{
+    margin-top: 40px;
+}
 
 .a-cardui.fluid-fat-image-link .a-cardui-body .center-image {
     height: 100%;
