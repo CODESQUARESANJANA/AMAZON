@@ -169,3 +169,25 @@ p {
 .submenu li{
     list-style: none;
 }
+
+#hiddenLi{
+    display: none;
+}
+
+#hiddenLi ul li{
+    list-style: none !important;
+   
+}
+#content ul li{
+    list-style: none !important;
+   
+}
+#content a{
+    text-decoration: none;
+    color: black;
+}
+
+ #hiddenLi a{
+    text-decoration: none;
+    color: black;
+}
