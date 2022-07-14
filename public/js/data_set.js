@@ -1103,7 +1103,7 @@ const Product_data = [
         product_name:"Kiaaron Women's Ikat Hand Block Print Jaipuri Cotton Mulmul Saree with Blouse Piece",
         product_description:"Beautiful Traditional Ethnic Indian Wear Saree with Blouse Piece. This Saree gives an Ethnic Indian look. This sari is great for wearing purposes. Work: Printed, Block print, Traditional Ethnic Look",
         product_rating:"4.3",
-        product_rating_count:"325",
+        product_rating_count:"325",                                         
         product_img: "https://m.media-amazon.com/images/I/31jzFQLaWfL.jpg",
         product_price: "6,999.00",
         product_discount_price: "799.00",
