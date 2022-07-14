@@ -1,0 +1,36 @@
+.container-fluid{
+    /* width: 100%; */
+    /* height: 100%; */
+    margin-top:1%;
+    /* margin-left: 20%; */
+    padding-bottom: 20px;
+    font-family:  sans-serif;
+
+}
+.container-b{
+    background-color: lightgrey;
+  width: 100%;
+  border: 15px solid gainsboro;
+  padding: 30px;
+ 
+}
+.women{
+  padding-left: 20%;
+  padding-bottom: 10%;
+  text-decoration: bisque;
+  text-decoration-color: black;
+
+}
+h2{
+
+  padding-bottom: 1%;
+}
+h5{
+  display:inline-flex;
+  padding-left: 20px;
+  /* vertical-align: top; */
+}
+h6{
+ padding-top: 10%;
+
+}
