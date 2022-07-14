@@ -172,6 +172,11 @@ p {
 
 #hiddenLi{
     display: none;
+   position: absolute;
+   padding: 4px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(225, 216, 216);
 }
 
 #hiddenLi ul li{
@@ -190,4 +195,21 @@ p {
  #hiddenLi a{
     text-decoration: none;
     color: black;
+}
+#hiddenLi2{
+    display: none;
+   position: absolute;
+   padding: 4px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(225, 216, 216);
+}
+#hiddenLi2 a{
+    text-decoration: none;
+    color: black;
+}
+
+#hiddenLi2 ul li{
+    list-style: none !important;
+   
 }
