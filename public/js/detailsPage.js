@@ -10,7 +10,7 @@ $(document).ready(function(){
         
         // $('#rating').mdbRate();
         $('#discount').html(`-50% &nbsp `);
-        // $('#discount').html(`-${product_discount_percentage}% &nbsp `);
+        // $('#discount').html(`-${product_discount_percenteage}% &nbsp `);
          
         $('.price').html(`<span id="currency">&#8377</span><span id="product_price">499.00</span>`);
         // $('.price').html(`<span id="currency" >&#8377</span>${product_discount_price}`);
@@ -24,6 +24,70 @@ $(document).ready(function(){
         $('#product_description').html(`<strong>Description</strong> : <br> The outsoles are made by an air cushion, doubling the effect of shock absorption. Besides, these shoes perform excellent in durability and are also slip resistant. It provides push cushioning comfort for foot pain relief and helps relieve pressure while conforming to your every step`);
         // $('#product_description').html(`Description :  ${product_description}`);
 
+//         $('#productDetailsSectionList').html(`<li> 
+//         <span  class="big-bold-fonts">
+//           Product Name :
+//         </span>
+//         ${product_name}
+//       </li>
+//       <li> 
+//         <span  class="big-bold-fonts">
+//           Rating :
+//         </span>
+//         ${product_rating}
+//       </li>
+//       <li> 
+//         <span  class="big-bold-fonts">
+//           Discount :
+//         </span>
+//         ${product_discount_percenteage}%
+//       </li>
+//       <li> 
+//         <span  class="big-bold-fonts">
+//           Color :
+//         </span>
+//         ${product_color}
+//       </li>
+//       <li> 
+//         <span  class="big-bold-fonts">
+//           Size :
+//         </span>
+//         ${product_size}
+//       </li>`)
+
+$('#productDetailsSectionList').html(`<li> 
+        <span  class="big-bold-fonts">
+          Product Name :
+        </span>
+        Amazon Brand - Myx Women's Cotton Kurti
+      </li>
+      <li> 
+        <span  class="big-bold-fonts">
+          Rating :
+        </span>
+        3.8
+      </li>
+      <li> 
+        <span  class="big-bold-fonts">
+          Discount :
+        </span>
+        55%
+      </li>
+      <li> 
+        <span  class="big-bold-fonts">
+          Color :
+        </span>
+       Yellow
+      </li>
+      <li> 
+        <span  class="big-bold-fonts">
+          Size :
+        </span>
+        Free-size
+      </li>`)
+
+       // $('#product-description-section').html(`${product_description}`);
+      $('#product-description-section').html(`Explore the collection of beautifully designed Saree from Sidhidata on Amazon. Each piece is elegantly crafted and will surely add to your wardrobe. Pair this piece with heels or flats for a graceful look.`);
 })
 
     
