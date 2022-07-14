@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html>
-<title>kid's section</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 
 <link rel="stylesheet" href="/public/css/kid.css">
 
-<body>
-
+<div id="header"></div>
     <div class="w3-sidebar  w3-bar-block w3-light-grey leftbar">
         <ul class="cat">
             <ul class="item">
@@ -96,43 +92,30 @@
                 <img src="/img/dresses/kidde.jpg" width="100%" alt="">
             </div>
         </div>
-        <div class="row" style="background:#fff; height:auto;">
-            <div class="w3-container" style="display: flex; overflow: scroll; width: 100%;">
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/jumpsuits.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
+
+        <div class="container1">   
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
                 </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/jeans.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/kurta&kurti.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/shirts.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/shorts.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/trackpaints.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/tshirts.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-                <div style="display: grid; width:100%;padding: 4px;height:25vh;float: left;">
-                    <img width="100%"  src="/img/dresses/tops.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">shop now</p>
-                </div>
-              
+        
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-        </div>
+        </div>   
+
         <div class="foot">
             <p style="font-size: 15px">kid's footwear</p>
             <div class="w3-container" style="display: flex;">
@@ -176,7 +159,33 @@
             </div>
         </div>
     </div>
+<div id="footer"></div>
+    <script>
+       $(document).ready(function() {
+// Swiper: Slider
+    new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+});
+    </script>
 
-</body>
-
-</html>
+    <script src="/public/js/kids.js"></script>
