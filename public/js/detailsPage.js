@@ -1,7 +1,9 @@
-$(document).ready(function(){
+$(function(){
         $('#header').load('topHeader.html');
         $('#footer').load('footer.html');
+})
 
+$(document).ready(function(){
         // $('#productRoute').text(`${cat_name} > ${sub_cat_name} `);
         $('#productRoute').text("Clothing > Men > T-shirts");
 
