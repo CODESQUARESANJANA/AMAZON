@@ -1,8 +1,12 @@
 $(document).ready(function () {
+console.log(subcategory_data);
 
     $("#hiddenLi").hide();
 
     $("#mens_cat").mouseenter(function () {
+
+            var cat_id = $(this).val();
+            
         $('#hiddenLi').css('display' , 'flex')
         $("#hiddenLi").show();
     })
