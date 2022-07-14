@@ -8,8 +8,11 @@
 />
 <link rel="stylesheet" href="/public/css/detailsPage.css">
 <div id="header"></div>
+<!-- Product Route -->
 <div id="productRoute"></div>
+<!-- Product details -->
 <div class="row my-4 pt-4 ml-0 mr-0">
+  <!-- 1st column -->
   <div class="col-sm-1 col-md-1 col-1">
     <img
       class="img-set img-set-gallery"
@@ -37,7 +40,10 @@
       alt=""
     />
   </div>
-  <div class="col-sm-4 col-md-4 col-4 mt-4">
+  <!-- !st column end -->
+
+  <!-- 2nd column start -->
+  <div class="col-sm-4 col-md-4 col-4 mt-4 text-center">
     <img
       class="img-center img-set-gallery"
       src="https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg"
@@ -45,6 +51,8 @@
       srcset=""
     />
   </div>
+  <!-- 2nd column end -->
+   <!-- 3rd column start -->
   <div class="col-sm-4 col-md-4 col-4" id="details">
     <h4 id="productName"></h4>
     <div class="row p-0 mb-0 color-blue">
@@ -113,6 +121,8 @@
     <!-- product_description -->
     <p id="product_description"></p>
   </div>
+   <!-- 3rd column end -->
+    <!-- 4th column start -->
   <div class="col-sm-3 col-md-3 col-3">
     <div class="border my-rounded-border p-3">
       <p class="price"></p>
@@ -169,8 +179,67 @@
     <hr>
     <button class="btn btn-block border border-dark text-left">Add to Wish List</button>
     </div>
+    <div class="text-center">
+      <p>Have one to sell?</p>
+      <button type="button" class="btn btn-light border">Sell on Amazon</button>
+    </div>
+    
+   
+   
+  </div>
+  <!-- 4th column end -->
+</div>
+<hr>
+<!-- Special Offers  -->
+<div id="special-offers" class="big-bold-fonts m-2">
+  <h2>Special offers and product promotions </h2>
+  <ul>
+    <li> <input type="checkbox" name="ClipThisCoupon" id="ClipThisCoupon">
+      <a href="#" class="color-blue big-bold-fonts">Clip this coupon</a> to save 1% on this product when you buy from Sidhidata Textile. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>Buy More Get More. Offered by Sidhidata Textile. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>Get 7.5% up to Rs. 2000 Instant Discount on Yes Bank Credit Card EMI transactions. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>Get 7.5% up to Rs. 1500 Instant Discount on Bank of Baroda Credit Card EMI transactions. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>10% Instant Discount up to INR 300 on Federal Bank Cards. Minimum purchase value INR 1000. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>5% Instant Discount up to INR 250 on HSBC Cashback Card Credit Card Transactions. Minimum purchase value INR 1000. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>No cost EMI available on select cards. Please check 'EMI options' above for more details. <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+    <li>Get GST invoice and save up to 28% on business purchases. <a href="#" class="color-blue big-bold-fonts">Sign up for free</a> <a href="#" class="color-blue big-bold-fonts">Here's how</a></li>
+  </ul>
+</div>
+<!-- Special Offers end -->
+<hr>
+
+<!-- Have a Question -->
+<div id="haveQuestion" class="m-2">
+  <h2>
+    Have a question?
+  </h2>
+  <p>
+    Find answers in product info, Q&amp;As, reviews
+  </p>
+  <div class="row haveQuestionSearchBar border m-0">
+    <i class=" fa-solid fa-magnifying-glass searchFavIcon"></i>
+    <input class="text-left" type="search" name="" id="haveQuestionSearch" placeholder="Type your question or keyword">
   </div>
 </div>
+<!-- Have a Question end-->
+
+<hr>
+<!-- Product details section -->
+<div id="productDetailsSection" class="m-2">
+  <h2>
+    Product details </h2>
+  <ul id="productDetailsSectionList">
+  </ul>
+</div>
+<!-- Product details section end-->
+<hr>
+<!-- Product Description section -->
+<div>    
+  <h2> Product description  </h2>  
+  <p  id="product-description-section" class="ml-5 mr-5"></p>          
+</div>
+<!-- Description section end -->
+<hr>
 
 
 </div>

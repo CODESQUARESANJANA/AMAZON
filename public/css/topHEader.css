@@ -61,10 +61,7 @@
     margin-left: -10px;
 }
 
-p {
-    /* font-size: 12px; */
-    /* line-height: 15px; */
-}
+
 
 .item i {
     padding: 0 3px;
@@ -168,4 +165,26 @@ p {
 
 .submenu li{
     list-style: none;
+}
+
+#hiddenLi{
+    display: none;
+}
+
+#hiddenLi ul li{
+    list-style: none !important;
+   
+}
+#sub-content ul li{
+    list-style: none !important;
+   
+}
+#sub-content a{
+    text-decoration: none;
+    /* color: black; */
+}
+
+ #hiddenLi a{
+    text-decoration: none;
+    color: black;
 }

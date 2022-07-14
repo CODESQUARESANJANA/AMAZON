@@ -1,7 +1,10 @@
 *{
     font-size: 14px;
 }
-
+.big-bold-fonts{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
 .img-set{
     vertical-align: top;
     width: 3vw;
@@ -103,5 +106,58 @@ border-radius: 10px;
 .deliveryOptions-roundImage{
     height: 50px !important;
     width: 50px !important;
+}
+
+/* Special offers */
+#special-offers li{
+    word-wrap: break-word;
+    margin: 0;
+    padding: 1px;
+    font-size: 16px !important;
+}
+#haveQuestion p{
+    margin-bottom: 8px!important;
+    color: #565959!important;
+    font-size: 14px!important;
+    line-height: 16px!important;
+}
+#haveQuestion{
+    /* margin: 20px; */
+    vertical-align: middle;
+}
+#haveQuestionSearch{
+      background: #e9ecef;
+      border: none;
+      background-color: transparent;
+      font-style: italic;
+      vertical-align: middle;
+      width: 70%;
+    padding-left: 15px;
+} 
+.searchFavIcon{
+    vertical-align: middle;
+}
+.haveQuestionSearchBar{
+    vertical-align: baseline;
+    padding: 5px 15px;
+        width: 75vw;
+}
+.haveQuestionSearchBar input:focus {
+    outline: none;
+  }
+/* Product details section*/
+#productDetailsSection ul li{
+    word-wrap: break-word;
+    font-size: 16px !important;
+   margin: 0px;
+   padding: 1px;
+}
+#productDetailsSection ul{
+   list-style-type: none;
+}
+/* Product Description section */
+#product-description-section{
+    font-size: 14px !important;
+    font-weight: 500;
 }
 

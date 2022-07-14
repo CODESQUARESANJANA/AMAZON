@@ -11,6 +11,7 @@
 
     <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -23,42 +24,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="mens.css">
+    <!-- <link rel="stylesheet" href="mens.css"> -->
     <script src="cat.js"></script>
-    <style>
-        h2 {
-            padding-top: 1%;
-        }
-
-        .b1 {
-            border: 40px solid ghostwhite;
-        }
-
-        .container-a {
-            background-color: lightgrey;
-            width: 100%;
-            border: 5px solid gainsboro;
-            padding: 20px;
-
-        }
-        #listing
-        {
-            display: flex;
-        }
-        #listing1
-        {
-            display: flex;
-        }
-        #listing1
-        {
-            display: flex;
-        }
-    </style>
+    <script src="public/js/hf.js"></script>
+    <link rel="stylesheet" href="public/css/product_list.css">
+     <link rel="stylesheet" href="public/css/topHEader.css" />
+    <link rel="stylesheet" href="public/css/leftbar.css">
+    <link rel="stylesheet" href="public/css/detailsPage.css">
+       
 </head>
 
 <body>
-
-    <div class="container-fluid">
+    <div id="header"></div>
+    <div class="container-fluid pb-4">
         <div class="row">
             <div class="col-sm-3" id="catList">
                 <ul>
@@ -85,7 +63,6 @@
                         <li>CREATURE</li>
                     </ul><br>
 
-                    <!-- <li><b>Average Customer Review</b></li><br> -->
                     <li><h6 ><b>Average Customer Review</b></h6></li>
                 <div class="icon pb-10 mr-10">
                    <i class="fa-solid fa-star"></i>
@@ -105,12 +82,10 @@
                 </div>
                     <i class="fa-solid fa-star-sharp-half-stroke"></i>
                 </ul>
-                <!-- shsg -->
-                
 
             </div>
             <div class="col-sm-9">
-                <h1>Under ₹300</h1>
+                <h1>Under ₹300-₹700</h1>
             <div id="listing">     
                     <div class="card" style="width: 15rem; margin-right:1%;">
                             <img class="card-img-top" src="https://m.media-amazon.com/images/I/91QwF2-Ry6L._UL1500_.jpg"
@@ -129,52 +104,52 @@
                             <img class="card-img-top" src="https://m.media-amazon.com/images/I/71LkXNMDGNL._UL1500_.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">₹299.00</h5>
-                                <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                                <h5 class="card-title">₹498.00 - ₹1,791.00</h5>
+                                <p class="card-text"><del>₹699.00 </del> <br>U.S. POLO ASSN. Men's Regular fit T-Shirt
                                     Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 75,53</p>
                             </div>
                     </div>
                     <div class="card" style="width: 15rem; margin-right:1%;">
                             <img class="card-img-top" src="https://m.media-amazon.com/images/I/511oc+UpTGL._UL1000_.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">₹299.00</h5>
-                                <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                                <h5 class="card-title">₹246.00 - ₹449.00</h5>
+                                <p class="card-text"><del>₹1299.00 </del> <br>EYEBOGLER Regular Fit Men's Cotton T-Shirt
                                     Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 13,273</p>
                             </div>
                     </div>
                     <div class="card" style="width: 15rem; margin-right:1%;">
                             <img class="card-img-top" src="https://m.media-amazon.com/images/I/71eUwDk8z+L._UL1500_.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">₹299.00</h5>
-                                <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                                <h5 class="card-title">₹666.00</h5>
+                                <p class="card-text"><del>₹899.00 </del> <br>Allen Solly Men's Polo
                                     Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 51,468</p>
                             </div>
                     </div>
                     <div class="card" style="width: 15rem; margin-right:1%;">
                             <img class="card-img-top" src="https://m.media-amazon.com/images/I/81IX-DPkEeL._UL1500_.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">₹299.00</h5>
-                                <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                                <h5 class="card-title">₹680.00</h5>
+                                <p class="card-text"><del>₹1899.00 </del> <br>U.S. POLO ASSN. Men's T-Shirt
                                     Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                        class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                        class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                                        class="fa-solid fa-star-half-stroke" style="font-size: smaller;"></i>
+                                        <i class="fa-regular fa-star" style="font-size: smaller;"></i> 213</p>
                             </div>
                      </div>
                         
@@ -199,21 +174,21 @@
                     <img class="card-img-top" src="https://m.media-amazon.com/images/I/61gA0Y0m9mL._UL1500_.jpg"
                         alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">₹299.00</h5>
-                        <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                        <h5 class="card-title">₹519.00</h5>
+                        <p class="card-text"><del>1999.00 </del> <br>Amazon Brand - Symbol Men's Regular Shirt
                             Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                 class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                 class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                 class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                                class="fa-regular fa-star" style="font-size: smaller;"></i> 4389</p>
                     </div>
              </div>
              <div class="card" style="width: 15rem; margin-right:1%;">
                 <img class="card-img-top" src="https://m.media-amazon.com/images/I/41Pa0t8FRXL.jpg"
                     alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">₹299.00</h5>
-                    <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                    <h5 class="card-title">₹349.00</h5>
+                    <p class="card-text"><del>₹1999.00 </del> <br>LookMark Men's Poly Cotton Digital Printed Stitched Half Sleeve Shirt
                         Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                             class="fa-solid fa-star" style="font-size: smaller;"></i><i
                             class="fa-solid fa-star" style="font-size: smaller;"></i><i
@@ -225,32 +200,32 @@
                 <img class="card-img-top" src="https://m.media-amazon.com/images/I/71lOM4AZATL._UY879_.jpg"
                     alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">₹299.00</h5>
-                    <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                    <h5 class="card-title">₹500.00</h5>
+                    <p class="card-text"><del>₹1849.00 </del> <br>Dennis Lingo Men's Slim Fit Casual Shirt
                         Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                             class="fa-solid fa-star" style="font-size: smaller;"></i><i
                             class="fa-solid fa-star" style="font-size: smaller;"></i><i
                             class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                            class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                            class="fa-regular fa-star" style="font-size: smaller;"></i> 24,909</p>
                 </div>
          </div>
          <div class="card" style="width: 15rem; margin-right:1%;">
             <img class="card-img-top" src="https://m.media-amazon.com/images/I/71qTbVnVZZL._UY879_.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">₹299.00</h5>
-                <p class="card-text"><del>₹799.00 </del> <br>Amazon Brand - Symbol Men's Regular Polo
+                <h5 class="card-title">₹349.00</h5>
+                <p class="card-text"><del>₹1999.00 </del> <br>LookMark Men's Poly Cotton Digital Printed Stitched Half Sleeve Shirt
                     Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
                         class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                        class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                        class="fa-regular fa-star" style="font-size: smaller;"></i> 15,843</p>
+                        class="fa-solid fa-star-half-stroke" style="font-size: smaller;"></i><i
+                        class="fa-regular fa-star" style="font-size: smaller;"></i> 22,29</p>
             </div>
      </div>
             </div>
-            <h2>Brans related to this category</h2>
-            <div id="listing3">
-                <div class="card" style="width: 60rem;">
+            <h2>Brands related to this category</h2>
+            <div id="listing2">
+                <div class="card" style="width: 70rem;">
   <img class="card-img-top" src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/2/AmazonStores/A21TJRUUN4KGV/a9374f053283aa423d5dd2fb15bfaf59.w1500.h300._CR0%2C0%2C1500%2C300_SX1500_.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Shirt Theory</h5>
@@ -259,12 +234,11 @@
   </div>
 </div>
             </div>
-            <h1>gfhh</h>
             </div>
             </div>
             
         </div>  
-    </div>
+        <div id="footer"></div>
 
 </body>
-</html>
+</html> 
