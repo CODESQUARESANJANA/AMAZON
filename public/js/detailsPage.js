@@ -4,8 +4,25 @@ $(function(){
 })
 
 $(document).ready(function(){
-        // $('#productRoute').text(`${cat_name} > ${sub_cat_name} `);
-        $('#productRoute').text("Clothing > Men > T-shirts");
+        var product_details = '';
+        var queryString = window.location.search;
+        const product_detail_param = new URLSearchParams(queryString);
+        console.log('product_detail_param---------',product_detail_param)
+        var product_id = product_detail_param.get('product_id');
+        console.log('product_id-------',product_id);
+
+        Product_data.forEach(function(value , index){
+                if(value.product_id == product_id)
+                {
+                       var product_details =  value;
+                }
+
+        })
+
+
+
+         $('#productRoute').text(`${product_details.cat_name} > ${product_details.sub_cat_name} `);
+        //$('#productRoute').text("Clothing > Men > T-shirts");
 
         // $('#productName').text(product_name);
         $('#productName').text("Amazon Brand - Myx Women's Cotton Kurti");
@@ -90,6 +107,17 @@ $('#productDetailsSectionList').html(`<li>
 
        // $('#product-description-section').html(`${product_description}`);
       $('#product-description-section').html(`Explore the collection of beautifully designed Saree from Sidhidata on Amazon. Each piece is elegantly crafted and will surely add to your wardrobe. Pair this piece with heels or flats for a graceful look.`);
+
+//       var card_product_name = $('[name="card_product_name"]');
+//       console.log('card_product_name-------------',card_product_name);
+//       var card_product_name = document.getElementsByName('userAnswer' + ansIdCount);
+//       document.getElementsByName('answerDisplay').innerHTML = '';
+//       for (var userAnswer of userAnswer) {
+//           if (userAnswer.checked) {
+//               userAnswer_arr.push(userAnswer.value);
+//               console.log('userAnswer.value----------', userAnswer.value);
+//           }
+//       }
 })
 
     
