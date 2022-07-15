@@ -46,8 +46,8 @@ let span = document.getElementsByTagName('span');
 		/*
 			CC 2.0 License Iatek LLC 2018 - Attribution required
 		*/
-		var $e = $(e.relatedTarget);
-		var idx = $e.index();
+		var e = $(e.relatedTarget);
+		var idx = e.index();
 		var itemsPerSlide = 6;
 		var totalItems = $('.carousel-item').length;
 	 
@@ -68,8 +68,8 @@ let span = document.getElementsByTagName('span');
 		/*
 			CC 2.0 License Iatek LLC 2018 - Attribution required
 		*/
-		var $e = $(e.relatedTarget);
-		var idx = $e.index();
+		var e = $(e.relatedTarget);
+		var idx = e.index();
 		var itemsPerSlide = 6;
 		var totalItems = $('.carousel-item').length;
 	 
@@ -88,8 +88,8 @@ let span = document.getElementsByTagName('span');
 	});
 	$('#carousel-example2').on('slide.bs.carousel', function (e) {
 		
-		var $e = $(e.relatedTarget);
-		var idx = $e.index();
+		var e = $(e.relatedTarget);
+		var idx = e.index();
 		var itemsPerSlide = 6;
 		var totalItems = $('.carousel-item').length;
 	 
@@ -106,3 +106,36 @@ let span = document.getElementsByTagName('span');
 			}
 		}
 	});
+
+
+	/*......sidebar responsive...*/
+	// function openNav() {
+	// 	document.getElementById("myNav").style.display = "block";
+	//   }
+	  
+	//   function closeNav() {
+	// 	document.getElementById("myNav").style.display = "none";
+	//   }
+
+	  $(document).load($(window).bind("resize", checkPosition));
+
+function checkPosition()
+{
+    if($(window).width() < 850)
+    {
+        $("#mysidepnav").css('display','none');
+		$('.pages').removeClass('col-9');
+		$('.pages').addClass('col-12');
+		$('#icon').css('display','block');
+		
+		$('#icon').click(function(){
+			$('#mysidepnav').css('display','block');
+		})
+    }
+	else{
+		 $("#mysidepnav").css('display','block');
+		$('.pages').removeClass('col-12');
+		$('.pages').addClass('col-9');
+		$('#icon').css('display','none');
+	}
+}

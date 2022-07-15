@@ -138,7 +138,10 @@ p.star{
     font-size: 25px;
     color: #808080;
 }
-@media (max-width: 768px) and (min-width: 390px) {
+.side-nav-aa .icon{
+    display: none;
+}
+@media (max-width: 636px) and (min-width: 390px) {
     .text h1{
         font-size: 35px;
     }
@@ -166,7 +169,29 @@ p.star{
     a{
         padding: 6px 10px;
     }
+    .side-nav-aa .icon{
+        display: block;
+        z-index: 4;
+    }
+
 }
+@media screen and (max-width: 850px) {
+    .ide-nav-aa.responsive {position: relative;}
+    .ide-nav-aa.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .side-nav-aa .icon{
+        display: block;
+    }
+    .ide-nav-aa.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   
+  }
 /*.........................second slider..............*/
 @media (min-width: 768px) and (max-width: 991px) {
     /* Show 4th slide on md if col-md-4*/

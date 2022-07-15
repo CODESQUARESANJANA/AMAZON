@@ -13,8 +13,14 @@
 
 <div id="header"></div>
 <div class="row main-div">
-    <div class="col-md-3 side-nav-aa">
+    <a href="javascript:void(0);" class="icon" id="icon"  onclick="myFunction3()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+    <div class="col-3 col-md-0 col-sm-0 side-nav-aa border" id="mysidepnav">
+        
         <ul class="side">
+            
             <ul class="sideItems">
                 <p style="margin-right: 10%;" ><strong>Boys</strong></p>
                 <li><a class="listValue" href="#">Clothing</a></li>
@@ -167,10 +173,10 @@
         </ul>
     </div>
     
-    <div class="col-md-9" style="background-color: #EAEAEA;">
+    <div class="col-9 pages" style="background-color: #EAEAEA;">
     
         <div class="w3-container">
-            <img src="/img/dresses/kid.jpg" style="width: 100%" alt="">
+            <img src="/img/dresses/kid.jpg" style="min-width:50%;max-width: 100%" alt="">
         </div>
         <div class="w3-container">
             <div class="row imgcont">
@@ -366,7 +372,14 @@
 
 <div id="footer"></div>
 <script>
-
+function myFunction3() {
+  var x = document.getElementById("mysidepnav");
+  if (x.className === "side-nav-aa") {
+    x.className += " responsive";
+  } else {
+    x.className = "side-nav-aa";
+  }
+}
 
 
 </script>
