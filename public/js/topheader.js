@@ -9,7 +9,7 @@ $(document).ready(function () {
             for(let i=0; i<subcategory_data.length;i++){
                 console.log("getting list", subcategory_data[i]);
                 if(subcategory_data[i].cat_id == cat_id ){
-                    lst_str += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
+                    lst_str += `<li style="font-family:cursive;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
                     
                 }
               
@@ -50,7 +50,7 @@ $(document).ready(function () {
             for(let i=0; i<subcategory_data.length;i++){
                 console.log("getting list", subcategory_data[i]);
                 if(subcategory_data[i].cat_id == cat_id1 ){
-                    lst_str1 += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
+                    lst_str1 += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id1}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
                     
                 }
               
@@ -72,6 +72,19 @@ $(document).ready(function () {
     $("#hiddenLi3").hide();
 
     $("#kids_cat").mouseenter(function () {
+
+        var lst_str2 = '';
+        var cat_id2 = $(this).val();
+        for(let i=0; i<subcategory_data.length;i++){
+            console.log("getting list", subcategory_data[i]);
+            if(subcategory_data[i].cat_id == cat_id2 ){
+                lst_str2 += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id2}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
+                
+            }
+          
+        }
+        $('#kid_cat_list').html(lst_str2);
+
         $('#hiddenLi3').css('display' , 'flex')
         $("#hiddenLi3").show();
     })

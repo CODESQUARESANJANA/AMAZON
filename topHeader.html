@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Clone</title>
+
+
     <script src="/public/js/data_set.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="public/js/topheader.js"></script>
 
     <!-- <meta charset="utf-8"> -->
-    
+    <!-- <script src="public/js/topheader.js"></script> -->
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -88,7 +92,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <div class="left dflex">
-                        <a href="#"><img src="./img/logo.png" alt="logo" class="logo" /><span>.in</span></a>
+                        <a href="index.html"><img src="./img/logo.png" alt="logo" class="logo" /><span>.in</span></a>
 
                         <div class="item">
                             <span><i class="fa fa-map-marker me"></i>hello,</span>
@@ -199,9 +203,9 @@
         </div>
         <div class="col-sm-8 " id="sub-content">
             <ul class="d-flex justify-content-around" >
-                <li><a href="women-category.html" id="women_cat" style="font-family:cursive ;">Women <sup style="color: red;">*</sup> </a></li>
+                <li id="women_cat" value="2"><a href="women-category.html" style="font-family:cursive ;">Women <sup style="color: red;">*</sup> </a></li>
                <li id="mens_cat" value="1"> <a  href="mens-category.html"  style="font-family:cursive ;" > Men <sup style="color: red;">*</sup></a></li>
-                <li><a href="kid.html'" id="kids_cat"style="font-family:cursive ;" >Kids  <sup style="color: red;">*</sup></a></li>
+                <li id="kids_cat" value="3"><a href="kid.html"  style="font-family:cursive ;" >Kids  <sup style="color: red;">*</sup></a></li>
                 <li><a href="">Baggage & Luagge</a></li>
                 <li><a href="">Sport Wear</a></li>
                 <li><a href="">Sales and Deals</a></li>
@@ -261,7 +265,11 @@
     </div>
     <div class="row" id="hiddenLi2">
         <div class="col-sm-3" >
-             <ul id="women_cat_list"></ul>
+
+           
+                <ul id="women_cat_list" ></ul>
+           
+             <!-- <ul id="women_cat_list"></ul> -->
                  <ul>
                    
                 <li><b><a href="">CLOTHING</a> </b></li>
@@ -321,7 +329,7 @@
     
     <div class="row" id="hiddenLi3">
         <div class="col-sm-3" >
-  
+            <ul id="kid_cat_list"></ul>
                  <ul>
                 <li><b><a href="">GIRLS</a> </b></li>
                 <li><a href="">ALL CLOTHING</a> </li>
