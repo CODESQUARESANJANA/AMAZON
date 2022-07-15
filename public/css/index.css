@@ -47,11 +47,15 @@
 }
 
 .row_2 {
-    /* padding: 4px; */
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
     /* margin-left: 0px; */
     margin: auto;
     /* height: 50%; */
     /* padding: 10px; */
+
     position: absolute;
     top: 70%;
     /* padding-bottom: 3px; */
@@ -61,10 +65,19 @@
 }
 
 .row_3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding-top: 150px;
     padding-bottom: 20px;
 }
-
+.row_3-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: auto;
+    padding-bottom: 20px;
+}
 .a-cardui.fluid-fat-image-link .a-cardui-body .center-image {
     height: 100%;
     width: 100%
@@ -155,3 +168,15 @@
 }
 
 /* New css for carousel */
+.card-text{
+    padding: 2px;
+    height: 50%;
+    background-color: red;
+    color: white;
+}
+@media screen and (min-width: 812px) and (max-width:1000px){
+    
+    .nav-style {
+        display: none;
+    }
+}
