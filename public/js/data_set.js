@@ -468,7 +468,7 @@ const Product_data = [
     product_color: "Navy blue",
     product_size: "6,7,8,9,10,11",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -652,7 +652,7 @@ const Product_data = [
     product_color: "Men Black Solid Denim Jacket",
     product_size: "S,M,L,XL,XXL",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -671,7 +671,7 @@ const Product_data = [
     product_color: "GREY",
     product_size: "S,M,L,XL",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "1",
@@ -836,7 +836,7 @@ const Product_data = [
     product_color: "Brown",
     product_size: "onesize",
     recentrly_view: false,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "1",
@@ -1005,7 +1005,7 @@ const Product_data = [
     product_color: "black&gray",
     product_size: "onesize",
     recentrly_view: false,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1025,7 +1025,7 @@ const Product_data = [
     product_color: "Yellow",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1044,7 +1044,7 @@ const Product_data = [
     product_color: "Pink-orange",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1062,7 +1062,7 @@ const Product_data = [
     product_color: "Pink",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1081,7 +1081,7 @@ const Product_data = [
     product_color: "Rama Green",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1100,7 +1100,7 @@ const Product_data = [
     product_color: "Dark Green",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1120,7 +1120,7 @@ const Product_data = [
     product_color: "Grey",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1138,7 +1138,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1157,7 +1157,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1176,7 +1176,7 @@ const Product_data = [
     product_color: "Yellow & black",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1195,7 +1195,7 @@ const Product_data = [
     product_color: "White 4",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1214,7 +1214,7 @@ const Product_data = [
     product_color: "Green",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1233,7 +1233,7 @@ const Product_data = [
     product_color: "Dark-Pink",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1253,7 +1253,7 @@ const Product_data = [
     product_color: "Beige",
     product_size: "Slim fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1272,7 +1272,7 @@ const Product_data = [
     product_color: "White",
     product_size: "Slim fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1291,7 +1291,7 @@ const Product_data = [
     product_color: "White",
     product_size: "Slim fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1310,7 +1310,7 @@ const Product_data = [
     product_color: "Yellow",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1330,7 +1330,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1350,7 +1350,7 @@ const Product_data = [
     product_color: "Frost White",
     product_size: "Slim fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1369,7 +1369,7 @@ const Product_data = [
     product_color: "Multicolour",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1387,7 +1387,7 @@ const Product_data = [
     product_color: "Multicolour",
     product_size: "Regular fit",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1405,7 +1405,7 @@ const Product_data = [
     product_color: "light blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -1425,7 +1425,7 @@ const Product_data = [
     product_color: "light blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -1445,7 +1445,7 @@ const Product_data = [
     product_color: "Dark blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -1464,7 +1464,7 @@ const Product_data = [
     product_color: "Dark blue",
     product_size: "29",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -1484,7 +1484,7 @@ const Product_data = [
     product_color: "Gray Blue",
     product_size: "27",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
     {
@@ -2661,8 +2661,8 @@ const Product_data = [
         product_size:"3-6 Months",
         recentrly_view:true,
         trending_product:true
-    }
-]
+    },
+
 
   {
     cat_id: "2",
@@ -2681,7 +2681,7 @@ const Product_data = [
     product_color: "Dark blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2700,7 +2700,7 @@ const Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2719,7 +2719,7 @@ const Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2738,7 +2738,7 @@ const Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2756,7 +2756,7 @@ const Product_data = [
     product_color: "Brown",
     product_size: "8UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -2776,7 +2776,7 @@ const Product_data = [
     product_color: "Gray",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2795,7 +2795,7 @@ const Product_data = [
     product_color: "Orange",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2814,7 +2814,7 @@ const Product_data = [
     product_color: "Brown",
     product_size: "8UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2832,7 +2832,7 @@ const Product_data = [
     product_color: "White",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2850,7 +2850,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2868,7 +2868,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2886,7 +2886,7 @@ const Product_data = [
     product_color: "Brown",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 
   {
@@ -2905,7 +2905,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "7UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2923,7 +2923,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "9UK",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2941,7 +2941,7 @@ const Product_data = [
     product_color: "Golden",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2960,7 +2960,7 @@ const Product_data = [
     product_color: "Silver",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2978,7 +2978,7 @@ const Product_data = [
     product_color: "    Multicolor",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -2997,7 +2997,7 @@ const Product_data = [
     product_color: "White",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3015,7 +3015,7 @@ const Product_data = [
     product_color: "Multicolor",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3034,7 +3034,7 @@ const Product_data = [
     product_color: "Golden and silver",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3053,7 +3053,7 @@ const Product_data = [
     product_color: "Gold",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3072,7 +3072,7 @@ const Product_data = [
     product_color: "Other Color",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3091,7 +3091,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "2",
@@ -3110,7 +3110,7 @@ const Product_data = [
     product_color: "Brown",
     product_size: "NA",
     recently_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3128,7 +3128,7 @@ const Product_data = [
     product_color: "Green",
     product_size: "3-6 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3147,7 +3147,7 @@ const Product_data = [
     product_color: "RoyalBlue",
     product_size: "4-5 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3166,7 +3166,7 @@ const Product_data = [
     product_color: "Multi",
     product_size: "4-5 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3185,7 +3185,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3204,7 +3204,7 @@ const Product_data = [
     product_color: "Green",
     product_size: "5-6 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3222,7 +3222,7 @@ const Product_data = [
     product_color: "Blood Red",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3241,7 +3241,7 @@ const Product_data = [
     product_color: "Multi Color",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3259,7 +3259,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3277,7 +3277,7 @@ const Product_data = [
     product_color: "Grey",
     product_size: "0-3 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3296,7 +3296,7 @@ const Product_data = [
     product_color: "Yellow",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3315,7 +3315,7 @@ const Product_data = [
     product_color: "Yellow",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3334,7 +3334,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3352,7 +3352,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3371,7 +3371,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3390,7 +3390,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3408,7 +3408,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "Medium",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3427,7 +3427,7 @@ const Product_data = [
     product_color: "Black-Blue",
     product_size: "Medium",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3446,7 +3446,7 @@ const Product_data = [
     product_color: "Wooden",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3465,7 +3465,7 @@ const Product_data = [
     product_color: "Skin",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3484,7 +3484,7 @@ const Product_data = [
     product_color: "Multi-Color",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3503,7 +3503,7 @@ const Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3522,7 +3522,7 @@ const Product_data = [
     product_color: "blue",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3541,7 +3541,7 @@ const Product_data = [
     product_color: "green",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3559,7 +3559,7 @@ const Product_data = [
     product_color: "yellow",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3578,7 +3578,7 @@ const Product_data = [
     product_color: "yellow",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3597,7 +3597,7 @@ const Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3616,7 +3616,7 @@ const Product_data = [
     product_color: "orange",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3635,7 +3635,7 @@ const Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3654,7 +3654,7 @@ const Product_data = [
     product_color: "red",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3673,7 +3673,7 @@ const Product_data = [
     product_color: "black",
     product_size: "",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3692,7 +3692,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3711,7 +3711,7 @@ const Product_data = [
     product_color: "Wooden",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3729,7 +3729,7 @@ const Product_data = [
     product_color: "Purple",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3748,7 +3748,7 @@ const Product_data = [
     product_color: "Pink",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3767,7 +3767,7 @@ const Product_data = [
     product_color: "Pink",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3785,7 +3785,7 @@ const Product_data = [
     product_color: "Orange",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3804,7 +3804,7 @@ const Product_data = [
     product_color: "White",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3823,7 +3823,7 @@ const Product_data = [
     product_color: "White",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3842,7 +3842,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3861,7 +3861,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3880,7 +3880,7 @@ const Product_data = [
     product_color: "Beige",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3899,7 +3899,7 @@ const Product_data = [
     product_color: "Pink",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3918,7 +3918,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3937,7 +3937,7 @@ const Product_data = [
     product_color: "Red",
     product_size: "6-12 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3955,7 +3955,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3973,7 +3973,7 @@ const Product_data = [
     product_color: "Blue",
     product_size: "0-3 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -3992,7 +3992,7 @@ const Product_data = [
     product_color: "Black",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -4010,7 +4010,7 @@ const Product_data = [
     product_color: "Multi Color",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -4029,7 +4029,7 @@ const Product_data = [
     product_color: "Beige",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
   {
     cat_id: "3",
@@ -4047,6 +4047,6 @@ const Product_data = [
     product_color: "Green",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true,
+    trending_product: true
   },
 ];
