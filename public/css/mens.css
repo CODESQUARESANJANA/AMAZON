@@ -10,9 +10,14 @@
     list-style: none;
     padding-top:2px ;
 
+
 }
-#list2 ,#list1{
+#list1{
     padding-left: 8px;
 }
 
+
+#list2{
+    padding-left: 8px;
+}
 

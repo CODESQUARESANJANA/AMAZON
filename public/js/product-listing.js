@@ -13,7 +13,9 @@ const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
-const param_cat_id = urlParams.get('cate_id');
+console.log('urlParams',urlParams);
+
+const param_cat_id = urlParams.get('cat_id');
 const param_sub_category_id = urlParams.get('sub_cat_id');
 // console.log(cat_id,
 //   sub_category_id);
@@ -24,8 +26,9 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
  
   Product_data.forEach(function(value , index){
     
-    if(value.cate_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
-      console.log(value.sub_cat_id);
+    if(value.cat_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
+      console.log('sub_cat_id-------------',value.sub_cat_id);
+      console.log('param_cat_id-------',param_cat_id);
         product_listing_details.push(value);
         $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
         <img class="card-img-top" src="${value.product_img}"
