@@ -123,13 +123,13 @@ padding: 0;}
 }
 
 small{color: #555;}
-a{
+a.listValue{
     text-decoration: none;
     padding: 6px 14px;
     font-size: 15px;
     margin: 5px 0 0 20px;
     display: inline-block;
-    background: #6773ff;
+    /* background: #6773ff; */
     color: white;
 }
 p.star{
@@ -138,7 +138,7 @@ p.star{
     font-size: 25px;
     color: #808080;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 390px) {
     .text h1{
         font-size: 35px;
     }
@@ -152,7 +152,11 @@ p.star{
         font-size: 30px;
         margin-top: 15%;
     }
-    #slidesect .product {
+    .side-nav-aa{
+        display: none;
+    }
+
+    #slidesect{
         min-width: 49%;
         margin:  0 10px  0 0;
     }
