@@ -19,8 +19,8 @@
 
 .img-gr-2 {
     background-image:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.203), rgba(235, 235, 235, 0.747)),
-        url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/EOSS/July9/EOSS-Unrec-Deals-PC-3000._CB632952112_.jpg');
+        linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(235, 235, 235, 0.05)),
+        url('https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/TheLordoftherings-Teaser/3000x1200_Hero-Tall._CB633114331_.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
