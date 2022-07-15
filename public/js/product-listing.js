@@ -3,6 +3,8 @@
 // sitepoint
 $(document).ready(function(){
 
+  var product_listing_details = [];
+
   $('#header').load('topHEader.html');
   $('#footer').load('footer.html');
 
@@ -28,11 +30,29 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
  
 //   {
   Product_data.forEach(function(value , index){
+    
     if(value.cate_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
-      console.log(value);
+      console.log(value.sub_cat_id);
+        product_listing_details.push(value);
+        $('#listing').append(` <div class="card" style="width: 15rem; margin-right:1%;">
+        <img class="card-img-top" src="${value.product_img}"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">₹${value.product_price}</h5>
+            <p class="card-text"><del>₹${value.product_discount_price} </del> <br> ${value.product_description}
+                Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
+                    class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
+                    style="font-size: smaller;"></i><i class="fa-solid fa-star"
+                    style="font-size: smaller;"></i><i class="fa-regular fa-star"
+                    style="font-size: smaller;"></i> 15,843</p>
+        </div>
+    </div>`)
     }
     
   });
+
+  
+  console.log(product_listing_details);
 
 });
 
