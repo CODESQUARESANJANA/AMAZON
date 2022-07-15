@@ -9,9 +9,10 @@ $(document).ready(function(){
         console.log('queryString---',queryString);
         const product_detail_param = new URLSearchParams(queryString);
         console.log('product_detail_param---------',product_detail_param)
+        var cat_id = product_detail_param.get('cat_id');
+        console.log('product_id-------',cat_id);
         var product_id = product_detail_param.get('product_id');
         console.log('product_id-------',product_id);
-
         Product_data.forEach(function(value , index){
                 if(value.product_id == product_id)
                 {
@@ -22,12 +23,15 @@ $(document).ready(function(){
 console.log('product_details--------',details);
 
         $('#productRoute').text("Clothing > Men > T-shirts");
+        $('#productRoute').text(``);
 
         $('#Product-image-main').attr('src',`${details[0].product_img}`);
 
         $('.img-set').attr('src',`${details[0].product_img}`);
 
          $('#productName').text(`${details[0].product_name}`);
+
+         $('#product_rating_count').html(`${details[0].product_rating_count} ratings`);
        
          $('#discount').html(`-${details[0].product_discount_percentage}% &nbsp `);
          
