@@ -9,7 +9,7 @@ $(document).ready(function () {
             for(let i=0; i<subcategory_data.length;i++){
                 console.log("getting list", subcategory_data[i]);
                 if(subcategory_data[i].cat_id == cat_id ){
-                    lst_str += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
+                    lst_str += `<li style="font-family:cursive;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
                     
                 }
               
@@ -50,7 +50,7 @@ $(document).ready(function () {
             for(let i=0; i<subcategory_data.length;i++){
                 console.log("getting list", subcategory_data[i]);
                 if(subcategory_data[i].cat_id == cat_id1 ){
-                    lst_str1 += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
+                    lst_str1 += `<li style="font-family:cursive ;"><b><a href="product-listing.html?cat_id=${cat_id1}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}</a> </b></li>`
                     
                 }
               
