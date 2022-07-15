@@ -173,6 +173,19 @@
     height: 50%;
     background-color: red;
     color: white;
+    
+}
+
+#text-edit{
+    color: #999;
+    max-height: 36px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 13px;
 }
 @media screen and (min-width: 812px) and (max-width:1000px){
     
