@@ -35,20 +35,22 @@ const UrlParams = new URLSearchParams(queryString);
 console.log(Product_data);
 
 const para_trending_product = UrlParams.get('trending_product')
+const param_product_discount_percentage= UrlParams.get('product_discount_percentage');
 
 const para_product_id = UrlParams.get('product_id');
+
 
 Product_data.forEach(function (value, index) {
     if (value.trending_product == false) {
         trending_productArr.push(value);
         $("#recently-view-items").append(`
         <div class="swiper-slide" value="${value.product_id}"> 
-        <div class="container">
+        <div class="container" style="max-height:347px">
           <div class="card" style="width: 100%;">
           <a href="detailsPage.html?product_id=${value.product_id}"> <img class="card-img-top" src="${value.product_img}"
           alt="Card image" style="width:100%; height:auto ;"></a>     
             <div class="card-body ">
-            <h5 class="card-title">${value.product_name} </h5>
+            <h5 class="card-title" id="pd_name">${value.product_name} </h5>
             <p class="card-text"  id="text-edit"><del>₹${value.product_discount_price} </del> <br> ${value.product_description }
             Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i>
             <i class="fa-solid fa-star" style="font-size: smaller;"></i>
@@ -66,7 +68,6 @@ Product_data.forEach(function (value, index) {
 })
 
 });
-
 
 
 
