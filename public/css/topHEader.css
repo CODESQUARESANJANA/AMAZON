@@ -35,11 +35,11 @@
 }
 
 .logo {
-    text-align: center;
-    margin: 1px;
+      /* text-align: center; */
+    /* margin: 1px; */
     margin-bottom: -5px;
-    padding: 6px 8px 0px 0px;
-    height: 42px;
+    /* padding: 6px 8px 0px 0px; */
+    height: 48px;
 }
 
 .nav-style a {

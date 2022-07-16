@@ -1,4 +1,7 @@
 <script src="/public/js/data_set.js "></script>
+<script>
+  console.log(Product_data);
+</script>
 <link rel="stylesheet" href="/public/css/index.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
@@ -51,7 +54,7 @@
 <!-- .........................tiles.................................. -->
 <div class="row  row_2 ">
   <div class="col-md-12 col-sm-12">
-    <div class="card-deck ">
+    <div class="card-deck card-styl">
       <div class="card ">
         <div class="card-body text-center">
           <div id="Vjv-2-ZSKWVYCI6VF5m6JA" class="a-cardui fluid-fat-image-link fluid-card fluid-fat-image-link"
@@ -327,11 +330,11 @@
 
 <!-- Swiper -->
 <!-- Carousel -->
-<div style="padding:4px; border: 1px solid black; margin-bottom: 10px;">
+<div style="padding:4px; border: 1px solid black; margin-bottom: 10px;height: fit-content;">
   <h3><b> Recently Views </b></h3>
-  <div class="swiper mySwiper " id="my-swipe" style="height: 600px;">
+  <div class="swiper mySwiper " id="my-swipe" style="height: 400 px;">
     <div class="swiper-wrapper" id="recently-view-items">
-     
+
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -353,7 +356,7 @@
     spaceBetween: 10,
     slidesPerGroup: 2,
     loop: true,
-    loopFillGroupWithBlank: true,
+    loopFillGroupWithBlank: false,
 
     navigation: {
       nextEl: ".swiper-button-next",
