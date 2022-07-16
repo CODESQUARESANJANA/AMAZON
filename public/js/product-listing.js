@@ -44,6 +44,7 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
     
   });
 
+  // for directing to the detail page
   $('.product-details-page').on('click' , function(){
     var p_id = $(this).attr('value');
     // alert(p_id)
@@ -51,13 +52,25 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
   })
 
   
-//   console.log(product_listing_details);
-      
+ 
+      // for showing all category
       for(let i=0; i<subcategory_data.length;i++){
         console.log(subcategory_data[i])
           // console.log("getting list", subcategory_data[i]);
           if(subcategory_data[i].cat_id == param_cat_id ){
+            if(param_cat_id == 2){
+              $('#cat_type').text('Women');
+            }
+            else if(param_cat_id == 3){
+              $('#cat_type').text('kid');
+            }
+            else{
+              $('#cat_type').text('Men');
+            }
+            
           $('#list2').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
+          $('#women').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
+            
               
           }
         
@@ -67,4 +80,11 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
 
 // $('#list2').append(`<a href='product-listing.html?cat_id=${value.cate_id}&sub_cat_id=${value.sub_cat_id}`)
 
+//  for women page
+// for(let i=0; i<subcategory_data.length;i++){
+//   if(subcategory_data[i].cat_id == param_cat_id ){
+//     $('#women').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
+              
+//   }
+// }
      
