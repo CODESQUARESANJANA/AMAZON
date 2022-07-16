@@ -13,8 +13,6 @@ const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
-console.log('urlParams',urlParams);
-
 const param_cat_id = urlParams.get('cat_id');
 const param_sub_category_id = urlParams.get('sub_cat_id');
 // console.log(cat_id,
@@ -27,8 +25,7 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
   Product_data.forEach(function(value , index){
     
     if(value.cat_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
-      console.log('sub_cat_id-------------',value.sub_cat_id);
-      console.log('param_cat_id-------',param_cat_id);
+      console.log(value.sub_cat_id);
         product_listing_details.push(value);
         $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
         <img class="card-img-top" src="${value.product_img}"
@@ -54,12 +51,20 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
   })
 
   
-  console.log(product_listing_details);
+//   console.log(product_listing_details);
+      
+      for(let i=0; i<subcategory_data.length;i++){
+        console.log(subcategory_data[i])
+          // console.log("getting list", subcategory_data[i]);
+          if(subcategory_data[i].cat_id == param_cat_id ){
+          $('#list2').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
+              
+          }
+        
+      }
 
 });
 
-// hrefff
-$('#list2').append
+// $('#list2').append(`<a href='product-listing.html?cat_id=${value.cate_id}&sub_cat_id=${value.sub_cat_id}`)
 
-
-
+     
