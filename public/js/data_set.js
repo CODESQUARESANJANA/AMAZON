@@ -683,7 +683,7 @@ const Product_data = [
     product_rating: "4.2",
     product_rating_count: "234",
     product_img:
-      "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18997368/2022/7/747e47600-594f-46c7-8130-f5daadf5b9151657177527175MotoGPMenBlackCamouflageWindcheaterandWaterResistantSportyJa1.jpg",
+      "https://m.media-amazon.com/images/I/61obgrElnhL._UY879_.jpg",
     product_price: "2999",
     product_discount_price: "2299",
     product_discount_percentage: "33",
