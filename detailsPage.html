@@ -91,19 +91,90 @@
       <p class="remove-margin p-3">
         <strong class="color-secondary">No Cost EMI:</strong> Avail No Cost EMI
         on select cards for orders above ₹3000 |
-        <a href="#" class="color-blue display-inline-block">Details</a>
+        <a href="#" class="color-blue display-inline-block" data-toggle="modal" data-target="#NoCostEMI_modal">Details</a>
       </p>
       <hr class="remove-margin" />
       <p class="remove-margin p-3">
         <strong class="color-secondary">Bank Offer:</strong> 5% Instant Discount
         up to INR 250 on HSBC Cashback Card Credit Card Transaction..... |
-        <a href="#" class="color-blue display-inline-block">Details</a>
+        <a href="#" class="color-blue display-inline-block" data-toggle="modal" data-target="BankOffers_modal">Details</a>
       </p>
       <hr class="remove-margin" />
       <p class="remove-margin p-3">
         <a href="#" class="color-blue">See 1 more</a>
       </p>
     </div>
+
+     <!-- Modals -->
+    <!-- Modal 1 -NoCostEMI_modal -->
+  <div class="modal fade" id="NoCostEMI_modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">No Cost EMI</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <h4>Avail No Cost EMI on select cards for orders above ₹3000</h4>
+          <p>To make this a No Cost EMI offer, interest amount will be discounted from the price of your order. Total amount you pay to the bank (excluding GST) will be equal to the price of the item. Bank may charge you GST only on the interest amount. Certain tenures are available on no cost EMI only on down payment. Please check EMI plans in payments page for more details.</p>
+          <hr>
+          <a href="#" class="color-blue display-inline-block" data-toggle="collapse" data-target="#demo">FAQ's</a>
+          <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal 1 end -->
+  <!-- Modal 2 -NoCostEMI_modal -->
+  <div class="modal fade" id="BankOffers_modal" role="dialog">
+    <div class="modal-dialog">   
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Bank Offer (3)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <!-- 1st offer -->
+          <p>5% Instant Discount up to INR 250 on HSBC Cashback Card Credit Card Transactions. Minimum purchase value INR 1000</p>
+          <hr>
+          <a href="#" class="color-blue display-inline-block" data-toggle="collapse" data-target="#bank_offers">Here's how</a>
+          <div id="bank_offers" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <!-- 2st offer -->
+          <p>5% Instant Discount up to INR 250 on HSBC Cashback Card Credit Card Transactions. Minimum purchase value INR 1000</p>
+          <hr>
+          <a href="#" class="color-blue display-inline-block" data-toggle="collapse" data-target="#bank_offers">Here's how</a>
+          <div id="bank_offers" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal 2 end -->
+
     <!-- delievery options -->
     <div class="row border-bottom">
       <div class="col-3">
@@ -255,117 +326,11 @@
 <hr>
 <!-- Carousel -->
 <div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <!-- slide 1 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- slide 2 -->
-<div class="swiper-slide">
-  <div class="container">
-    <div class="card" style="max-width: fit-content;">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-      <div class="card-body">
-        <p class="card-text" name="card-product-name"></p>
-        <p class="card-text" name="card-product-price"></p>
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- slide 3 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 4 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 5 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 6 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 7 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 8 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slide 9 -->
-    <div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <p class="card-text" name="card-product-name"></p>
-            <p class="card-text" name="card-product-price"></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="swiper-wrapper related_products_carousel">
+   
+
      <!-- slide 10 -->
-     <div class="swiper-slide">
+     <!-- <div class="swiper-slide">
       <div class="container">
         <div class="card" style="max-width: fit-content;">
           <img class="card-img-top" src="https://m.media-amazon.com/images/I/41xaEv+4phL._AC_SR160,200_.jpg" alt="Card image" style="width:100%">
@@ -375,7 +340,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
