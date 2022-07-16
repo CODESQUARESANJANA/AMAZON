@@ -47,7 +47,7 @@ Product_data.forEach(function (value, index) {
         <div class="swiper-slide" value="${value.product_id}"> 
         <div class="container" style="max-height:347px">
           <div class="card" style="width: 100%;">
-          <a href=""> <img class="card-img-top" src="${value.product_img}"
+          <a href="detailsPage.html?product_id=${value.product_id}"> <img class="card-img-top" src="${value.product_img}"
           alt="Card image" style="width:100%; height:auto ;"></a>     
             <div class="card-body ">
             <h5 class="card-title" id="pd_name">${value.product_name} </h5>
