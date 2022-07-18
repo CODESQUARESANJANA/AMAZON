@@ -1,14 +1,11 @@
 
 $(document).ready(function(){
 
-  var product_listing_details = [];
-//  var price=value.product_price;
   $('#header').load('topHEader.html');
   $('#footer').load('footer.html');
 
-  // jjjk
 
-
+  var product_listing_details = [];
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
@@ -24,7 +21,6 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
     if(value.cat_id == param_cat_id && value.sub_cat_id == param_sub_category_id){
       console.log(value.sub_cat_id);
       product_listing_details.push(value);
-        // product_listing_details.push(value);
         $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
         <img class="card-img-top" src="${value.product_img}"
             alt="Card image cap">
@@ -75,20 +71,21 @@ const param_sub_category_id = urlParams.get('sub_cat_id');
           }
         
       }
-
+      console.log(product_listing_details);
+//  for filtering
       $( function() {
         $( "#slider-range" ).slider({
           range: true,
           min: 0,
-          max: 1300,
-          values: [ 75, 300 ],
+          max: 5000,
+          values: [ 75, 5000],
           slide: function( event, ui ) {
             $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
             console.log(ui.values[ 0 ] , ui.values[1])
               $('#listing').empty()
               product_listing_details.forEach(function(value , index)
               {
-                if(value.product_price <= ui.values[1] && value.product_price >= ui.values[ 0 ]){
+                if(value.product_price <= ui.values[1] && value.product_price >= ui.values[0]){
                  
                     $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
                     <img class="card-img-top" src="${value.product_img}"
