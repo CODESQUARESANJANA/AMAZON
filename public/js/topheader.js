@@ -9,7 +9,7 @@ $(document).ready(function () {
          const param_cat_id1 = urlParams.get('cat_id');
          const param_sub_category_id1 = urlParams.get('sub_cat_id');
          const param_product_name1 = urlParams.get("sub_cat_name");
-
+        const param_product_id= urlParams.get("product_id")
         var path = "";
         var toName='';
         var href = document.location.href;
@@ -25,16 +25,25 @@ $(document).ready(function () {
                 if(val.cat_id == param_cat_id1 ){
                     console.log(val.cat_name);
                     // console.log(val.sub_cat_name);
-                    $('#toBreadCrum').append(`<span  style="text-transform:uppercase; color:black"> > &nbsp <a href=""> ${val.cat_name}</a></span>`)
+                    $('#toBreadCrum').append(`<span  style="text-transform:uppercase; color:black"> > &nbsp <a href="product-listing.html?cat_id=param.cat_id1"> ${val.cat_name}</a></span>`)
                 }
             })
             subcategory_data.forEach(function(value,index){
                 if(value.sub_cat_id==param_sub_category_id1){
                     console.log(value.sub_cat_name);
                     // alert(value.sub_cat_name)
-                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.sub_cat_name}</a> </span>`)
+                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href="${urlParams}"> ${value.sub_cat_name}</a> </span>`)
                 }
             })
+
+            Product_data.forEach(function(value,index){
+                if(value.product_id==param_product_id){
+                    console.log(value.product_name);
+                    // alert(valu.product_name)
+                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.product_name}</a> </span>`)
+                }
+            })
+
            
         }
 
