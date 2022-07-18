@@ -5,6 +5,7 @@
 
 #catList{
     padding-top: 2px;
+    font-size: large;
 }
 #catList ul li{
     list-style: none;

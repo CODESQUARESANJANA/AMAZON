@@ -57,7 +57,7 @@ $(document).ready(function () {
 
   $("#product_rating_count").html(`${details[0].product_rating_count} ratings`);
 
-  $("#discount").html(`-${details[0].product_discount_percentage}% &nbsp `);
+  $("#discount").html(`-${details[0].product_discount_percenteage}% &nbsp `);
 
   $(".price").html(
     `<span id="currency" >&#8377</span>${details[0].product_discount_price}`
