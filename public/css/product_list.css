@@ -13,6 +13,17 @@ h2 {
     padding: 20px;
 
 }
+.description
+{
+    /* max-height: px; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 13px;
+}
 #listing
 {
     display: flex;

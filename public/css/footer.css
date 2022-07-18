@@ -103,3 +103,7 @@ section .section-title {
     
 
 }
+
+ .modal-content    {background-color: #dbd5ff;
+border-radius: 33px;
+}
