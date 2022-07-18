@@ -91,7 +91,7 @@ const subcategory_data = [
   },
 ];
 
-const Product_data = [
+var Product_data = [
   {
     cat_id: "1",
     sub_cat_id: "101",
