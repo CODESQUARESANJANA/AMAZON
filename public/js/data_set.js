@@ -1,4 +1,4 @@
-const category_data = [
+var category_data = [
   {
     cat_id: "1",
     cat_name: "men",
@@ -13,7 +13,7 @@ const category_data = [
   },
 ];
 
-const subcategory_data = [
+var subcategory_data = [
   {
     cat_id: "1",
     sub_cat_id: "101",
@@ -91,7 +91,7 @@ const subcategory_data = [
   },
 ];
 
-const Product_data = [
+var Product_data = [
   {
     cat_id: "1",
     sub_cat_id: "101",
@@ -1305,7 +1305,7 @@ const Product_data = [
 {
     cat_id: "2",
     sub_cat_id: "108",
-    product_id: "1171 ",
+    product_id: "1171",
     product_name: "Jeans",
     product_description: "",
     product_rating: "3.0",
@@ -1323,7 +1323,7 @@ const Product_data = [
 {
     cat_id: "2",
     sub_cat_id: "108",
-    product_id: "1172 ",
+    product_id: "1172",
     product_name: "Skiny-Jeans",
     product_description: "‘Fit like a glove’ is an expression that one can definitely use while describing skinny types of jeans for girls! They hug your curves perfectly, and are practically all-rounders. Whether it’s a shirt or a t-shirt, a blouse or a kurti and everything in between; skinny jeans do it all and do it well!",
     product_rating: "3.0",
@@ -1342,7 +1342,7 @@ const Product_data = [
 {
     cat_id: "2",
     sub_cat_id: "108",
-    product_id: "1173 ",
+    product_id: "1173",
     product_name: "Skiny-Jeans",
     product_description: "‘Fit like a glove’ is an expression that one can definitely use while describing skinny types of jeans for girls! They hug your curves perfectly, and are practically all-rounders. Whether it’s a shirt or a t-shirt, a blouse or a kurti and everything in between; skinny jeans do it all and do it well!",
     product_rating: "3.0",
@@ -1359,7 +1359,7 @@ const Product_data = [
 {
     cat_id: "2",
     sub_cat_id: "108",
-    product_id: "1174 ",
+    product_id: "1174",
     product_name: "Low Waist Jeans",
     product_description: "Low-slung denims are back in fashion, as you may have noticed by now! This doesn’t go to say that high-waisted ones aren’t the ‘it thing’ anymore, but it just means that in the world of all types of jeans, each one is a hero and takes center stage.",
     product_rating: "3.0",
@@ -1377,7 +1377,7 @@ const Product_data = [
 {
     cat_id: "2",
     sub_cat_id: "108",
-    product_id: "1175 ",
+    product_id: "1175",
     product_name: "Boyfriend Jeans",
     product_description: "When boyfriend jeans hit us, we couldn’t believe that denims could offer the same comfort as our favorite lounge pants and be uber-stylish for the outdoorsNo, it’s nothing like slipping into your boyfriend’s jeans, but more about keeping it baggy yet fashionable",
     product_rating: "3.0",

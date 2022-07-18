@@ -19,6 +19,7 @@ $(document).ready(function () {
       
     }
   });
+  console.log(details)
   var para_sub_cat_id = details[0].sub_cat_id;
   console.log('para_sub_cat_id',para_sub_cat_id);
     Product_data.forEach(function (value, index) {
@@ -46,7 +47,7 @@ $(document).ready(function () {
 
   console.log("product_details--------", details);
 
-  $("#productRoute").text("Clothing > Men > T-shirts");
+
   // $('#productRoute').text(``);
 
   $("#Product-image-main").attr("src", `${details[0].product_img}`);
@@ -130,4 +131,38 @@ $(document).ready(function () {
 
   //     }
   // })
+
+
+
+var _cat_name = '';
+var _sub_cat_name = '';
+category_data.forEach(function(v , i){
+  if(details[0].cat_id == v.cat_id )
+  {
+    _cat_name = v.cat_name;
+  }
+
+})  
+
+subcategory_data.forEach(function(v , i){
+  if(details[0].sub_cat_id == v.sub_cat_id )
+  {
+    _sub_cat_name = v.sub_cat_name;
+  }
+
+})  
+
+$("#productRoute").html(`<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name} </b></a> </span>`);
+
+
+
+
+
+
+
+
+
+
+
+
 });
