@@ -52,7 +52,7 @@
   
     /* min-width: 400px;*/
     max-width: 100%; 
-    position: relative;
+    /* position: relative; */
     /* padding: 4px; */
     /* display: flex; */
     /* justify-content: center; */
@@ -90,7 +90,12 @@
     height: 100%;
     width: 100%
 }
+.card_style{
+    
+    width:280px;
+    margin-top: 4%                           ;
 
+}
 .fluid-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -183,11 +188,11 @@
     color: white;
 
 }
-/* .card-styl{
-    margin-left: 20px;
-    min-width:auto ;
-    justify-content: center;
-} */
+
+.card-styl{
+    margin-left: 20px !important;
+   
+} 
 
 #pd_name {
     /* color: red; */
