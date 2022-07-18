@@ -8,6 +8,7 @@ $(document).ready(function () {
          const urlParams = new URLSearchParams(queryString);
          const param_cat_id1 = urlParams.get('cat_id');
          const param_sub_category_id1 = urlParams.get('sub_cat_id');
+         const param_product_name1 = urlParams.get("sub_cat_name");
 
         var path = "";
         var toName='';
@@ -18,15 +19,33 @@ $(document).ready(function () {
         var m = s[3].split('.');
 
     console.log(m[0])
-        if(m[0]=="product-listing"){
+    // console.log(m[1]);
+        if(m[0]=="product-listing"){ 
             category_data.forEach(function(val , index){
-                if(val.cat_id == param_cat_id1){
+                if(val.cat_id == param_cat_id1 ){
                     console.log(val.cat_name);
-                    $('#toBreadCrum').append(`<span> > &nbsp${val.cat_name}</span>`)
+                    // console.log(val.sub_cat_name);
+                    $('#toBreadCrum').append(`<span> > &nbsp${val.cat_name}</span><span></span>`)
+                }
+            })
+            subcategory_data.forEach(function(value,index){
+                if(value.sub_cat_id==param_sub_category_id1){
+                    console.log(value.sub_cat_name);
+                    // alert(value.sub_cat_name)
+                    $('#toBreadCrum').append(`<span> > &nbsp${value.sub_cat_name}</span><span></span>`)
                 }
             })
            
         }
+
+       
+        // if(m[0]=="product-listing"){
+        //     Product_data.forEach(function(value,index){
+        //         if(value.product_name=param_product_name){
+        //             console.log(value.sub_cat_name);
+        //         }
+        //     })
+        // }
         // for (var i=2;i<(s.length-1);i++) {
         // path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+(i == 2 ? "" : s[i])+"</A> / ";
         // }
@@ -34,7 +53,7 @@ $(document).ready(function () {
         // path += "<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
         // var url = path;
         // document.writeln(url);
-        console.log(path)
+
    
 
 
