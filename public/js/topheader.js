@@ -3,6 +3,17 @@ $(document).ready(function () {
     // console.log(window.location.href);
          //breadcrum for navigation
          
+
+         //dynamic title
+
+         for(let i=0;i<Product_data.length;i++){
+             document.getElementById("titleChange").innerHTML=Product_data[i].product_name;
+         }
+        
+
+        $('#titleChange').
+
+
          const queryString = window.location.search;
         //  console.log(queryString);
          const urlParams = new URLSearchParams(queryString);
