@@ -25,14 +25,14 @@ $(document).ready(function () {
                 if(val.cat_id == param_cat_id1 ){
                     console.log(val.cat_name);
                     // console.log(val.sub_cat_name);
-                    $('#toBreadCrum').append(`<span> > &nbsp${val.cat_name}</span><span></span>`)
+                    $('#toBreadCrum').append(`<span  style="text-transform:uppercase; color:black"> > &nbsp <a href=""> ${val.cat_name}</a></span>`)
                 }
             })
             subcategory_data.forEach(function(value,index){
                 if(value.sub_cat_id==param_sub_category_id1){
                     console.log(value.sub_cat_name);
                     // alert(value.sub_cat_name)
-                    $('#toBreadCrum').append(`<span> > &nbsp${value.sub_cat_name}</span><span></span>`)
+                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.sub_cat_name}</a> </span>`)
                 }
             })
            
