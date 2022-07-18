@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <input id="searchBar" type="text" placeholder="search the web.."><button id="go">Go</button>
+    <form id="options" action=""></form>
+    <script>
+        const seData = [
+
+            {
+                name: "Google",
+                url: "https://www.google.com/search?&q=%s"
+                //"%s" is substituted with the search terms 
+            },
+            {
+                name: "Yahoo",
+                url: "https://search.yahoo.com/search?p=%s&fr=opensearch"
+            },
+            {
+                name: "Bing",
+                url: "https://www.bing.com/search?q=%s"
+            }
+        ];
+        function optionControls(seData) {
+            return `
+<label>${seData.name}<input type="radio" id="${seData.name}Checkbox" name="searchEngine"></label>`
+        } </script>
+</body >
+</html >
