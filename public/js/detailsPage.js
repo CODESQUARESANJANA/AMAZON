@@ -146,7 +146,10 @@ $(document).ready(function () {
       parseInt(quantity);
       var data_json = {
         "product_id": para_product_id,
-        'quantity': quantity
+        'quantity': quantity,
+        'product_name' : details[0].product_name,
+        'product_description' : details[0].product_description,
+        'product_img' : details[0].product_img
       };
       addToCart_arr.push(data_json);
       

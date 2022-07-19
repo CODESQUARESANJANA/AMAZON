@@ -60,7 +60,7 @@
     font-size: 14px;
     margin-left: -10px;
 }
-#nav-cart-count{
+#nav-cart #nav-cart-count-container #nav-cart-count {
     position: absolute;
     left: 13px;
     right: auto;
@@ -70,6 +70,11 @@
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+}
+.nav-cart-icon{
+    background-position: -10px -340px;
+    width: 38px;
+    height: 26px;
 }
 #nav-cart-count-container {
     position: relative;
