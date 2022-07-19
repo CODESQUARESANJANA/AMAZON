@@ -171,5 +171,12 @@ border-radius: 10px;
     color: black;
     
 }
-
-._brod a:hover { text-decoration: none; }
+._brod a:hover { 
+    text-decoration: none;
+ }
+.swal-footer {
+    text-align: center !important;
+}
+.swal-button {
+    background-color:#273545;
+}
