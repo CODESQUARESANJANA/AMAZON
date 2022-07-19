@@ -176,20 +176,17 @@ p.star{
 
 }
 @media screen and (max-width: 850px) {
-    .ide-nav-aa.responsive {position: relative;}
-    .ide-nav-aa.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .side-nav-aa .icon{
-        display: block;
-    }
-    .ide-nav-aa.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+    #mysidepnav .responsive {position: relative;}
+  #mysidepnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #mysidepnav .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
    
   }
 /*.........................second slider..............*/
@@ -320,3 +317,6 @@ p.star{
         visibility: visible;
     }
 }
+#mysidepnav .icon {
+    display: none;
+  }
