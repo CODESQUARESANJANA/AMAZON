@@ -42,7 +42,7 @@
 border-radius: 10px;
 }
 #currency{
-    font-size: 18px!important;
+    font-size: 25px!important;
     vertical-align: top;
     font-weight: 400;
 }
@@ -163,7 +163,7 @@ border-radius: 10px;
 
 .card-product-name{
     color: #007185;
-    font-size:18px;
+    font-size:16px;
 }
 ._brod a{
     text-decoration: none;
@@ -180,24 +180,3 @@ border-radius: 10px;
 .swal-button {
     background-color:#273545;
 }
-
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-  }
-  
-  .label-warning[href],
-  .badge-warning[href] {
-    background-color: #c67605;
-  }
-  #lblCartCount {
-      font-size: 12px;
-      background: #ff0000;
-      color: #fff;
-      padding: 0 5px;
-      vertical-align: top;
-      margin-left: -10px; 
-  }
