@@ -7,11 +7,12 @@ $(document).ready(function () {
          //dynamic title
 
          for(let i=0;i<Product_data.length;i++){
+
              document.getElementById("titleChange").innerHTML=Product_data[i].product_name;
          }
         
 
-        $('#titleChange').
+        //  $('document').attr("title",'${sub_cat_name}')
 
 
          const queryString = window.location.search;
@@ -23,6 +24,8 @@ $(document).ready(function () {
         const param_product_id= urlParams.get("product_id")
         var path = "";
         var toName='';
+
+        
         var href = document.location.href;
         var s = href.split("/");
        
