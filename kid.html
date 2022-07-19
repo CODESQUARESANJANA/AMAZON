@@ -1,28 +1,77 @@
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<script src="/public/js/data_set.js"></script>
+
 
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <link rel="stylesheet" href="/public/css/kid.css">
 <style>
-    
 
+.MultiCarousel {
+	float: left;
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	position: relative;
+}
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item_r {
+	float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item_r > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background: #f1f1f1;
+	color: #666;
+}
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+	position: absolute;
+	border-radius: 50%;
+	top: calc(50% - 20px);
+}
+/******* Bnt Full********
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%; 
+    height: 80%;
+    top: 24px;
+}**/
+
+.MultiCarousel .leftLst {
+	left: 0;
+}
+.MultiCarousel .rightLst {
+	right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+	pointer-events: none;
+	background: #ccc;
+}
 </style>
 
 <div id="header"></div>
-<div class="row main-div">
-    <a href="javascript:void(0);" class="icon" id="icon"  onclick="myFunction3()">
-        <i class="fa fa-bars"></i>
-      </a>
+<div class="row main-div" style="display: flex;">
+
+
 
     <div class="col-3 col-md-0 col-sm-0 side-nav-aa border" id="mysidepnav">
-        
+
         <ul class="side">
-            
+
             <ul class="sideItems">
-                <p style="margin-right: 10%;" ><strong>Boys</strong></p>
+                <p style="margin-right: 10%;"><strong>Boys</strong></p>
                 <li><a class="listValue" href="#">Clothing</a></li>
                 <li><a class="listValue" href="#">Shoes</a></li>
                 <li><a class="listValue" href="#">Watches</a></li>
@@ -35,11 +84,14 @@
                 <li><a class="listValue" href="#">Shoes</a></li>
                 <li><a class="listValue" href="#">Watches</a></li>
                 <li><a class="listValue" href="#">Sunglasses</a></li>
-                <li><a style="font-weight:400;"  class="listValue" href="#">Baby Girl</a></li>
+                <li><a style="font-weight:400;" class="listValue" href="#">Baby Girl</a></li>
             </ul>
             <ul class="sideItems">
                 <p><strong>Department</strong></p>
-                <li><p>< Fashion</p><a class="listValue" href="#"></a></li>
+                <li>
+                    <p>
+                        < Fashion</p><a class="listValue" href="#"></a>
+                </li>
                 <li><a class="listValue" href="#">Kid's Fashion</a></li>
                 <li><a class="listValue" href="#">Kid's SS'22 Collection</a></li>
                 <li><a class="listValue" href="#">Boys & Girls</a></li>
@@ -49,74 +101,86 @@
             <ul class="sideItems" style="justify-content:space-between">
                 <p><strong>Amazone Prime</strong></p>
                 <li color="#007185" style="line-height:1.5rem;"><input type="checkbox">Prime</li>
-                
-                
+
+
             </ul>
             <ul class="sideItems">
                 <p><strong>Pay On Delivery</strong></p>
                 <li style="line-height:1.5rem;"><input type="checkbox">Eligible For Pay on Delivery</li>
-                
-                
+
+
             </ul>
-            
+
             <ul class="sideItems">
                 <p><strong>Colour</strong></p>
-                <div style="background-color: red;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: rgb(99, 234, 108);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: rgb(112, 130, 205);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: rgb(213, 83, 181);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: rgba(99, 91, 91, 0.162);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: rgb(92, 88, 88);margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: gray;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                
-                <div style="background-color: coral;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: aqua;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div><br>
-                <div style="background-color: bisque;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: azure;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div>
-                <div style="background-color: orange;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox"></div><br><br>
-                
+                <div style="background-color: red;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox">
+                </div>
+                <div style="background-color: rgb(99, 234, 108);margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: rgb(112, 130, 205);margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: rgb(213, 83, 181);margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: rgba(99, 91, 91, 0.162);margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: rgb(92, 88, 88);margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: gray;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox">
+                </div>
+
+                <div style="background-color: coral;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox">
+                </div>
+                <div style="background-color: aqua;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox">
+                </div><br>
+                <div style="background-color: bisque;margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div>
+                <div style="background-color: azure;margin: 1%; width: 10%; float: left; height: 4vh;" class="colorbox">
+                </div>
+                <div style="background-color: orange;margin: 1%; width: 10%; float: left; height: 4vh;"
+                    class="colorbox"></div><br><br>
+
 
 
             </ul><br><br> <br><br>
-            <ul class="sideItems" >
+            <ul class="sideItems">
                 <p><strong>Brands</strong></p>
                 <li style="line-height:1.5rem;"><input type="checkbox">Goldnize Fashion</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">To The Nines</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">Matrix</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">Nivia</li>
-                <li style="line-height:1.5rem;"><input type="checkbox">SWADESHI STUFF</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">SWADESHI STUFF</li>
             </ul>
             <ul class="sideItems" style="align-items: space-between;">
                 <p><strong>Avg. Customer Reveiw</strong></p>
                 <li><a> <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
 
-</a></li>
+                    </a></li>
                 <li><a> <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
 
-<span class="fa fa-star"></span></a></li>
+                        <span class="fa fa-star"></span></a></li>
                 <li><a> <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span></a></li>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></a></li>
                 <li><a> <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span></a></li>
-<li><a> <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span></a></li>
-             
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></a></li>
+                <li><a> <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></a></li>
+
             </ul>
             <ul class="sideItems">
                 <p><strong>New Arrivals</strong></p>
@@ -128,7 +192,7 @@
                 <p><strong>Item Condition</strong></p>
                 <li><a class="listValue" href="#">New</a></li>
                 <li><a class="listValue" href="#">Used</a></li>
-                
+
             </ul>
             <ul class="sideItems">
                 <p><strong>Price</strong></p>
@@ -140,7 +204,7 @@
             </ul>
             <ul class="sideItems">
                 <p><strong>Deals</strong></p>
-                <li color="#007185" style="line-height:1.5rem;"><input type="checkbox">Today's Deals</li> 
+                <li color="#007185" style="line-height:1.5rem;"><input type="checkbox">Today's Deals</li>
             </ul>
             <ul class="sideItems">
                 <p><strong>Discount</strong></p>
@@ -151,30 +215,33 @@
                 <li><a class="listValue" href="#">60% off or more</a></li>
                 <li><a class="listValue" href="#">70% off or more</a></li>
             </ul>
-            <ul class="sideItems" >
+            <ul class="sideItems">
                 <p><strong>Seller</strong></p>
                 <li style="line-height:1.5rem;"><input type="checkbox">Cocoblu Retail</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">Bixind(USA)</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">Nitrous Stores</li>
                 <li style="line-height:1.5rem;"><input type="checkbox">Pratham Shop</li>
-                <li style="line-height:1.5rem;"><input type="checkbox">Groot_</li> 
-                <li style="line-height:1.5rem;"><input type="checkbox">Agrawal steel</li> 
-                <li style="line-height:1.5rem;"><input type="checkbox">CartIndia Online</li> 
-                <li style="line-height:1.5rem;"><input type="checkbox">Vedansh Interprises</li> 
-                <li style="line-height:1.5rem;"><input type="checkbox">MBM USA Stores</li> 
+                <li style="line-height:1.5rem;"><input type="checkbox">Groot_</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Agrawal steel</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">CartIndia Online</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">Vedansh Interprises</li>
+                <li style="line-height:1.5rem;"><input type="checkbox">MBM USA Stores</li>
 
             </ul>
-            <ul class="sideItems" >
+            <ul class="sideItems">
                 <p><strong>Availability</strong></p>
-                <li style="line-height:1.5rem;"><input type="checkbox">Include Out Of Stock</li>
-              
+                <li style="line-height:1.5rem; width: 15%;"><input type="checkbox">Include Out Of Stock</li>
 
             </ul>
         </ul>
     </div>
-    
+
+    <a href="javascript:void(0);" class="icon" id="icon" onclick="" style="display: none; color: black;">
+        <i class="fa fa-bars"></i>
+    </a>
+
     <div class="col-9 pages" style="background-color: #EAEAEA;">
-    
+
         <div class="w3-container">
             <img src="/img/dresses/kid.jpg" style="min-width:50%;max-width: 100%" alt="">
         </div>
@@ -189,7 +256,7 @@
                 <img src="/img/dresses/kidde.jpg" width="100%" alt="">
             </div>
         </div>
-    
+
         <main id="slideproduct">
             <h3>
                 Kids' Clothing | Up to 60% off
@@ -197,7 +264,7 @@
             <div class="top-content">
                 <div class="container-fluid">
                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="  row w-100 mx-auto" role="listbox">
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                                 <img src="/img/dresses/jumpsuits.jpg" class="img-fluid mx-auto d-block" alt="img1">
                                 <p class="text-center">Shop Now</p>
@@ -263,42 +330,42 @@
                 </div>
             </div>
         </main>
-    
-    
+
+
         <div class="swiper-pagination"></div>
-    
+
         <div class="swiper-footer">
         </div>
         <div id="swipper">
-    
+
         </div>
-    
+
         <div class="foot">
             <div style=" background-color: #fff; margin: 1%;">
                 <h3>kid's footwear</h3>
-            <div class="container" style="display: flex; background-color: #fff; padding: 1%;">
-                <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
-                    <img width="100%" src="/img/dresses/f2.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">Girl's Footwear</p>
+                <div class="container" style="display: flex; background-color: #fff; padding: 1%;">
+                    <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
+                        <img width="100%" src="/img/dresses/f2.jpg" alt="">
+                        <p style="font-size: 8px; text-align:center;">Girl's Footwear</p>
+                    </div>
+                    <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
+                        <img width="100%" src="/img/dresses/f3.jpg" alt="">
+                        <p style="font-size: 8px; text-align:center;">Baby Footwear</p>
+                    </div>
+                    <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
+                        <img width="100%" src="/img/dresses/footw.jpg" alt="">
+                        <p style="font-size: 8px; text-align:center;">Boy's Footwear</p>
+                    </div>
+                    <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
+                        <img width="100%" src="/img/dresses/sport.jpg" alt="">
+                        <p style="font-size: 8px; text-align:center;">Sports Shoes</p>
+                    </div>
                 </div>
-                <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
-                    <img width="100%" src="/img/dresses/f3.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">Baby Footwear</p>
-                </div>
-                <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
-                    <img width="100%" src="/img/dresses/footw.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">Boy's Footwear</p>
-                </div>
-                <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
-                    <img width="100%" src="/img/dresses/sport.jpg" alt="">
-                    <p style="font-size: 8px; text-align:center;">Sports Shoes</p>
-                </div>
-            </div>
             </div>
         </div>
         <div class="jwellary">
             <div style="background-color: #fff; margin: 1%;">
-            <h3>Watches, jwellary and more...</h3>
+                <h3>Watches, jwellary and more...</h3>
 
                 <div class="container" style="display: flex;" style="background-color: #fff;">
                     <div class="footimg" style="display: grid; width: 25%; padding: 1%;">
@@ -320,7 +387,7 @@
                 </div>
             </div>
         </div>
-       
+
         <div class="brand">
             <div class="top-content2" style="background-color: #fff; margin: 1%;">
                 <h3>Top Offers from Top Brands</h3>
@@ -328,28 +395,36 @@
                     <div id="carousel-example1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner row w-100 mx-auto" role="listbox">
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                                <img src="/img//dresses/KF-Brand-tiles_02._CB625159289_.gif" class="img-fluid mx-auto d-block" alt="img14">
+                                <img src="/img//dresses/KF-Brand-tiles_02._CB625159289_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img14">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="/img/dresses/KF-Brand-tiles_03._CB625159289_.gif" class="img-fluid mx-auto d-block" alt="img15">
+                                <img src="/img/dresses/KF-Brand-tiles_03._CB625159289_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img15">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="img/dresses/KF-Brand-tiles_04._CB625159289_.gif" class="img-fluid mx-auto d-block" alt="img16">
+                                <img src="img/dresses/KF-Brand-tiles_04._CB625159289_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img16">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="img/dresses/KF-Brand-tiles_05._CB625159289_.gif" class="img-fluid mx-auto d-block" alt="img17">
+                                <img src="img/dresses/KF-Brand-tiles_05._CB625159289_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img17">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="/img/dresses/KF-Brand-tiles_06._CB625159288_.gif" class="img-fluid mx-auto d-block" alt="img18">
+                                <img src="/img/dresses/KF-Brand-tiles_06._CB625159288_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img18">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="img/dresses/KF-Brand-tiles_07._CB625159288_.gif" class="img-fluid mx-auto d-block" alt="img19">
+                                <img src="img/dresses/KF-Brand-tiles_07._CB625159288_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img19">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="/img/dresses/KF-Brand-tiles_08._CB625159289_.gif" class="img-fluid mx-auto d-block" alt="img20">
+                                <img src="/img/dresses/KF-Brand-tiles_08._CB625159289_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img20">
                             </div>
                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                                <img src="/img/dresses/KF-Brand-tiles_09._CB625159288_.gif" class="img-fluid mx-auto d-block" alt="img21">
+                                <img src="/img/dresses/KF-Brand-tiles_09._CB625159288_.gif"
+                                    class="img-fluid mx-auto d-block" alt="img21">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-example1" role="button" data-slide="prev">
@@ -368,20 +443,28 @@
             <img style="width: 100%;" src="/img/offimg.jpg" alt="">
         </div>
         
-</div>
 
-<div id="footer"></div>
-<script>
-function myFunction3() {
-  var x = document.getElementById("mysidepnav");
-  if (x.className === "side-nav-aa") {
-    x.className += " responsive";
-  } else {
-    x.className = "side-nav-aa";
-  }
-}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,2,3,4" data-slide="3" id="MultiCarousel"  data-interval="3000">
+                <div class="MultiCarousel-inner" id="outer-div">
+                    
+                   
+                </div>
+                <button class="btn btn-primary leftLst"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="btn btn-primary rightLst"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            
+          
+        </div>
+    </div>
+    
+    
 
+    <div id="footer"></div>
+    
 
-</script>
-
-<script  src="/public/js/kids.js"></script>
+    <script src="/public/js/kids.js"></script>
