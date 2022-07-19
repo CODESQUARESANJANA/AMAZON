@@ -2,9 +2,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
              
-<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
 
 <script src="public/js/product-listing.js"></script>
@@ -20,6 +21,7 @@
 
 <!-- Popper JS -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -88,12 +90,12 @@
                 </div> -->
                 <p class="stars">
                     <label class="myrating">0</label>
-                    <span>
-                      <a class="star-1" href="#">1</a>
-                      <a class="star-2" href="#">2</a>
-                      <a class="star-3" href="#">3</a>
-                      <a class="star-4" href="#">4</a>
-                      <a class="star-5" href="#">5</a>
+                    <span id="rating-star">
+                      <a class="s1" value="1" class="star-1" >1</a>
+                      <a class="s1" value="2" class="star-2" >2</a>
+                      <a class="s1" value="3" class="star-3" >3</a>
+                      <a class="s1" value="4" class="star-4" >4</a>
+                      <a class="s1" value="5" class="star-5" >5</a>
                     </span>
                 </p>
                 <script>
@@ -122,10 +124,10 @@
            
 
             <div class="row" id="listing" style="display: flex;">
-                
-                
-
+                <!-- <div class=" row"  id="para" style="display: flex;" > -->
+             <!-- </div> -->
             </div>
+            <!-- <div class="contain"><p> ghghfg</p></div> -->
             <h2>Recommended for you</h2>
             <!-- 2nd column collectn -->
             <div id="listing1">
