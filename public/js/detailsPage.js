@@ -5,7 +5,10 @@ $(function () {
 
 $(document).ready(function () {
   var details = [];
-  var related_products =[];
+  var related_products = [];
+  var _cat_name = "";
+  var _sub_cat_name = "";
+
   var queryString = window.location.search;
   console.log("queryString---", queryString);
   const product_detail_param = new URLSearchParams(queryString);
@@ -16,37 +19,36 @@ $(document).ready(function () {
   Product_data.forEach(function (value, index) {
     if (value.product_id == para_product_id) {
       details.push(value);
-      
     }
   });
-  console.log(details)
+  console.log(details);
   var para_sub_cat_id = details[0].sub_cat_id;
-  console.log('para_sub_cat_id',para_sub_cat_id);
-    Product_data.forEach(function (value, index) {
-      if(value.sub_cat_id == para_sub_cat_id){
-        related_products.push(value);
-        $('.related_products_carousel').append(
-          `<div class="swiper-slide" style = "height: 60%; width: 35%">
+  console.log("para_sub_cat_id", para_sub_cat_id);
+  Product_data.forEach(function (value, index) {
+    if (value.sub_cat_id == para_sub_cat_id) {
+      related_products.push(value);
+      $(".related_products_carousel").append(
+        `<div class="swiper-slide">
       <div class="container" >
-        <div class="card" >
-          <img class="card-img-top" style="max-width: 30%;max-height: 40%; margin-left: auto; margin-right: auto;" src="${value.product_img}" alt="Card image" style="width:100%">
+        <div class="card m-0">
+          <img class="card-img-top" style="max-width: 100%;margin-left: auto; margin-right: auto;" src="${value.product_img}" alt="Card image" style="width:100%">
           <div class="card-body">
-            <p class="card-text" name="card-product-name">${value.product_name}</p>
-            <p class="card-text" name="card-product-price">${value.product_name}</p>
+            <p class="card-text mb-0">
+            <a  class="card-product-name" href="detailsPage.html?product_id=${value.product_id}">${value.product_name}</a><br>
+            </p>
+            <p class="mb-0"> <span class="color-secondary"><del>₹${value.product_price} </del> </span><span style="font-size:20px;">&nbsp ₹${value.product_discount_price} </span></p>
+            <p class="card-text" name="card-product-price"></p>
           </div>
         </div>
       </div>
     </div>`
-        )
-    
-      }
-   
+      );
+    }
   });
-  
-   console.log("related_products--------", related_products);
+
+  console.log("related_products--------", related_products);
 
   console.log("product_details--------", details);
-
 
   // $('#productRoute').text(``);
 
@@ -105,64 +107,54 @@ $(document).ready(function () {
 
   $("#product-description-section").html(`${details[0].product_description}`);
 
-  //   Product_data.forEach(function (value, index) {
-  //     if (value.trending_product == false) {
-  //         trending_productArr.push(value);
-  //         $("#recently-view-items").append(`
-  //         <div class="swiper-slide" value="${value.product_id}">
-  //         <div class="container">
-  //           <div class="card" style="width: 100%;">
-  //           <a href=""> <img class="card-img-top" src="${value.product_img}"
-  //           alt="Card image" style="width:100%; height:auto ;"></a>
-  //             <div class="card-body ">
-  //             <h5 class="card-title">${value.product_name} </h5>
-  //             <p class="card-text"  id="text-edit"><del>₹${value.product_discount_price} </del> <br> ${value.product_description }
-  //             Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i>
-  //             <i class="fa-solid fa-star" style="font-size: smaller;"></i>
-  //          <i class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
-  //                 style="font-size: smaller;"></i><i class="fa-regular fa-star"
-  //                 style="font-size: smaller;"></i><br>${value.product_rating_count}</p>
+  category_data.forEach(function (v, i) {
+    if (details[0].cat_id == v.cat_id) {
+      _cat_name = v.cat_name;
+    }
+  });
 
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //         `)
+  subcategory_data.forEach(function (v, i) {
+    if (details[0].sub_cat_id == v.sub_cat_id) {
+      _sub_cat_name = v.sub_cat_name;
+    }
+  });
 
-  //     }
-  // })
+  $("#productRoute").html(
+    `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name} </b></a> </span>`
+  );
+  var addToCart_arr = [];
+  $("#addToCart").click(() => {
+    var flag =0;
+    var quantity = $("select#productQuantity option").filter(":selected").text();
+    console.log('productQuantity----------', typeof(quantity));
 
+    var addToCart_arr = localStorage.getItem('add_to_cart') || [];
 
+    if(addToCart_arr != '') {
+      addToCart_arr = JSON.parse(addToCart_arr);
+    }
 
-var _cat_name = '';
-var _sub_cat_name = '';
-category_data.forEach(function(v , i){
-  if(details[0].cat_id == v.cat_id )
-  {
-    _cat_name = v.cat_name;
-  }
+    addToCart_arr.forEach(function(value,index){
+      if(value.product_id == para_product_id){
+        value.quantity = parseInt(value.quantity) + parseInt(quantity);
+      // console.log('value.quantity-----------',value.quantity);
+       flag = 1;
+      }
+    })
 
-})  
-
-subcategory_data.forEach(function(v , i){
-  if(details[0].sub_cat_id == v.sub_cat_id )
-  {
-    _sub_cat_name = v.sub_cat_name;
-  }
-
-})  
-
-$("#productRoute").html(`<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name} </b></a> </span>`);
-
-
-
-
-
-
-
-
-
-
-
-
+    if(flag == 0 ){
+      parseInt(quantity);
+      var data_json = {
+        "product_id": para_product_id,
+        'quantity': quantity
+      };
+      addToCart_arr.push(data_json);
+      
+     
+    }
+    swal("Added to Cart", "", "success")
+    localStorage.setItem('add_to_cart', JSON.stringify(addToCart_arr));
+    
+  });
+  
 });

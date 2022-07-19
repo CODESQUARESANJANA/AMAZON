@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/public/css/MultipleItemCarousel.css">
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 <link rel="stylesheet" href="/public/css/detailsPage.css">
@@ -255,7 +256,7 @@
       </p>
       <p>
         Quantity:
-        <select name="Quantity" id="">
+        <select name="Quantity" id="productQuantity">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -269,7 +270,7 @@
         </select>
       </p>
 
-      <button type="button" class="btn btn-warning btn-block border-round">Add to Cart</button>
+      <button type="button" class="btn btn-warning btn-block border-round" id="addToCart">Add to Cart</button>
       <button type="button" class="btn btn-block buynow-btn-color border-round">Buy Now</button>
 
       <p class="my-3">

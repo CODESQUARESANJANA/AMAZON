@@ -161,12 +161,22 @@ border-radius: 10px;
     font-weight: 500;
 }
 
-
+.card-product-name{
+    color: #007185;
+    font-size:18px;
+}
 ._brod a{
     text-decoration: none;
     font-size: 20px;
     color: black;
     
 }
-
-._brod a:hover { text-decoration: none; }
+._brod a:hover { 
+    text-decoration: none;
+ }
+.swal-footer {
+    text-align: center !important;
+}
+.swal-button {
+    background-color:#273545;
+}

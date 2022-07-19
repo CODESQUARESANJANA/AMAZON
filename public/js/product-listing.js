@@ -12,6 +12,7 @@ $(document).ready(function () {
 
   const param_cat_id = urlParams.get('cat_id');
   const param_sub_category_id = urlParams.get('sub_cat_id');
+  // const param_cat_rating = url.get('product_rating');
 
   // category_data.forEach(function(value , index){
   //   console.log(value);
@@ -40,12 +41,7 @@ $(document).ready(function () {
   });
 
 
-  // for directing to the detail page
-  $('.product-details-page').on('click', function () {
-    var p_id = $(this).attr('value');
-    // alert(p_id)
-    window.location.href = `detailsPage.html?product_id=${p_id}`;
-  })
+
 
 
 
@@ -91,7 +87,7 @@ $(document).ready(function () {
       max: tosort[tosort.length-1],
       values: [tosort[0], tosort[tosort.length-1]],
       slide: function (event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        $(".amount").val( ui.values[0] + " - " + ui.values[1]);
         console.log(ui.values[0], ui.values[1])
         $('#listing').empty()
         product_listing_details.forEach(function (value, index) {
@@ -118,10 +114,50 @@ $(document).ready(function () {
 
       }
     });
-    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-      " - $" + $("#slider-range").slider("values", 1));
+    $(".amount").val($("#slider-range").slider("values", 0) +
+      " - " + $("#slider-range").slider("values", 1));
   });
 
 
+  $(".s1").click(function(){
+      var rating_cnt = $(this).attr('value')
+      $('#listing').empty()
+      product_listing_details.forEach(function (value, index) {
+      if (parseInt(value.product_rating) == rating_cnt ) {
+      $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    <img class="card-img-top" src="${value.product_img}"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">₹${value.product_price}</h5>
+                        <p class="card-text"><del>₹${value.product_discount_price} </del> <br> 
+                        <div class="description">${value.product_description}</div>
+                          <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
+                                class="fa-solid fa-star" style="font-size: smaller;"></i>
+                                <i class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
+                                style="font-size: smaller;"></i><i class="fa-regular fa-star"
+                                style="font-size: smaller;"></i>(${value.product_rating})</p>
+                    </div>
+                </div>`)
+
+    }
+
+    
+  })
+  if (document.getElementById('listing').innerHTML == '')
+  {
+    
+    swal("Sorry!", "for this rating product is not available!");
+
+  }
+  
+
+  });
+  
+    // for directing to the detail page
+    $(document).on('click', '.product-details-page' ,function () {
+      var p_id = $(this).attr('value');
+      // alert(p_id)
+      window.location.href = `detailsPage.html?product_id=${p_id}`;
+    })
 
 });

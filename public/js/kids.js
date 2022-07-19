@@ -253,25 +253,29 @@ ResCarousel(ell, Parent, slide);
 // 		$('#icon').css('display', 'none');
 // 	}
 // }
+ let offer10Arr = [];
+Product_data.forEach(function (value, index)
+ {
+	if (value.product_discount_percenteage == "10")
+	{
+		offer10Arr.push(value);
+		$("#outerDiv").append(`
 
-Product_data.forEach(function (value, index) {
-	if (value.product_discount_percenteage =="10%")
-	 {
-		
-		$("#outer-div").append(`
-		<div class="item item_r"  style= "width:300px;">
-		<div class="pad15">
-			<p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
-			<p><b>${value.product_name}</b></p>
-			<p>₹ ${value.product_discount_price}</p>
-			
-			<p>${value.product_description}</p>
-		</div>
-	</div>
-		
+		<div class="item item_r" style= "width:300px;">
+                        <div class="pad15">
+                            <p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
+                            <p><b>${value.product_name}</b></p>
+                            <p>₹ ${value.product_discount_price}</p>
+                            
+                            <p>${value.product_description}</p>
+                        </div>
+                    </div>
+
 	`)
+		
+		
 	}
-})
+});
 
 
 
