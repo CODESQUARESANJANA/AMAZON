@@ -37,8 +37,8 @@ $(document).ready(function () {
     if(m[0]=='product-listing'){
         document.getElementById("titleChange").innerHTML=`Product Listing`;
     }
-    else if(m[0]=='sarees'){
-        document.getElementById("titleChange").innerHTML=`Sarees`;
+    else if(m[0]=='mens-category'){
+        document.getElementById("titleChange").innerHTML=`Men's Category`;
     }
 
 
@@ -59,9 +59,7 @@ $(document).ready(function () {
     else if(m[0]=='fashion'){
         document.getElementById("titleChange").innerHTML=`Fashion`;  
     }
-    else if(m[0]=='school stationery'){
-        document.getElementById("titleChange").innerHTML=`School Stationary `;  
-    }
+    
     // console.log(m[1]);
         if(m[0]=="product-listing"){ 
             category_data.forEach(function(val , index){
