@@ -59,7 +59,7 @@ $(document).ready(function () {
       var sure = confirm("Do you really want to remove this");
       this.checked = !sure;
       count--;
-      checkout_price -= parseInt(parse_1[this.value].product_price);
+      checkout_price -= parseInt(parse_1[this.value].product_price)*parseInt(parse_1[this.value].quantity);
       $('#price').html(`<b>Subtotal</b> (${count} item): ${checkout_price}`);
     }
     else {
@@ -81,7 +81,8 @@ $(document).ready(function () {
   });
 
 $('#checkout-btn').on('click' , function(){
-  var checkout_product = localStorage.getItem('checkout') || [];
+if (checkout_price != 0){
+    var checkout_product = localStorage.getItem('checkout') || [];
   if(checkout_product != '')
   {
     checkout_product = JSON.parse(checkout_product);
@@ -97,8 +98,11 @@ $('#checkout-btn').on('click' , function(){
   window.location.href = "checkout.html";
 
 
-})
-  
 
+}  
+else {
+    alert("Please select atleast one product to checkout")
+}
+});
 });
 
