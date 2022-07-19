@@ -60,8 +60,21 @@
     font-size: 14px;
     margin-left: -10px;
 }
-
-
+#nav-cart-count{
+    position: absolute;
+    left: 13px;
+    right: auto;
+    top: 8px;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#nav-cart-count-container {
+    position: relative;
+    padding-bottom: 1px;
+}
 
 .item i {
     padding: 0 3px;
