@@ -1,3 +1,4 @@
+<!-- <script src="/public/js/data_set.js "></script> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="titleChange">Amazon Clone</title>
-
-
+ 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    
+    <!-- <script src="public/js/index.js"></script> -->
     <script src="/public/js/data_set.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="public/js/topheader.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.j
+        s" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
     <!-- <meta charset="utf-8"> -->
     <!-- <script src="public/js/topheader.js"></script> -->
@@ -23,12 +32,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="public/css/topHEader.css" />
+         <link rel="stylesheet" href="public/css/topHEader.css" />
     <link rel="stylesheet" href="public/css/leftbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="public/css/detailsPage.css">
-  
+    <script src="public/js/topheader.js"></script>
+<script>
+    $( function() {
+    var search_product = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#search_Bar" ).autocomplete({
+      source: search_product
+    });
+  } );
+</script>
 </head>
 
 <body>
@@ -113,7 +153,8 @@
                                 <button type="submit" class="all">
                                     All <i class="fa fa-sort-desc"></i>
                                 </button>
-                                <input type="text" id="search_Bar" />
+                                <input type="text" id="search_Bar" placeholder="search">
+                                <label for="search_Bar"></label>
                                 <button type="submit" class="search">
                                     <i class="fa fa-search"></i>
                                 </button>
@@ -400,8 +441,6 @@
            
         </div>
     </div>
-    
-
     
     <!-- </div>
     </div> -->
