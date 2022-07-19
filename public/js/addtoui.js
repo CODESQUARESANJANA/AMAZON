@@ -45,7 +45,7 @@ $(document).ready(function () {
     </div>
   </label>`)
 
-    total_price += parseInt(value.product_price);
+    total_price += parseInt(value.product_price)*parseInt(value.quantity);
   })
 
   console.log(total_price)

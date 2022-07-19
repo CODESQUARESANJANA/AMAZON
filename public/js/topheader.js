@@ -65,6 +65,10 @@ $(document).ready(function () {
         else if(m[0]=='fashion'){
             document.getElementById("titleChange").innerHTML=`Fashion`;  
         }
+        else if(m[0] == 'cart')
+        {
+            document.getElementById("titleChange").innerHTML=`Cart - Fashion.in`;
+        }
         
         // console.log(m[1]);
             if(m[0]=="product-listing"){ 
