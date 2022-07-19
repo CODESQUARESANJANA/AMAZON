@@ -31,14 +31,19 @@ $(document).ready(function () {
         `<div class="swiper-slide">
       <div class="container" >
         <div class="card m-0">
+        <a href="detailsPage.html?product_id=${value.product_id}" style="text-decoration:none;">
           <img class="card-img-top" style="max-width: 100%;margin-left: auto; margin-right: auto;" src="${value.product_img}" alt="Card image" style="width:100%">
           <div class="card-body">
             <p class="card-text mb-0">
-            <a  class="card-product-name" href="detailsPage.html?product_id=${value.product_id}">${value.product_name}</a><br>
+            <p class="card-product-name mb-0">${value.product_name}</p>
+            <p class="mb-0">
+            <p style="font-size:18px;color:black;">&nbsp ₹${value.product_discount_price} </p>
+             <span class="color-secondary"><del>₹${value.product_price} </del> &nbsp -${value.product_discount_percenteage}% </span>
+             </p>
             </p>
-            <p class="mb-0"> <span class="color-secondary"><del>₹${value.product_price} </del> </span><span style="font-size:20px;">&nbsp ₹${value.product_discount_price} </span></p>
-            <p class="card-text" name="card-product-price"></p>
+            
           </div>
+          </a>
         </div>
       </div>
     </div>`
@@ -63,7 +68,7 @@ $(document).ready(function () {
   $("#discount").html(`-${details[0].product_discount_percenteage}% &nbsp `);
 
   $(".price").html(
-    `<span id="currency" >&#8377</span>${details[0].product_discount_price}`
+    `<p id="currency">₹${details[0].product_discount_price}</p>`
   );
 
   $("#mrp").html(`M.R.P.: <s>&#8377 ${details[0].product_price}</s>`);
@@ -124,8 +129,6 @@ $(document).ready(function () {
   );
   var addToCart_arr = [];
   var cart_count_var = 0;
-
-
   $("#addToCart").click(() => {
     var flag =0;
     var quantity = $("select#productQuantity option").filter(":selected").text();
