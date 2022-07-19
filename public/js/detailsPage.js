@@ -95,7 +95,7 @@ $(document).ready(function () {
         <span  class="big-bold-fonts">
           Discount :
         </span>
-        ${details[0].product_discount_percentage}%
+        ${details[0].product_discount_percenteage}%
       </li>
       <li> 
         <span  class="big-bold-fonts">
