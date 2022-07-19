@@ -160,7 +160,8 @@ $(document).ready(function () {
       addToCart_arr.push(data_json);
      
     }
-    swal("Added to Cart", "", "success")
+    swal("Added to Cart", "", "success");
+    window.location.reload();
     localStorage.setItem('add_to_cart', JSON.stringify(addToCart_arr));
     
   });
