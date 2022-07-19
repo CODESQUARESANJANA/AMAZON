@@ -1,15 +1,20 @@
 $(document).ready(function () {
     var cart_data = JSON.parse(localStorage.getItem('add_to_cart'));
     var cart_count = 0;
-    console.log('cart_count--------',cart_data); 
+    if(cart_data != null)
+    {
+        console.log('cart_count--------',cart_data); 
 
 
-    cart_data.forEach(function(value,index){
-        
-        cart_count += value.quantity;
-    })
-    console.log(cart_count);
+        cart_data.forEach(function(value,index){
+            
+            cart_count += value.quantity;
+        })
+        console.log(cart_count);
+    
 
+    }
+  
     $('#cart_count').html(cart_count);
 
     // $("#submit_fun").click(function (e) { 
