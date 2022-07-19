@@ -124,6 +124,8 @@ $(document).ready(function () {
   );
   var addToCart_arr = [];
   var cart_count_var = 0;
+
+
   $("#addToCart").click(() => {
     var flag =0;
     var quantity = $("select#productQuantity option").filter(":selected").text();
