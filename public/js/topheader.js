@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // console.log(subcategory_data);
     // console.log(window.location.href);
+<<<<<<< HEAD
     //breadcrum for navigation
 
 
@@ -28,8 +29,69 @@ $(document).ready(function () {
 
     console.log(s);
     var m = s[3].split('.');
+=======
+         //breadcrum for navigation
+         
+
+         //dynamic title
+
+     
+
+         
+     
+        
+
+        //  $('document').attr("title",'${sub_cat_name}')
+
+
+         const queryString = window.location.search;
+        //  console.log(queryString);
+         const urlParams = new URLSearchParams(queryString);
+         const param_cat_id1 = urlParams.get('cat_id');
+         const param_sub_category_id1 = urlParams.get('sub_cat_id');
+         const param_product_name1 = urlParams.get("sub_cat_name");
+        const param_product_id= urlParams.get("product_id")
+        var path = "";
+        var toName='';
+   
+
+        
+        var href = document.location.href;
+        var s = href.split("/");
+       
+        console.log(s);
+        var m = s[3].split('.');
+>>>>>>> 3bd5cd47861f19e557ab48ebb61aef58a0a1560c
 
     console.log(m[0])
+    if(m[0]=='product-listing'){
+        document.getElementById("titleChange").innerHTML=`Product Listing`;
+    }
+    else if(m[0]=='sarees'){
+        document.getElementById("titleChange").innerHTML=`Sarees`;
+    }
+
+
+    if(m[0] == 'detailsPage'){
+
+            document.getElementById("titleChange").innerHTML=`Product Details`;
+    }
+    else if(m[0]=='women-category'){
+        document.getElementById("titleChange").innerHTML=`Women Category`;
+        
+    }
+    else if(m[0]=='kid'){
+        document.getElementById("titleChange").innerHTML=`Kid Category`;  
+    }
+    else if(m[0]=='index'){
+        document.getElementById("titleChange").innerHTML=`Amazon`;  
+    }
+    else if(m[0]=='fashion'){
+        document.getElementById("titleChange").innerHTML=`Fashion`;  
+    }
+    else if(m[0]=='school stationery'){
+        document.getElementById("titleChange").innerHTML=`School Stationary `;  
+    }
     // console.log(m[1]);
     if (m[0] == "product-listing") {
         category_data.forEach(function (val, index) {
@@ -47,6 +109,7 @@ $(document).ready(function () {
             }
         })
 
+<<<<<<< HEAD
         Product_data.forEach(function (value, index) {
             if (value.product_id == param_product_id) {
                 console.log(value.product_name);
@@ -54,6 +117,36 @@ $(document).ready(function () {
                 $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.product_name}</a> </span>`)
             }
         })
+=======
+            Product_data.forEach(function(value,index){
+                if(value.product_id==param_product_id){
+                    console.log(value.product_name);
+                    // alert(valu.product_name)
+                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.product_name}</a> </span>`)
+                }
+            })
+
+         
+        }
+
+       
+        // if(m[0]=="product-listing"){
+        //     Product_data.forEach(function(value,index){
+        //         if(value.product_name=param_product_name){
+        //             console.log(value.sub_cat_name);
+        //         }
+        //     })
+        // }
+        // for (var i=2;i<(s.length-1);i++) {
+        // path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+(i == 2 ? "" : s[i])+"</A> / ";
+        // }
+        // i = s.length-1;
+        // path += "<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+        // var url = path;
+        // document.writeln(url);
+
+   
+>>>>>>> 3bd5cd47861f19e557ab48ebb61aef58a0a1560c
 
 
     }

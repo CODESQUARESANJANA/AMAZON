@@ -104,6 +104,9 @@ section .section-title {
 
 }
 
- .modal-content    {background-color: #dbd5ff;
-border-radius: 33px;
+ .modal-content    {
+    color: aliceblue;
+    background-color: #273545;
+border-radius:15px;
+ 
 }
