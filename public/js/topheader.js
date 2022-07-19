@@ -6,10 +6,10 @@ $(document).ready(function () {
 
          //dynamic title
 
-         for(let i=0;i<Product_data.length;i++){
+     
 
-             document.getElementById("titleChange").innerHTML=Product_data[i].product_name;
-         }
+         
+     
         
 
         //  $('document').attr("title",'${sub_cat_name}')
@@ -24,6 +24,7 @@ $(document).ready(function () {
         const param_product_id= urlParams.get("product_id")
         var path = "";
         var toName='';
+   
 
         
         var href = document.location.href;
@@ -33,6 +34,34 @@ $(document).ready(function () {
         var m = s[3].split('.');
 
     console.log(m[0])
+    if(m[0]=='product-listing'){
+        document.getElementById("titleChange").innerHTML=`Product Listing`;
+    }
+    else if(m[0]=='sarees'){
+        document.getElementById("titleChange").innerHTML=`Sarees`;
+    }
+
+
+    if(m[0] == 'detailsPage'){
+
+            document.getElementById("titleChange").innerHTML=`Product Details`;
+    }
+    else if(m[0]=='women-category'){
+        document.getElementById("titleChange").innerHTML=`Women Category`;
+        
+    }
+    else if(m[0]=='kid'){
+        document.getElementById("titleChange").innerHTML=`Kid Category`;  
+    }
+    else if(m[0]=='index'){
+        document.getElementById("titleChange").innerHTML=`Amazon`;  
+    }
+    else if(m[0]=='fashion'){
+        document.getElementById("titleChange").innerHTML=`Fashion`;  
+    }
+    else if(m[0]=='school stationery'){
+        document.getElementById("titleChange").innerHTML=`School Stationary `;  
+    }
     // console.log(m[1]);
         if(m[0]=="product-listing"){ 
             category_data.forEach(function(val , index){
@@ -58,7 +87,7 @@ $(document).ready(function () {
                 }
             })
 
-           
+         
         }
 
        
