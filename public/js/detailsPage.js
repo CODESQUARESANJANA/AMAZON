@@ -74,7 +74,7 @@ $(document).ready(function () {
   $("#mrp").html(`M.R.P.: <s>&#8377 ${details[0].product_price}</s>`);
 
   $("#color-name").html(`Color Name :  ${details[0].product_color}`);
-var color= (details[0].product_color).toLowerCase();
+  var color= (details[0].product_color).toLowerCase();
   $('#color-bubble').css("background-color",color);
 
   $("#product_description").html(
