@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
     cart_data.forEach(function(value,index){
-
+        
         cart_count += value.quantity;
     })
     console.log(cart_count);

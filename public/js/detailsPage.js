@@ -161,7 +161,10 @@ $(document).ready(function () {
      
     }
     swal("Added to Cart", "", "success");
-    window.location.reload();
+    setTimeout(function(){
+      window.location.reload();
+    },1000)
+    
     localStorage.setItem('add_to_cart', JSON.stringify(addToCart_arr));
     
   });
