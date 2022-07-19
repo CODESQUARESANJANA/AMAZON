@@ -22,7 +22,7 @@ $(document).ready(function () {
     
             //  $('document').attr("title",'${sub_cat_name}')
     
-    
+            //window.location.search gives query string 
              const queryString = window.location.search;
             //  console.log(queryString);
              const urlParams = new URLSearchParams(queryString);
@@ -34,7 +34,7 @@ $(document).ready(function () {
             var toName='';
        
     
-            
+            //dpcument.location.href gives the full url 
             var href = document.location.href;
             var s = href.split("/");
            
@@ -218,14 +218,14 @@ $(document).ready(function () {
         });
     
     
-    //    Himanshuuuuu 
+    
     
 
         
      
     });
     
-    //mens_cat
+    
     
     
     
