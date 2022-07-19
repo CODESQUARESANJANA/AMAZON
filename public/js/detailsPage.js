@@ -128,7 +128,6 @@ $(document).ready(function () {
     `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name} </b></a> </span>`
   );
   var addToCart_arr = [];
-  var cart_count_var = 0;
   $("#addToCart").click(() => {
     var flag =0;
     var quantity = $("select#productQuantity option").filter(":selected").text();
@@ -145,7 +144,6 @@ $(document).ready(function () {
         value.quantity = parseInt(value.quantity) + parseInt(quantity);
       // console.log('value.quantity-----------',value.quantity);
        flag = 1;
-       cart_count_var++;
       }
     })
 
@@ -153,14 +151,13 @@ $(document).ready(function () {
       parseInt(quantity);
       var data_json = {
         "product_id": para_product_id,
-        'quantity': quantity,
+        'quantity': parseInt(quantity),
         'product_name' : details[0].product_name,
         'product_description' : details[0].product_description,
         'product_img' : details[0].product_img,
         'product_price' : details[0].product_discount_price
       };
       addToCart_arr.push(data_json);
-      cart_count_var++;
      
     }
     swal("Added to Cart", "", "success")
