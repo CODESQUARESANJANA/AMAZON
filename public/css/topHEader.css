@@ -10,13 +10,13 @@
     height: 1000vh;
   } */
 /* .nav-s { */
-    /* height: 18vh; */
-    /* flex-shrink: initial; */
-    /* background-color: #000; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 3px 10px 2px 5px; */
+/* height: 18vh; */
+/* flex-shrink: initial; */
+/* background-color: #000; */
+/* display: flex; */
+/* justify-content: space-between; */
+/* align-items: center; */
+/* padding: 3px 10px 2px 5px; */
 /* } */
 
 .dflex {
@@ -35,7 +35,7 @@
 }
 
 .logo {
-      /* text-align: center; */
+    /* text-align: center; */
     /* margin: 1px; */
     margin-bottom: -5px;
     /* padding: 6px 8px 0px 0px; */
@@ -76,7 +76,8 @@
     color: black;
 }
 
-#top-Header button {
+#top-Header section,
+button {
     padding: 1px 10px;
     color: rgb(2, 0, 0);
     font-size: 12px;
@@ -87,11 +88,40 @@
 }
 
 #top-Header .all {
+    text-align: center;
     background: rgb(239, 232, 232);
     height: 45px;
-    width: 43px;
+    width: auto;
     font-size: 12px;
     border-radius: 5px 0px 0px 5px;
+}
+
+#search_list {
+    display: none;
+    z-index: 9;
+    max-height: 313px;
+    background-color: white;
+    margin-top: -25px;
+    /* display: inline-grid; */
+    max-width: 549px;
+    border: 1px solid black;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 28.5%;
+    overflow: scroll;
+}
+
+#search_list li {
+    padding: 3px;
+    list-style: none;
+    margin-left: -30px;
+    /* text-decoration: none; */
+}
+#search_list a{
+    text-decoration: none;
+}
+#search_list li:hover {
+    background-color: rgb(235, 231, 231);
 }
 
 #top-Header .search {
@@ -101,6 +131,11 @@
     margin: -2px;
     background: rgb(247, 155, 80);
     border-radius: 0px 5px 5px 0px;
+}
+
+#myUl li:hover {
+    /* padding: 3px; */
+    border: 1px solid rgb(192, 192, 192);
 }
 
 #top-Header .search i,
@@ -163,75 +198,78 @@
     color: white;
 }
 
-.submenu li{
+.submenu li {
     list-style: none;
 }
 
-#hiddenLi{
+#hiddenLi {
     display: none;
-   position: absolute;
-   padding: 4px;
+    position: absolute;
+    padding: 4px;
     width: 100%;
     z-index: 100;
-    background-color:white;
-    font-size:xx-small;
+    background-color: white;
+    font-size: xx-small;
 }
 
-#hiddenLi ul li{
+#hiddenLi ul li {
     list-style: none !important;
-   
+
 }
-#sub-content ul li{
+
+#sub-content ul li {
     list-style: none !important;
-   
+
 }
-#sub-content a{
+
+#sub-content a {
     text-decoration: none;
     color: black;
 }
 
- #hiddenLi a{
+#hiddenLi a {
     text-decoration: none;
     color: black;
 }
 
 
-#hiddenLi2{
+#hiddenLi2 {
     display: none;
-   position: absolute;
-   padding: 4px;
+    position: absolute;
+    padding: 4px;
     width: 100%;
     z-index: 100;
     background-color: white;
 }
-#hiddenLi2 a{
+
+#hiddenLi2 a {
     text-decoration: none;
     color: black;
 }
 
-#hiddenLi2 ul li{
+#hiddenLi2 ul li {
     list-style: none !important;
-   
+
 }
 
 
 
-#hiddenLi3{
+#hiddenLi3 {
     display: none;
-   position: absolute;
-   padding: 4px;
+    position: absolute;
+    padding: 4px;
     width: 100%;
     z-index: 100;
-    background-color:white;
-  /* box-shadow: ; */
+    background-color: white;
+    /* box-shadow: ; */
 }
-#hiddenLi3 a{
+
+#hiddenLi3 a {
     text-decoration: none;
     color: black;
 }
 
-#hiddenLi3 ul li{
+#hiddenLi3 ul li {
     list-style: none !important;
-   
-}
 
+}
