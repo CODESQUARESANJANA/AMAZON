@@ -133,7 +133,7 @@
                                 </select>
                                 <!-- </select> -->
 
-                                <input type="text" id="search_Bar" oninput="search__()" placeholder="search">
+                                <input type="text" id="search_Bar" onkeyup="search__()" placeholder="search">
 
                                 <button type="submit" id="submit_fun" class="search">
                                     <i class="fa fa-search"></i>
@@ -166,11 +166,6 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="cart.html">
-                        <div id="nav-cart-count-container">
-                            <span id="nav-cart-count" class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">2</span>
-                        </div>
-                    </a>
                     <div class="item"><i class="fa fa-shopping-cart fa-2x"></i>Cart</div>
         </div>
         </li>
@@ -461,6 +456,8 @@
 
     <script>
         const search__ = () => {
+
+            $('#search_list').empty();
             document.getElementById('search_list').style.display = "block"
             let filter = document.getElementById('search_Bar').value.toUpperCase();
             let dropDon = document.getElementById('searchDropdownBox').value;
@@ -468,18 +465,26 @@
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter)) {
                         $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.sub}">${v.product_name}</a></li>`)
-                    } search_list
+                    }
+                   
                 })
+                
 
             }
             else {
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter) && v.cat_id == dropDon) {
                         $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.product_id}">${v.product_name}</a></li>`)
-                    } search_list
-                })
+                    } 
+                    else{
+                        $('#search_list').html(`<li>No Data Found</li>`);
+                    }
 
+                })
+               
             }
+           
+            
 
 
             // let ul = document.getElementById('myUl');

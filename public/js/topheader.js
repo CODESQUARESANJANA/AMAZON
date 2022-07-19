@@ -73,14 +73,14 @@ $(document).ready(function () {
                     if(val.cat_id == param_cat_id1 ){
                         console.log(val.cat_name);
                         // console.log(val.sub_cat_name);
-                        $('#toBreadCrum').append(`<span> > &nbsp <a href="product-listing.html?cat_id=param.cat_id1"  style="text-transform:uppercase; color:black"> > ${val.cat_name}</a></span>`)
+                        $('#toBreadCrum').append(`<span> > &nbsp <a href="product-listing.html?cat_id=param.cat_id1"  style="text-transform:uppercase; color:black; text-decoration:none"> > ${val.cat_name}</a></span>`)
                     }
                 })
                 subcategory_data.forEach(function(value,index){
                     if(value.sub_cat_id==param_sub_category_id1){
                         console.log(value.sub_cat_name);
                         // alert(value.sub_cat_name)
-                        $('#toBreadCrum').append(`<span > > &nbsp <a href="${urlParams}" style="text-transform:uppercase;color:black"> > ${value.sub_cat_name}</a> </span>`)
+                        $('#toBreadCrum').append(`<span > > &nbsp <a href="${urlParams}" style="text-transform:uppercase;color:black; text-decoration:none"> > ${value.sub_cat_name}</a> </span>`)
                     }
                 })
     
@@ -88,7 +88,7 @@ $(document).ready(function () {
                     if(value.product_id==param_product_id){
                         console.log(value.product_name);
                         // alert(valu.product_name)
-                        $('#toBreadCrum').append(`<span> > &nbsp <a href="" style="text-transform:uppercase;color:black"> > ${value.product_name}</a> </span>`)
+                        $('#toBreadCrum').append(`<span> > &nbsp <a href="" style="text-transform:uppercase;color:black; text-decoration:none"> > ${value.product_name}</a> </span>`)
                     }
                 })
     
