@@ -80,6 +80,7 @@ $(document).ready(function () {
   });
 
 $('#checkout-btn').on('click' , function(){
+  
   var checkout_product = localStorage.getItem('checkout') || [];
   if(checkout_product != '')
   {
