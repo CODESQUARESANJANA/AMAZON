@@ -133,7 +133,7 @@
                                 </select>
                                 <!-- </select> -->
 
-                                <input type="text" id="search_Bar" oninput="search__()" placeholder="search">
+                                <input type="text" id="search_Bar" onkeyup="search__()" placeholder="search">
 
                                 <button type="submit" id="submit_fun" class="search">
                                     <i class="fa fa-search"></i>
@@ -465,23 +465,26 @@
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter)) {
                         $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.sub}">${v.product_name}</a></li>`)
-                    } search_list
+                    }
+                   
                 })
+                
 
             }
             else {
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter) && v.cat_id == dropDon) {
                         $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.product_id}">${v.product_name}</a></li>`)
-                    } search_list
-                })
+                    } 
+                    else{
+                        $('#search_list').html(`<li>No Data Found</li>`);
+                    }
 
-            }
-            Product_data.forEach(function (v, i) {
-                    if (v.product_name.toUpperCase().includes(filter) && v.cat_id == dropDon) {
-                        $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.product_id}">${v.product_name}</a></li>`)
-                    } search_list
                 })
+               
+            }
+           
+            
 
 
             // let ul = document.getElementById('myUl');
