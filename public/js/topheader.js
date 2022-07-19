@@ -36,10 +36,9 @@ $(document).ready(function () {
     console.log(m[0])
     if(m[0]=='product-listing'){
         document.getElementById("titleChange").innerHTML=`Product Listing`;
+        
     }
-    else if(m[0]=='mens-category'){
-        document.getElementById("titleChange").innerHTML=`Men's Category`;
-    }
+   
 
 
     if(m[0] == 'detailsPage'){
@@ -108,6 +107,9 @@ $(document).ready(function () {
 
 
 //mens category dynamic list display 
+
+
+
     $("#hiddenLi").hide();
 
     $("#mens_cat").mouseenter(function () {
@@ -127,6 +129,8 @@ $(document).ready(function () {
         $('#hiddenLi').css('display' , 'flex')
         $("#hiddenLi").show();
         // $("#hideenLi2, #hiddenLi3").hide();
+
+        
     })
 
 
