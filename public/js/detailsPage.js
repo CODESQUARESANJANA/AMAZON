@@ -26,10 +26,10 @@ $(document).ready(function () {
       if(value.sub_cat_id == para_sub_cat_id){
         related_products.push(value);
         $('.related_products_carousel').append(
-          `<div class="swiper-slide">
-      <div class="container">
-        <div class="card" style="max-width: fit-content;">
-          <img class="card-img-top" src="${value.product_img}" alt="Card image" style="width:100%">
+          `<div class="swiper-slide" style = "height: 60%; width: 35%">
+      <div class="container" >
+        <div class="card" >
+          <img class="card-img-top" style="max-width: 30%;max-height: 40%; margin-left: auto; margin-right: auto;" src="${value.product_img}" alt="Card image" style="width:100%">
           <div class="card-body">
             <p class="card-text" name="card-product-name">${value.product_name}</p>
             <p class="card-text" name="card-product-price">${value.product_name}</p>
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
   $("#product_rating_count").html(`${details[0].product_rating_count} ratings`);
 
-  $("#discount").html(`${details[0].product_discount_percenteage}% &nbsp `);
+  $("#discount").html(`-${details[0].product_discount_percenteage}% &nbsp `);
 
   $(".price").html(
     `<span id="currency" >&#8377</span>${details[0].product_discount_price}`
