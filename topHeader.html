@@ -166,11 +166,6 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="cart.html">
-                        <div id="nav-cart-count-container">
-                            <span id="nav-cart-count" class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">2</span>
-                        </div>
-                    </a>
                     <div class="item"><i class="fa fa-shopping-cart fa-2x"></i>Cart</div>
         </div>
         </li>
@@ -260,10 +255,11 @@
         </div>
     </div>
     <hr>
-    
-    <div class="container-fluid" >
-        <a href="index.html" style="text-decoration: none; color:black">Home</a>
-        <span id="toBreadCrum"> ></span><hr>
+
+    <div class="container-fluid">
+        <a href="index.html" style="text-decoration: none; color:black">Amazon</a>
+        <span id="toBreadCrum"></span>
+        <hr>
     </div>
 
     <div class="row pl-5" id="hiddenLi" data-toggle="popover" data-trigger="hover">
@@ -481,6 +477,11 @@
                 })
 
             }
+            Product_data.forEach(function (v, i) {
+                    if (v.product_name.toUpperCase().includes(filter) && v.cat_id == dropDon) {
+                        $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.product_id}">${v.product_name}</a></li>`)
+                    } search_list
+                })
 
 
             // let ul = document.getElementById('myUl');
