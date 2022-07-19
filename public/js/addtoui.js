@@ -70,7 +70,8 @@ $(document).ready(function () {
         if (checked_item.checked) {
           count++;
           console.log(checked_item.value);
-          checkout_price += parseInt(parse_1[checked_item.value].product_price);
+          checkout_price += parseInt(parse_1[checked_item.value].product_price)*parseInt(parse_1[checked_item.value].quantity);
+          
         }
 
       }
