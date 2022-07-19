@@ -73,12 +73,12 @@ $(document).ready(function () {
 
   $("#mrp").html(`M.R.P.: <s>&#8377 ${details[0].product_price}</s>`);
 
-  $("#color-name").html(`Color Name :  ${details[0].product_color}`);
+  $("#color-name").html(`<b>Color Name :</b>  ${details[0].product_color}`);
   var color= (details[0].product_color).toLowerCase();
   $('.color-bubble').css("background-color",color);
 
   $("#product_description").html(
-    `Description : <br>  ${details[0].product_description}`
+    `<br><b>Description :</b> <br>  ${details[0].product_description}`
   );
 
   $("#productDetailsSectionList").html(`<li> 
