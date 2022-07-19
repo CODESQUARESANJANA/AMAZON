@@ -59,7 +59,7 @@ $(document).ready(function () {
       var sure = confirm("Do you really want to remove this");
       this.checked = !sure;
       count--;
-      checkout_price -= parseInt(parse_1[this.value].product_price)*parseInt(parse_1[this.value].quantity);
+      checkout_price -= parseInt(parse_1[this.value].product_price) * parseInt(parse_1[this.value].quantity);
       $('#price').html(`<b>Subtotal</b> (${count} item): ${checkout_price}`);
     }
     else {
@@ -70,8 +70,8 @@ $(document).ready(function () {
         if (checked_item.checked) {
           count++;
           console.log(checked_item.value);
-          checkout_price += parseInt(parse_1[checked_item.value].product_price)*parseInt(parse_1[checked_item.value].quantity);
-          
+          checkout_price += parseInt(parse_1[checked_item.value].product_price) * parseInt(parse_1[checked_item.value].quantity);
+
         }
 
       }
@@ -80,29 +80,28 @@ $(document).ready(function () {
     console.log(checkout_price);
   });
 
-$('#checkout-btn').on('click' , function(){
-if (checkout_price != 0){
-    var checkout_product = localStorage.getItem('checkout') || [];
-  if(checkout_product != '')
-  {
-    checkout_product = JSON.parse(checkout_product);
-  }
+  $('#checkout-btn').on('click', function () {
+    if (checkout_price != 0) {
+      var checkout_product = localStorage.getItem('checkout') || [];
+      if (checkout_product != '') {
+        checkout_product = JSON.parse(checkout_product);
+      }
 
-  var data = {
-    'checkout_price' : checkout_price
-  };
+      var data = {
+        'checkout_price': checkout_price
+      };
 
-  checkout_product.push(data);
+      checkout_product.push(data);
 
-  localStorage.setItem('checkout' , JSON.stringify(checkout_product));
-  window.location.href = "checkout.html";
-
+      localStorage.setItem('checkout', JSON.stringify(checkout_product));
+      window.location.href = "checkout.html";
 
 
-}  
-else {
-    alert("Please select atleast one product to checkout")
-}
-});
+
+    }
+    else {
+      alert("Please select atleast one product to checkout")
+    }
+  });
 });
 
