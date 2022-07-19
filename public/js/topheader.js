@@ -21,8 +21,8 @@ $(document).ready(function () {
          const param_cat_id1 = urlParams.get('cat_id');
          const param_sub_category_id1 = urlParams.get('sub_cat_id');
          const param_product_name1 = urlParams.get("sub_cat_name");
-        const param_product_id= urlParams.get("product_id")
-        var path = "";
+         const param_product_id= urlParams.get("product_id")
+         var path = "";
         var toName='';
    
 

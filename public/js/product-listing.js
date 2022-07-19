@@ -91,7 +91,7 @@ $(document).ready(function () {
       max: tosort[tosort.length-1],
       values: [tosort[0], tosort[tosort.length-1]],
       slide: function (event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        $(".amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
         console.log(ui.values[0], ui.values[1])
         $('#listing').empty()
         product_listing_details.forEach(function (value, index) {
@@ -118,7 +118,7 @@ $(document).ready(function () {
 
       }
     });
-    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+    $(".amount").val("$" + $("#slider-range").slider("values", 0) +
       " - $" + $("#slider-range").slider("values", 1));
   });
 
