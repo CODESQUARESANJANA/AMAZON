@@ -1763,13 +1763,8 @@ var Product_data = [
     product_rating_count: "23192",
     product_img: "https://m.media-amazon.com/images/I/71LLiqiFh6L._UY575_.jpg",
     product_price: "65,960.00",
-<<<<<<< HEAD
     product_discount_price: "56120.00",
-    product_discount_percenteage: "15%",
-=======
-    product_discount_price: "56,120.00",
     product_discount_percenteage: "15",
->>>>>>> b36d63f9febcd1e529d9a93712f0b7ff39535ee1
     product_color: "Gold",
     product_size: "NA",
     recentrly_view: true,
