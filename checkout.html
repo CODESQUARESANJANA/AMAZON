@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select a delivery address</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- <script src="public/js/checkout.js"></script> -->
+    <script src="public/js/checkout.js"></script>
     <script src="/public/js/data_set.js"></script>
     
     <!-- <script src="public/js/topheader.js"></script> -->
@@ -317,11 +317,10 @@
                 <div class="card " style="font-size:small;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);border-radius: 15px;margin-top: -60px; margin-left: 20px; ">
                     <div class="card-body">
                       <p>
-                        Your order is eligible for FREE Delivery. Click here to place your order</p>
-                      <p id="price">Total (1 item): 499.00</p>
-                      <input type="checkbox" name="check" id="check"><label for="check">This order contains a gift</label>
-                      <button type="button" id="checkout-btn" class="btn btn-warning form-control " style="width: 100%; border-radius: 10px;box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Proceed to
-                        Buy</button>
+                        You have added productss <span id="totalProducts"></span> in cart and total sum of money need to pay.</p>
+                      <p id="price">Total: <span id="totalPrice"></span></p>
+                      <!-- <input type="checkbox" name="check" id="check"><label for="check">This order contains a gift</label> -->
+                      <!-- <button type="button" id="checkout-btn" class="btn btn-warning form-control " style="width: 100%; border-radius: 10px;box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Place Order</button> -->
                     </div>
               
                   </div> <br>
@@ -398,9 +397,9 @@
                     <input type="text" name="gift" id="gift" style="width: 40%;" class="form-control ml-4" placeholder="Enter code"><button type="submit" class="btn btn-secondary p- ml-3 mt-3 form-control" style="width: 13%;">Apply</button>
                 </div>
                 </form>
-                <div class="card float-sm-right mt-4 p-3 mr-5 text-center" style=" background-color:#F7F7F7;">
+                <div class="card  mt-3 text-center" style=" background-color:#F7F7F7;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);border-radius: 15px; margin-left:25px ;">
                     <div class="card-body float-right mt-3">
-                           <button type="submit" class="btn btn-warning form-control p-3" style="width: 70%;">Continue</button>
+                           <button id="placeOrder" class="btn btn-warning form-control p-3" style="width: 70%;">Final Order place</button>
                            <p>You can review this order before it's final.</p>
                     </div>
                  
