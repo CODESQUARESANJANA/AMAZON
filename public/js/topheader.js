@@ -67,9 +67,51 @@ $(document).ready(function () {
     if(m[0]=='product-listing'){
         document.getElementById("titleChange").innerHTML=`Product Listing`;
     }
+<<<<<<< HEAD
     else if(m[0]=='sarees'){
         document.getElementById("titleChange").innerHTML=`Sarees`;
     }
+=======
+    else if(m[0]=='mens-category'){
+        document.getElementById("titleChange").innerHTML=`Men's Category`;
+    }
+
+
+    if(m[0] == 'detailsPage'){
+
+            document.getElementById("titleChange").innerHTML=`Product Details`;
+    }
+    else if(m[0]=='women-category'){
+        document.getElementById("titleChange").innerHTML=`Women Category`;
+        
+    }
+    else if(m[0]=='kid'){
+        document.getElementById("titleChange").innerHTML=`Kid Category`;  
+    }
+    else if(m[0]=='index'){
+        document.getElementById("titleChange").innerHTML=`Amazon`;  
+    }
+    else if(m[0]=='fashion'){
+        document.getElementById("titleChange").innerHTML=`Fashion`;  
+    }
+    
+    // console.log(m[1]);
+        if(m[0]=="product-listing"){ 
+            category_data.forEach(function(val , index){
+                if(val.cat_id == param_cat_id1 ){
+                    console.log(val.cat_name);
+                    // console.log(val.sub_cat_name);
+                    $('#toBreadCrum').append(`<span  style="text-transform:uppercase; color:black"> > &nbsp <a href="product-listing.html?cat_id=param.cat_id1"> ${val.cat_name}</a></span>`)
+                }
+            })
+            subcategory_data.forEach(function(value,index){
+                if(value.sub_cat_id==param_sub_category_id1){
+                    console.log(value.sub_cat_name);
+                    // alert(value.sub_cat_name)
+                    $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href="${urlParams}"> ${value.sub_cat_name}</a> </span>`)
+                }
+            })
+>>>>>>> c854488c0d2856e6509adab144942020e9c2a91b
 
 
     if(m[0] == 'detailsPage'){
