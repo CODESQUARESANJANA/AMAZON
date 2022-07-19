@@ -161,7 +161,7 @@ $(document).ready(function () {
      
     }
     swal("Added to Cart", "", "success")
-    localStorage.setItem('myForms', JSON.stringify(addToCart_arr));
+    localStorage.setItem('add_to_cart', JSON.stringify(addToCart_arr));
     
   });
   
