@@ -50,7 +50,7 @@ $(document).ready(function () {
 
   console.log(total_price)
 
-  $('#price').html(`<b>Subtotal</b> (1 item): ${total_price}`);
+  $('#price').html(`<b>Subtotal</b> (${parse_1.length} item): ${total_price} (without select)`);
 
 
   $('.item-checked').on('change', function () {
