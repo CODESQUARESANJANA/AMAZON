@@ -21,7 +21,7 @@ $(document).ready(function () {
       //   console.log('param_cat_id-------',param_cat_id);
       // product_listing_details.push(value);
       $("#te123")
-        .append(`<a style="text-decoration: none; color: black" href=""><div value = "${value.product_id}" class="card ml-4 mb-3 mr-4 product-details-page" style="width: 15rem; height: 325px ;">
+        .append(`<a style="text-decoration: none; color: black" href="detailsPage.html?product_id=${value.product_id}"><div value = "${value.product_id}" class="card ml-4 mb-3 mr-4 product-details-page" style="width: 15rem; height: 325px ;">
         <img style="margin-left: auto;
     max-width: 155px;
     margin-right: auto;

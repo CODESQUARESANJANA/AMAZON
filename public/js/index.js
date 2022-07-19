@@ -41,7 +41,8 @@ $(document).ready(function () {
           <a href="detailsPage.html?product_id=${value.product_id}"> <img class="card-img-top" src="${value.product_img}"
           alt="Card image" style="width:100%; height:auto ;"></a>     
             <div class="card-body ">
-            <h5 class="card-title" id="pd_name">${value.product_name} </h5>
+            <h5 class="card-title" id="pd_name">${value.product_name
+            } </h5>
             <p class="card-text"  id="text-edit"><del>₹${value.product_discount_price} </del> <br> ${value.product_description}
             Shirt <br><i class="fa-solid fa-star" style="font-size: smaller;"></i>
             <i class="fa-solid fa-star" style="font-size: smaller;"></i>
@@ -142,7 +143,11 @@ $(document).ready(function () {
 
 
     }
+
+   
+    
 });
+
 
 
 
