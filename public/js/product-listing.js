@@ -67,15 +67,12 @@ $(document).ready(function () {
     }
 
   }
-  console.log(product_listing_details);
+  // console.log(product_listing_details);
   //  for filtering
   var tosort = [];
   var maxim = '';
   product_listing_details.forEach(function (value, index) {
     tosort.push(parseInt(value.product_price));
-    // console.log(tosort);
-  
-
   });
   
   tosort.sort(function(a, b){return a - b});
