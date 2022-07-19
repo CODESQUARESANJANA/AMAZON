@@ -2,6 +2,8 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+             
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
 
@@ -68,7 +70,7 @@
                 <li>
                     <h6><b>Average Customer Review</b></h6>
                 </li>
-                <div class="icon pb-10 mr-10">
+                <!-- <div class="icon pb-10 mr-10">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -83,7 +85,26 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-sharp-half-stroke"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>& Up<br>
-                </div>
+                </div> -->
+                <p class="stars">
+                    <label class="myrating">0</label>
+                    <span>
+                      <a class="star-1" href="#">1</a>
+                      <a class="star-2" href="#">2</a>
+                      <a class="star-3" href="#">3</a>
+                      <a class="star-4" href="#">4</a>
+                      <a class="star-5" href="#">5</a>
+                    </span>
+                </p>
+                <script>
+                    $('.stars a').on('click', function() {
+                        $('.stars span, .stars a').removeClass('active');
+            
+                        $(this).addClass('active');
+                        $('.stars span').addClass('active');
+                        $('.myrating').html($(this).text());
+                    });
+                </script>
                 <i class="fa-solid fa-star-sharp-half-stroke"></i>
             </ul>
 
