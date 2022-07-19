@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // console.log(subcategory_data);
     // console.log(window.location.href);
-<<<<<<< HEAD
     //breadcrum for navigation
 
 
@@ -13,7 +12,6 @@ $(document).ready(function () {
 
 
     $('#titleChange')
-
 
     const queryString = window.location.search;
     //  console.log(queryString);
@@ -29,17 +27,16 @@ $(document).ready(function () {
 
     console.log(s);
     var m = s[3].split('.');
-=======
          //breadcrum for navigation
-         
+
 
          //dynamic title
 
-     
 
-         
-     
-        
+
+
+
+
 
         //  $('document').attr("title",'${sub_cat_name}')
 
@@ -53,25 +50,23 @@ $(document).ready(function () {
         const param_product_id= urlParams.get("product_id")
         var path = "";
         var toName='';
-   
 
-        
+
+
         var href = document.location.href;
         var s = href.split("/");
-       
+
         console.log(s);
         var m = s[3].split('.');
->>>>>>> 3bd5cd47861f19e557ab48ebb61aef58a0a1560c
 
     console.log(m[0])
-    if(m[0]=='product-listing'){
-        document.getElementById("titleChange").innerHTML=`Product Listing`;
+    if (m[0] == 'product-listing') {
+        document.getElementById("titleChange").innerHTML = `Product Listing`;
+
     }
-<<<<<<< HEAD
-    else if(m[0]=='sarees'){
-        document.getElementById("titleChange").innerHTML=`Sarees`;
+    else if (m[0] == 'sarees') {
+        document.getElementById("titleChange").innerHTML = `Sarees`;
     }
-=======
     else if(m[0]=='mens-category'){
         document.getElementById("titleChange").innerHTML=`Men's Category`;
     }
@@ -83,20 +78,20 @@ $(document).ready(function () {
     }
     else if(m[0]=='women-category'){
         document.getElementById("titleChange").innerHTML=`Women Category`;
-        
+
     }
     else if(m[0]=='kid'){
-        document.getElementById("titleChange").innerHTML=`Kid Category`;  
+        document.getElementById("titleChange").innerHTML=`Kid Category`;
     }
     else if(m[0]=='index'){
-        document.getElementById("titleChange").innerHTML=`Amazon`;  
+        document.getElementById("titleChange").innerHTML=`Amazon`;
     }
     else if(m[0]=='fashion'){
-        document.getElementById("titleChange").innerHTML=`Fashion`;  
+        document.getElementById("titleChange").innerHTML=`Fashion`;
     }
-    
+
     // console.log(m[1]);
-        if(m[0]=="product-listing"){ 
+        if(m[0]=="product-listing"){
             category_data.forEach(function(val , index){
                 if(val.cat_id == param_cat_id1 ){
                     console.log(val.cat_name);
@@ -111,7 +106,6 @@ $(document).ready(function () {
                     $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href="${urlParams}"> ${value.sub_cat_name}</a> </span>`)
                 }
             })
->>>>>>> c854488c0d2856e6509adab144942020e9c2a91b
 
 
     if(m[0] == 'detailsPage'){
@@ -120,19 +114,19 @@ $(document).ready(function () {
     }
     else if(m[0]=='women-category'){
         document.getElementById("titleChange").innerHTML=`Women Category`;
-        
+
     }
     else if(m[0]=='kid'){
-        document.getElementById("titleChange").innerHTML=`Kid Category`;  
+        document.getElementById("titleChange").innerHTML=`Kid Category`;
     }
     else if(m[0]=='index'){
-        document.getElementById("titleChange").innerHTML=`Amazon`;  
+        document.getElementById("titleChange").innerHTML=`Amazon`;
     }
     else if(m[0]=='fashion'){
-        document.getElementById("titleChange").innerHTML=`Fashion`;  
+        document.getElementById("titleChange").innerHTML=`Fashion`;
     }
     else if(m[0]=='school stationery'){
-        document.getElementById("titleChange").innerHTML=`School Stationary `;  
+        document.getElementById("titleChange").innerHTML=`School Stationary `;
     }
     // console.log(m[1]);
     if (m[0] == "product-listing") {
@@ -151,7 +145,7 @@ $(document).ready(function () {
             }
         })
 
-<<<<<<< HEAD
+
         Product_data.forEach(function (value, index) {
             if (value.product_id == param_product_id) {
                 console.log(value.product_name);
@@ -159,8 +153,7 @@ $(document).ready(function () {
                 $('#toBreadCrum').append(`<span style="text-transform:uppercase;color:black"> > &nbsp <a href=""> ${value.product_name}</a> </span>`)
             }
         })
-=======
-            Product_data.forEach(function(value,index){
+          Product_data.forEach(function(value,index){
                 if(value.product_id==param_product_id){
                     console.log(value.product_name);
                     // alert(valu.product_name)
@@ -168,10 +161,10 @@ $(document).ready(function () {
                 }
             })
 
-         
+
         }
 
-       
+
         // if(m[0]=="product-listing"){
         //     Product_data.forEach(function(value,index){
         //         if(value.product_name=param_product_name){
@@ -186,10 +179,6 @@ $(document).ready(function () {
         // path += "<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
         // var url = path;
         // document.writeln(url);
-
-   
->>>>>>> 3bd5cd47861f19e557ab48ebb61aef58a0a1560c
-
 
     }
 
@@ -212,7 +201,12 @@ $(document).ready(function () {
 
 
 
-    //mens category dynamic list display 
+    //mens category dynamic list displa
+//mens category dynamic list display
+
+
+
+
     $("#hiddenLi").hide();
 
     $("#mens_cat").mouseenter(function () {
@@ -232,6 +226,8 @@ $(document).ready(function () {
         $('#hiddenLi').css('display', 'flex')
         $("#hiddenLi").show();
         // $("#hideenLi2, #hiddenLi3").hide();
+
+
     })
 
 
@@ -314,7 +310,7 @@ $(document).ready(function () {
 
 });
 // var search_product = [
-        
+
 //     "Kids",
 //     "Women",
 //     "Men",
