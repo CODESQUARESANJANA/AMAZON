@@ -169,6 +169,7 @@ border-radius: 10px;
     text-decoration: none;
     font-size: 20px;
     color: black;
+    text-transform:uppercase;
     
 }
 ._brod a:hover { 
@@ -179,4 +180,8 @@ border-radius: 10px;
 }
 .swal-button {
     background-color:#273545;
+}
+.card-size{
+    max-width: 20%;
+    max-height: 70%;
 }
