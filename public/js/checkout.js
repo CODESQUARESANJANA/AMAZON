@@ -2,7 +2,7 @@ $(document).ready(function () {
   var details = localStorage.getItem('addresss')  || [] ;
   
   
-      //        var otherdetails=JSON.parse(details)
+      // var otherdetails=JSON.parse(details)
       // console.log(otherdetails);
   
       // otherdetails.forEach(function(value,index) {
@@ -61,11 +61,14 @@ $(document).ready(function () {
 
     var quantity= localStorage.getItem('add_to_cart');
     quantity= JSON.parse(quantity);
-    // console.log(quantity);
+    console.log(quantity);
+
+    
     var totalQuant= quantity[0].quantity;
+    var pname= 
     $(`#totalProducts`).html(`<b> ${totalQuant}</b>`)
     
-    
+
 
 
     //to show products details in checkout page
