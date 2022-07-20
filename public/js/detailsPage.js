@@ -136,6 +136,8 @@ $(document).ready(function () {
   $("#productRoute").html(
     `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name}</b></a> </span>`
   );
+
+  // Add to cart functionality
   var addToCart_arr = [];
   $("#addToCart").click(() => {
     var flag =0;
@@ -177,5 +179,24 @@ $(document).ready(function () {
     localStorage.setItem('add_to_cart', JSON.stringify(addToCart_arr));
     
   });
+  // Reviews section
+  var reviews_arr = [];
+  Product_data.forEach(function(value,index){
+    if(value.product_id == para_product_id){
+      reviews_arr.push(value.reviews); 
+      value.reviews.forEach(function(value,index){
+        $('#product-review-section').append(
+          `<div class="jumbotron my-jumbotron">
+          <p><span class="text-secondary font-italic">Reviewed on 13 June 2022 </span>&nbsp|&nbsp<span class="color-secondary">Verified Purchase</span> </p>
+          <p>${value}</p>
+          <button type="button" class="btn btn-light border" id="find-helpful" style="border-radius: 10px !important;">Helpful</button> &nbsp &nbsp| &nbsp <span class="text-secondary">Report abuse</span>
+          
+          </div><hr>`
+        );
+      })  
+    }
+  })
+  
+  console.log('reviews_arr--------',reviews_arr);
   
 });
