@@ -26,7 +26,6 @@ $(document).ready(function () {
         localStorage.setItem('addresss',JSON.stringify(details)) 
         })
 
-
     var checkout_price = localStorage.getItem('checkout');
     checkout_price = JSON.parse(checkout_price);
 

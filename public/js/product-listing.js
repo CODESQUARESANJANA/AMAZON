@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('#header').load('topHEader.html');
   $('#footer').load('footer.html');
 
-
   var product_listing_details = [];
   const queryString = window.location.search;
   console.log(queryString);
@@ -62,12 +61,10 @@ $(document).ready(function () {
 
       $('#list2').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
       $('#women').append(`<li><a href="product-listing.html?cat_id=${param_cat_id}&sub_cat_id=${subcategory_data[i].sub_cat_id}">${subcategory_data[i].sub_cat_name}*</a> </li>`)
-
-
     }
 
   }
-  // console.log(product_listing_details);
+  console.log(product_listing_details);
   //  for filtering
   var tosort = [];
   var maxim = '';
@@ -137,8 +134,6 @@ $(document).ready(function () {
                 </div>`)
 
     }
-
-    
   })
   if (document.getElementById('listing').innerHTML == '')
   {
@@ -149,11 +144,9 @@ $(document).ready(function () {
   
 
   });
-  
     // for directing to the detail page
     $(document).on('click', '.product-details-page' ,function () {
       var p_id = $(this).attr('value');
-      // alert(p_id)
       window.location.href = `detailsPage.html?product_id=${p_id}`;
     })
 
