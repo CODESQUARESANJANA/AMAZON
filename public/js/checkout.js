@@ -1,8 +1,10 @@
 $(document).ready(function () {
-  var details = localStorage.getItem('addresss')  || [] ;
-  
-  
-      // var otherdetails=JSON.parse(details)
+  // var details = localStorage.getItem('addresss')  || [] ;
+
+
+
+
+          // var otherdetails=JSON.parse(details)
       // console.log(otherdetails);
   
       // otherdetails.forEach(function(value,index) {
@@ -27,48 +29,69 @@ $(document).ready(function () {
   
    
   
-  if(details != ''){
-        details = JSON.parse(details);
-    }
-    var count1=0;
-     $("#submission").click(()=>{
+  // if(details != ''){
+  //       details = JSON.parse(details);
+  //   }
+  //   var count1=0;
+  //    $("#submission").click(()=>{
     
-        var myForms={
-        "country": $('#country').val(),
-        "fullname":$('#fullname').val(),
-        "mobile":$('#mobile').val(),
-        "pincode":$('#pincode').val(),
-        "flat":$('#flat').val(),
-        "warea":$('#warea').val(),
-        "landmark":$('#landmark').val(),
-        "town":$('#town').val(),
-        "state":$('#state').val(),
-        "my":$('#my').val(),
-        "addType":$('addType').val()
-        }
+  //       var myForms={
+  //       "country": $('#country').val(),
+  //       "fullname":$('#fullname').val(),
+  //       "mobile":$('#mobile').val(),
+  //       "pincode":$('#pincode').val(),
+  //       "flat":$('#flat').val(),
+  //       "warea":$('#warea').val(),
+  //       "landmark":$('#landmark').val(),
+  //       "town":$('#town').val(),
+  //       "state":$('#state').val(),
+  //       "my":$('#my').val(),
+  //       "addType":$('addType').val()
+  //       }
 
-        details.push(myForms);
-        count1++
-        localStorage.setItem('addresss',JSON.stringify(details)) 
-        })
+  //       details.push(myForms);
+  //       count1++
+  //       localStorage.setItem('addresss',JSON.stringify(details)) 
+  //       })
 
 
-    var checkout_price = localStorage.getItem('checkout');
-    checkout_price = JSON.parse(checkout_price);
+    var checkProducts = localStorage.getItem('checkout');
+    checkProducts = JSON.parse(checkProducts);
 
-    var final_price =  checkout_price[0].checkout_price;
-    $('#totalPrice').html(`<b>₹ ${final_price}</b>`);
+    var cartadded= localStorage.getItem('add_to_cart');
+    cartadded= JSON.parse(cartadded);
 
-    var quantity= localStorage.getItem('add_to_cart');
-    quantity= JSON.parse(quantity);
-    console.log(quantity);
+    console.log(cartadded);
+    console.log(checkProducts);
 
+    // var totalQuant= cartadded[0].quantity;
+
+  
+    // $(`#totalProducts`).html(`<b> ${totalQuant}</b>`)
+    var totalPrice =0;
     
-    var totalQuant= quantity[0].quantity;
-    var pname= 
-    $(`#totalProducts`).html(`<b> ${totalQuant}</b>`)
-    
+       checkProducts.forEach(function(value, index){
 
+          var cart_index = value.checkout_index;
+          
+            
+              $('#fdetails').prepend(`<div class="card ml-4 p-5">
+                  <b>Product name</b>
+                <b style="font-size:large">${cartadded[cart_index].product_name}</b>
+                <b>${cartadded[cart_index].quantity}</b>
+                <b>${cartadded[cart_index].product_description}</b>
+                <b>${cartadded[cart_index].product_price}
+              </div>`)
+
+          totalPrice += parseInt(cartadded[cart_index].product_price) * parseInt(cartadded[cart_index].quantity);
+
+       })
+
+       $('#totalPay').html(`<b>Total sum of money you need to pay </b> :<b>₹${totalPrice} </b> for <b> ${checkProducts.length}</b>   number of products`)
+       console.log(totalPrice);
+        
+        // $('#totalPrice').html(`<b>₹ ${final_price}</b>`);
+        // console.log(final_price);
 
 
     //to show products details in checkout page

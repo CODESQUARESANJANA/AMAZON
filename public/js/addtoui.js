@@ -87,18 +87,18 @@ $(document).ready(function () {
                 checkout_product = JSON.parse(checkout_product);
             }
             
-            var data = [];
+            
 
 
             var checked_item = document.getElementsByName('cart-item-check');
             for (checked_item of checked_item) {
                 if (checked_item.checked) {
 
-                    data.push({'checkout_index' : checked_item.value})
+                  checkout_product.push({'checkout_index' : checked_item.value})
                 }
             }
 
-            checkout_product.push(data);
+            // checkout_product.push(data);
 
             localStorage.setItem('checkout', JSON.stringify(checkout_product));
             window.location.href = "checkout.html";
