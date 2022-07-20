@@ -27,6 +27,7 @@ $(document).ready(function () {
         <div class="card-body">
             <h5 class="card-title">₹${value.product_price}</h5>
             <p class="card-text"><del>₹${value.product_discount_price} </del> <br> 
+            <div class="name"><b>${value.product_name}</b></div><br>
             <div class="description">${value.product_description}</div>
               <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                     class="fa-solid fa-star" style="font-size: smaller;"></i>
@@ -161,6 +162,7 @@ $(document).ready(function () {
                         <div class="card-body">
                             <h5 class="card-title">₹${value.product_price}</h5>
                             <p class="card-text"><del>₹${value.product_discount_price} </del> <br> 
+                            <div class="name">${value.product_name}</div><br>
                             <div class="description">${value.product_description}</div>
                               <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                     class="fa-solid fa-star" style="font-size: smaller;"></i>
