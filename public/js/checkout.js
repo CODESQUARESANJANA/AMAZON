@@ -75,19 +75,19 @@ $(document).ready(function () {
           var cart_index = value.checkout_index;
           
             
-              $('#fdetails').prepend(`<div class="card ml-4 p-5">
-                  <b>Product name</b>
-                <b style="font-size:large">${cartadded[cart_index].product_name}</b>
-                <b>${cartadded[cart_index].quantity}</b>
-                <b>${cartadded[cart_index].product_description}</b>
-                <b>${cartadded[cart_index].product_price}
+              $('#fdetails').prepend(`<div class="card  ml-4 p-5" style="border:1px solid gray">
+                 <span> <b>Product name:  </b>
+                <b style="font-size:small">${cartadded[cart_index].product_name}</b></span>
+                <span> <b>Quantity:   ${cartadded[cart_index].quantity}</b></span>
+                <span> <b>Description:  ${cartadded[cart_index].product_description}</b></span>
+                <b> Price:  ${cartadded[cart_index].product_price}
               </div>`)
 
           totalPrice += parseInt(cartadded[cart_index].product_price) * parseInt(cartadded[cart_index].quantity);
 
        })
 
-       $('#totalPay').html(`<b>Total sum of money you need to pay </b> :<b>₹${totalPrice} </b> for <b> ${checkProducts.length}</b>   number of products`)
+       $('#totalPay').html(`<b style="font-size:large ; border: 2px solid" class="ml-5">Total sum of money you need to pay  :₹${totalPrice}  for  ${checkProducts.length}   number of products</b>`)
        console.log(totalPrice);
         
         // $('#totalPrice').html(`<b>₹ ${final_price}</b>`);

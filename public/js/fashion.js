@@ -39,5 +39,13 @@ $(document).ready(function () {
         </div>
     </div></a>`);
     }
+    
   });
+  const trending_productArr = []
+
+    swiper_data.forEach(function (value, index) {
+       
+            trending_productArr.push(value);
+            $("#swiper_123").append(`<div class="swiper-slide"><img src="${value.swiper_img}" alt=""></div>`)
+        })
 });
