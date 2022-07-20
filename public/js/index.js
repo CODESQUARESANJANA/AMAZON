@@ -144,6 +144,27 @@ $(document).ready(function () {
 
     }
 
+    const image_url = [];
+    // var img =0;
+    for (let i = 0; i <carousel_data.length; i++) {
+      console.log("carousel-data", carousel_data)
+      // const element = array[i];'
+      // image_url.push(carousel_data[i]);
+      $('#crousel-img').append(`<div class="carousel-item ${carousel_data[i]===carousel_data[0] ?"active":""}" >
+      <div class="d-block w-100 " style=" background-image:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(235, 235, 235, 0.05)),
+      url('${carousel_data[i].image_url}');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  padding: 20px;">
+  </div>
+    </div>`);
+    
+      
+    }
+// image_url.push()
    
     
 });

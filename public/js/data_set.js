@@ -2671,5 +2671,26 @@ var Product_data = [
     product_size: "3-6 Months",
     recentrly_view: true,
     trending_product: true
-}
+},
+
+
 ];
+
+var carousel_data = [
+    {
+        image_url: "https://images-eu.ssl-images-amazon.com/images/G/31/prime/PD22/GW/ACQ/IN-PD-22-teaser-GW_3000x1200_2._CB631707276_.jpg"
+    },
+    {
+image_url:"https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonDevices/DEArange/DEA-PC_Hero_3000x1200._CB631554919_.jpg"
+
+    },
+    {
+    image_url :"https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Event/Gw/PD22/Teaser/Rev-1/PC_3000-Eng-Unrec-Day1._CB631559769_.jpg"
+},
+{
+    image_url: "https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/U599/jun22/eoss/apay/WA_3000._CB633632198_.jpg"
+},
+{
+    image_url: "https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/ComicstaanwithPDstyle/3000x1200_Hero-Tall_NP._CB633299139_.jpg"
+}
+]
