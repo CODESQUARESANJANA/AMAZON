@@ -30,6 +30,12 @@
             -webkit-align-items: center;
             align-items: center;
         }
+        .swiper-slide-mg{
+            height: 70% !important;
+        }
+        .swiper-wrapper-mg{
+            height: 75% !important;
+        }
 
         .swiper-slide img {
             display: block;
