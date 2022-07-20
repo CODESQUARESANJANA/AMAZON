@@ -141,7 +141,7 @@ $(document).ready(function () {
     swal("Sorry!", "for this rating product is not available!");
 
   }
-  
+
 
   });
     // for directing to the detail page
@@ -149,5 +149,41 @@ $(document).ready(function () {
       var p_id = $(this).attr('value');
       window.location.href = `detailsPage.html?product_id=${p_id}`;
     })
+
+    $('.getColor').click(function(){
+      var p_color = $(this).attr('value');
+      $('#listing').empty()
+      product_listing_details.forEach(function (value, index) {
+        if ((value.product_color) == p_color ) {
+          $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                        <img class="card-img-top" src="${value.product_img}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">₹${value.product_price}</h5>
+                            <p class="card-text"><del>₹${value.product_discount_price} </del> <br> 
+                            <div class="description">${value.product_description}</div>
+                              <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
+                                    class="fa-solid fa-star" style="font-size: smaller;"></i>
+                                    <i class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
+                                    style="font-size: smaller;"></i><i class="fa-regular fa-star"
+                                    style="font-size: smaller;"></i>(${value.product_rating})</p>
+                        </div>
+                    </div>`)
+    
+        }
+
+      })
+      if (document.getElementById('listing').innerHTML == '')
+  {
+    
+    swal("Sorry!", "for this color product is not available!");
+
+  }
+    })
+
+
+
+
+
 
 });
