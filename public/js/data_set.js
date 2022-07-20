@@ -3562,3 +3562,25 @@ image_url:"https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonDevic
     image_url: "https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/ComicstaanwithPDstyle/3000x1200_Hero-Tall_NP._CB633299139_.jpg"
 }
 ]
+
+var swiper_data = [
+    {
+        swiper_img : "https://hashrail.sgp1.cdn.digitaloceanspaces.com/CND/Product/large/DSS150_2.jpg"
+    },
+    {
+        swiper_img : "https://m.media-amazon.com/images/I/91dDMDg+QTL._UY879_.jpg"
+    },
+    {
+        swiper_img : "https://img101.urbanic.com/goods-pic/a0268342305444a19bef12dd20b5e0e7_w1000_q90"
+    },
+    {
+        swiper_img : "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQw-U1AD22-T6j8gdnKkw13qccUhQXGX7FKpXyo8TO4_EMnNDWFkDAwLggiRbPOMJwg78obDc-tELFVAzgwCjFvmo_xymPM8LIHuWbVVYM&usqp=CAE"
+    },
+    {
+        swiper_img : "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS1EawrL_InB8kJ_UeFobwJ1Q51gIp9hbc1dHHIdUVD_I_U5sseYODT8r0QiuvPN9JhFeyV0DC5NUwg2Qpm8UoAXW8vsh9pCeyzYZEMCGpm&usqp=CAE"
+    },
+    {
+        swiper_img : "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQnEMjTw3V4pLXVma0gUXACe1NMgHL1lhZ-yPRglPFO70eEXP4jFaT757st5rbq59M_5aluBc26CP0KmCeis9hOjWb4gHwhWfDejsCmO_NnrnxvPkzpID-B&usqp=CAE"
+    },
+
+]
