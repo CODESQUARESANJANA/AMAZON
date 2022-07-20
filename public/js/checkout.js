@@ -1,7 +1,33 @@
 $(document).ready(function () {
-    var details = localStorage.getItem('addresss')  || [] ;
-
-    if(details != ''){
+  var details = localStorage.getItem('addresss')  || [] ;
+  
+  
+      //        var otherdetails=JSON.parse(details)
+      // console.log(otherdetails);
+  
+      // otherdetails.forEach(function(value,index) {
+  //       $('#recentAddress').append(`
+        
+  //       <div class="card d-flex" style="">
+  
+  //   <div class="card-body">
+  //     <h5 class="card-title"><label>Name</label>${value.fullname}</h5>
+  //     <h6> <label>Country</label>${value.country}</h6>
+  //     <h6> <label>PIN</label>${value.pincode}</h6>
+  
+    
+  
+  //   </div>
+  // </div>
+  
+  //       `)
+    
+// })
+ 
+  
+   
+  
+  if(details != ''){
         details = JSON.parse(details);
     }
     var count1=0;
@@ -35,10 +61,37 @@ $(document).ready(function () {
 
     var quantity= localStorage.getItem('add_to_cart');
     quantity= JSON.parse(quantity);
-    console.log(quantity);
+    // console.log(quantity);
     var totalQuant= quantity[0].quantity;
     $(`#totalProducts`).html(`<b> ${totalQuant}</b>`)
+    
+    
 
+
+    //to show products details in checkout page
+    
+
+
+
+
+    // var cartDetails= localStorage.getItem('add_to_cart');
+    //     cartDetails1 = JSON.parse(cartDetails)
+    //     var pdesp= add_to_cart[0].cartDetails1;
+    //     var pname= add_to_cart[3].cartDetails1;
+    //     var pprice= add_to_cart[4].cartDetails1;
+
+    //     cartDetails1.forEach(function(value,index){
+    //        $('#desp').append(`<div class="card">
+    //   <label>Product Description:${value.pdesp}</label>
+    //   <label>Product name:${value.pname}</label>
+    //   <label>Product price:${value.pprice}</label>
+      
+    //     </div>`)
+    //     })
+
+   
+   
+        
 
         $('#placeOrder').click(()=>{
             
@@ -55,5 +108,6 @@ $(document).ready(function () {
           
            
         })
+
 
 });

@@ -27,7 +27,7 @@ var subcategory_data = [
   {
     cat_id: "1",
     sub_cat_id: "103",
-    sub_cat_name: "shoes",
+    sub_cat_name: "shoes"
   },
   {
     cat_id: "1",
@@ -107,7 +107,13 @@ var Product_data = [
     product_color:"White",
     product_size:"S,M,L,XL",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -124,7 +130,13 @@ var Product_data = [
     product_color:"Green",
     product_size:"S,M,L,XL",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -141,7 +153,13 @@ var Product_data = [
     product_color:"Green",
     product_size:"S,M,L,XL,XXL",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -158,7 +176,13 @@ var Product_data = [
     product_color:"Black",
     product_size:"S,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -175,7 +199,13 @@ var Product_data = [
     product_color:"Blue Shade",
     product_size:"S,M,L,XL",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -192,7 +222,13 @@ var Product_data = [
     product_color:"Maroon",
     product_size:"S,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -209,7 +245,13 @@ var Product_data = [
     product_color:"grey",
     product_size:"S,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -226,7 +268,13 @@ var Product_data = [
     product_color:"Strip Blue",
     product_size:"S,M,L,XL",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -243,7 +291,12 @@ var Product_data = [
     product_color:"Navy Blue",
     product_size:"X,M,L,XL",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -260,7 +313,13 @@ var Product_data = [
     product_color:"Black",
     product_size:"X,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "1",
@@ -277,7 +336,13 @@ var Product_data = [
     product_color:"black",
     product_size:"28,30,32,34,36",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -294,7 +359,12 @@ var Product_data = [
     product_color:"Blue dark",
     product_size:"28,30,32,34,36",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -311,7 +381,12 @@ var Product_data = [
     product_color:"Blue",
     product_size:"30,32,34,36",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -328,7 +403,13 @@ var Product_data = [
     product_color:"black",
     product_size:"28,30,32,34,36",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -345,7 +426,12 @@ var Product_data = [
     product_color:"Grey",
     product_size:"30,32,34,36,38",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -362,7 +448,13 @@ var Product_data = [
     product_color:"Blue",
     product_size:"28,30,32,34,36",
     recentrly_view: false,
-    trending_product: false
+    trending_product: false,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "1",
@@ -379,7 +471,12 @@ var Product_data = [
     product_color:"Blue",
     product_size:"28,30,32,34,36",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -396,7 +493,13 @@ var Product_data = [
     product_color:"Black",
     product_size:"28,30,32,34,36",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -413,7 +516,13 @@ var Product_data = [
     product_color:"Black",
     product_size:"30,32,34,36,38",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -430,7 +539,12 @@ var Product_data = [
     product_color:"Blue Dark",
     product_size:"28,30,32,34,36",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -447,7 +561,13 @@ var Product_data = [
     product_color:"white",
     product_size:"6,7,8,9,10",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 
@@ -466,7 +586,13 @@ var Product_data = [
     product_color:"Navy blue",
     product_size:"6,7,8,9,10,11",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 
 
@@ -485,7 +611,12 @@ var Product_data = [
     product_color:"white and black",
     product_size:"6,7,8,9,10",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -504,7 +635,12 @@ var Product_data = [
     product_color:"green",
     product_size:"7",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -523,7 +659,12 @@ var Product_data = [
     product_color:"charchol grey",
     product_size:"9",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -542,7 +683,12 @@ var Product_data = [
     product_color:"white&red",
     product_size:"6,7,9,10",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -561,7 +707,13 @@ var Product_data = [
     product_color:"silver",
     product_size:"6,7,8,9,10",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 {
@@ -579,7 +731,13 @@ var Product_data = [
     product_color:"blue",
     product_size:"6,7,8,9,10,11",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 
 {
@@ -597,7 +755,13 @@ var Product_data = [
     product_color:"black & white",
     product_size:"8,9",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 {
@@ -615,7 +779,12 @@ var Product_data = [
     product_color:"grey orange",
     product_size:"6,7,8,9,10,11",
     recentrly_view:true,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -634,7 +803,12 @@ var Product_data = [
     product_color:"Men Black Solid Denim Jacket",
     product_size:"S,M,L,XL,XXL",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 {
@@ -652,7 +826,13 @@ var Product_data = [
     product_color:"GREY",
     product_size:"S,M,L,XL",
     recentrly_view:true,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -669,7 +849,12 @@ var Product_data = [
     product_color:"BLACK",
     product_size:"S,M,L,XL,XXL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -686,7 +871,13 @@ var Product_data = [
     product_color:"cream",
     product_size:"S,M,,XL,XXL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -703,7 +894,13 @@ var Product_data = [
     product_color:"Grey",
     product_size:"S,L,M,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -720,7 +917,12 @@ var Product_data = [
     product_color:"RED",
     product_size:"",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 
 
@@ -739,7 +941,12 @@ var Product_data = [
     product_color:"MEN BLACK",
     product_size:"S,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -756,7 +963,13 @@ var Product_data = [
     product_color:"NAVY BLUE",
     product_size:"S,M,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "1",
@@ -773,7 +986,12 @@ var Product_data = [
     product_color: "MEN BLUE",
     product_size: "S,M,L,XL,XXL",
     recentrly_view: false,
-    trending_product:  false
+    trending_product:  false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -790,7 +1008,12 @@ var Product_data = [
     product_color:"WHITE",
     product_size:"S,L,XL",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -807,7 +1030,13 @@ var Product_data = [
     product_color:"Brown",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
  {
     cat_id: "1",
@@ -824,7 +1053,13 @@ var Product_data = [
     product_color:"Black",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "1",
@@ -841,7 +1076,13 @@ var Product_data = [
     product_color:"light blue",
     product_size:"125ml",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "1",
@@ -858,7 +1099,12 @@ var Product_data = [
     product_color:"black",
     product_size:"60-70ML",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -875,7 +1121,12 @@ var Product_data = [
     product_color:"black&white",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -892,7 +1143,12 @@ var Product_data = [
     product_color:"navy blue",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -909,7 +1165,12 @@ var Product_data = [
     product_color:"brown",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "1",
@@ -926,7 +1187,13 @@ var Product_data = [
     product_color:"brown",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "1",
@@ -943,7 +1210,13 @@ var Product_data = [
     product_color:"black",
     product_size:"140ML",
     recentrly_view:false,
-    trending_product:false
+    trending_product:false,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "1",
@@ -960,7 +1233,12 @@ var Product_data = [
     product_color:"black&gray",
     product_size:"onesize",
     recentrly_view:false,
-    trending_product:true
+    trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -977,7 +1255,13 @@ var Product_data = [
     product_color: "Yellow",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -994,7 +1278,13 @@ var Product_data = [
     product_color: "Pink-orange",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1011,7 +1301,12 @@ var Product_data = [
     product_color: "Pink",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1028,7 +1323,12 @@ var Product_data = [
     product_color: "Rama Green",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1045,7 +1345,13 @@ var Product_data = [
     product_color: "Dark Green",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1062,7 +1368,13 @@ var Product_data = [
     product_color: "Grey",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1079,7 +1391,13 @@ var Product_data = [
     product_color: "Red",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1096,7 +1414,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1113,7 +1437,13 @@ var Product_data = [
     product_color: "Yellow & black",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1130,7 +1460,12 @@ var Product_data = [
     product_color: "White 4",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1147,7 +1482,12 @@ var Product_data = [
     product_color: "Green",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1164,7 +1504,12 @@ var Product_data = [
     product_color: "Dark-Pink",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1181,7 +1526,13 @@ var Product_data = [
     product_color: "Beige",
     product_size: "Slim fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1198,7 +1549,12 @@ var Product_data = [
     product_color: "White",
     product_size: "Slim fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1215,7 +1571,13 @@ var Product_data = [
     product_color: "White",
     product_size: "Slim fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1232,7 +1594,12 @@ var Product_data = [
     product_color: "Yellow",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1249,7 +1616,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1266,7 +1639,12 @@ var Product_data = [
     product_color: "Frost White",
     product_size: "Slim fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price'
+    ]
 },
 {
     cat_id: "2",
@@ -1283,7 +1661,13 @@ var Product_data = [
     product_color: "Multicolour",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1300,7 +1684,13 @@ var Product_data = [
     product_color: "Multicolour",
     product_size: "Regular fit",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1317,7 +1707,13 @@ var Product_data = [
     product_color: "light blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 {
@@ -1335,7 +1731,13 @@ var Product_data = [
     product_color: "light blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 
 
@@ -1354,7 +1756,13 @@ var Product_data = [
     product_color: "Dark blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1371,7 +1779,13 @@ var Product_data = [
     product_color: "Dark blue",
     product_size: "29",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 {
@@ -1389,7 +1803,13 @@ var Product_data = [
     product_color: "Gray Blue",
     product_size: "27",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 
 {
@@ -1407,7 +1827,13 @@ var Product_data = [
     product_color: "Dark blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 {
@@ -1425,7 +1851,13 @@ var Product_data = [
     product_color: "Dark blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1442,7 +1874,13 @@ var Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1459,7 +1897,13 @@ var Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1476,7 +1920,13 @@ var Product_data = [
     product_color: "blue",
     product_size: "28",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1494,6 +1944,12 @@ var Product_data = [
     product_size:"8UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 
 
@@ -1513,6 +1969,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1530,6 +1992,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1547,6 +2015,12 @@ var Product_data = [
     product_size:"8UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1564,6 +2038,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1581,6 +2061,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1598,6 +2084,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1615,6 +2107,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 
 {
@@ -1633,6 +2131,12 @@ var Product_data = [
     product_size:"7UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1650,6 +2154,12 @@ var Product_data = [
     product_size:"9UK",
     recentrly_view:true,
     trending_product:true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1666,7 +2176,13 @@ var Product_data = [
     product_color: "Golden",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1683,7 +2199,13 @@ var Product_data = [
     product_color: "Silver",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1700,7 +2222,13 @@ var Product_data = [
     product_color: "	Multicolor",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1717,7 +2245,13 @@ var Product_data = [
     product_color: "White",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1734,7 +2268,13 @@ var Product_data = [
     product_color: "Multicolor",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1751,7 +2291,13 @@ var Product_data = [
     product_color: "Golden and silver",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1768,7 +2314,13 @@ var Product_data = [
     product_color: "Gold",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "2",
@@ -1785,7 +2337,13 @@ var Product_data = [
     product_color: "Other Color",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "2",
@@ -1802,7 +2360,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "2",
@@ -1820,7 +2384,13 @@ var Product_data = [
     product_color: "Brown",
     product_size: "NA",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1837,7 +2407,13 @@ var Product_data = [
     product_color: "Green",
     product_size: "3-6 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -1854,7 +2430,13 @@ var Product_data = [
     product_color: "RoyalBlue",
     product_size: "4-5 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1871,7 +2453,13 @@ var Product_data = [
     product_color: "Multi",
     product_size: "4-5 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -1888,7 +2476,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1905,7 +2499,13 @@ var Product_data = [
     product_color: "Green",
     product_size: "5-6 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -1922,7 +2522,13 @@ var Product_data = [
     product_color: "Blood Red",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1939,7 +2545,13 @@ var Product_data = [
     product_color: "Multi Color",
     product_size: "2-3 Years",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1956,7 +2568,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -1973,7 +2591,13 @@ var Product_data = [
     product_color: "Grey",
     product_size: "0-3 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -1990,7 +2614,13 @@ var Product_data = [
     product_color: "Yellow",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2007,7 +2637,13 @@ var Product_data = [
     product_color: "Yellow",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2024,7 +2660,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2041,7 +2683,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2058,7 +2706,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2075,7 +2729,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2092,7 +2752,13 @@ var Product_data = [
     product_color: "Red",
     product_size: "Medium",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2109,7 +2775,13 @@ var Product_data = [
     product_color: "Black-Blue",
     product_size: "Medium",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2126,7 +2798,13 @@ var Product_data = [
     product_color: "Wooden",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2143,7 +2821,13 @@ var Product_data = [
     product_color: "Skin",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2160,7 +2844,13 @@ var Product_data = [
     product_color: "Multi-Color",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2177,7 +2867,13 @@ var Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2194,7 +2890,13 @@ var Product_data = [
     product_color: "blue",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2211,7 +2913,13 @@ var Product_data = [
     product_color: "green",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2228,7 +2936,13 @@ var Product_data = [
     product_color: "yellow",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2245,7 +2959,13 @@ var Product_data = [
     product_color: "yellow",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2262,7 +2982,13 @@ var Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2279,7 +3005,13 @@ var Product_data = [
     product_color: "orange",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2296,7 +3028,13 @@ var Product_data = [
     product_color: "pink",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2313,7 +3051,13 @@ var Product_data = [
     product_color: "red",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2330,7 +3074,13 @@ var Product_data = [
     product_color: "black",
     product_size: "",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2347,7 +3097,13 @@ var Product_data = [
     product_color: "Red",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2364,7 +3120,13 @@ var Product_data = [
     product_color: "Wooden",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2381,7 +3143,13 @@ var Product_data = [
     product_color: "Purple",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2398,7 +3166,13 @@ var Product_data = [
     product_color: "Pink",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2415,7 +3189,13 @@ var Product_data = [
     product_color: "Pink",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2432,7 +3212,13 @@ var Product_data = [
     product_color: "Orange",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2449,7 +3235,13 @@ var Product_data = [
     product_color: "White",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2466,7 +3258,13 @@ var Product_data = [
     product_color: "White",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2483,7 +3281,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2500,7 +3304,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "Small",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2517,7 +3327,13 @@ var Product_data = [
     product_color: "Beige",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2534,7 +3350,13 @@ var Product_data = [
     product_color: "Pink",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2551,7 +3373,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2568,7 +3396,13 @@ var Product_data = [
     product_color: "Red",
     product_size: "6-12 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'The colour is awesome and the quality of fabric is soft. Design is also beautiful and elegant.',
+        "More more beautiful light weight easy to care",
+        'Good for day to day use. Project matches the one displayed in colour and print. Price is also reasonable.',
+        'Yellow colour is just awesome. Beautiful design and quality is good too- value for money. highly recommended.'
+    ]
 },
 {
     cat_id: "3",
@@ -2585,7 +3419,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2602,7 +3442,13 @@ var Product_data = [
     product_color: "Blue",
     product_size: "0-3 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2619,7 +3465,13 @@ var Product_data = [
     product_color: "Black",
     product_size: "18-24 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2636,7 +3488,13 @@ var Product_data = [
     product_color: "Multi Color",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Quality is good, feels comfortable and looks classy.',
+        "It's ok but size is not correct",
+        'Quality is great for the price',
+        'The photo is misleading, the actual color is not shiny blue, but rather dull. Its made of rough cotton. Fitting is perfect though. Made by some Ludhiana company, not worth the price.'
+    ]
 },
 {
     cat_id: "3",
@@ -2653,7 +3511,13 @@ var Product_data = [
     product_color: "Beige",
     product_size: "12-18 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 },
 {
     cat_id: "3",
@@ -2670,6 +3534,12 @@ var Product_data = [
     product_color: "Green",
     product_size: "3-6 Months",
     recentrly_view: true,
-    trending_product: true
+    trending_product: true,
+    reviews: [
+        'Colour and febric quality is worth price',
+        "It's ok but size is not correct",
+        'True to colour, good material, very comfortable...',
+        'Good fit'
+    ]
 }
 ];

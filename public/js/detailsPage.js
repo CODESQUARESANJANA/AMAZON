@@ -30,10 +30,10 @@ $(document).ready(function () {
       $(".related_products_carousel").append(
         `<div class="swiper-slide">
       <div class="container" >
-        <div class="card m-0">
+        <div class="card m-0" >
         <a href="detailsPage.html?product_id=${value.product_id}" style="text-decoration:none;">
           <img class="card-img-top" style="max-width: 100%;margin-left: auto; margin-right: auto;" src="${value.product_img}" alt="Card image" style="width:100%">
-          <div class="card-body">
+          <div class="card-body pt-0 pb-0">
             <p class="card-text mb-0">
             <p class="card-product-name mb-0">${value.product_name}</p>
             <p class="mb-0">

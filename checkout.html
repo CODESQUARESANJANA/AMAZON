@@ -37,8 +37,10 @@
                 <h1>Select a delivery address</h1>
                 <p>Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can <a href="">enter a new delivery address.</a> </p> <hr>
                 <h1>Most recently used</h1>
-                <div id="recentAddress"></div>
-                <div id="otherAddress"></div>
+                <div id="recentAddress" style="display: flex;">
+                    
+                </div>
+                <!-- <div id="otherAddress"></div> -->
 
                 <hr style="box-shadow: 1px 0.5px 4px;">
 
@@ -319,10 +321,15 @@
                 <div class="card " style="font-size:small;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);border-radius: 15px;margin-top: -60px; margin-left: 20px; ">
                     <div class="card-body">
                       <p>
-                        You have added productss <span id="totalProducts"></span> in cart and total sum of money need to pay.</p>
-                      <p id="price">Total: <span id="totalPrice"></span></p>
+                        You have added productss <span id="totalProducts"></span> in cart and total sum of money need to pay <br><b> <span id="productName">Product Name:</span></b><br>
+                        <b><span id="productDesp">Description:</span></b><br><b><span></span></b>
+                    
+                    </p>
+                      <p id="price" >Total you need to pay: <span id="totalPrice"></span></p>
                       <!-- <input type="checkbox" name="check" id="check"><label for="check">This order contains a gift</label> -->
                       <!-- <button type="button" id="checkout-btn" class="btn btn-warning form-control " style="width: 100%; border-radius: 10px;box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Place Order</button> -->
+                   
+                    <div id="desp"></div>
                     </div>
               
                   </div> <br>
