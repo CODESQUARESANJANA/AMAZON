@@ -113,6 +113,13 @@ $(document).ready(function () {
       </li>`);
 
   $("#product-description-section").html(`${details[0].product_description}`);
+  $('#customer-review-stars').html(`<i class="fa-solid fa-star" style="font-size: 18px;color:#f5961d"></i>
+                                <i class="fa-solid fa-star" style="font-size: 18px;color:#f5961d"></i>
+                                <i class="fa-solid fa-star" style="font-size: 18px;color:#f5961d"></i>
+                                <i class="fa-solid fa-star" style="font-size: 18px;color:#f5961d"></i>
+                                <i class="fa-regular fa-star"style="font-size: 18px;"></i>`); 
+  $('#customer-review').html(`${details[0].product_rating} out of 5`)
+  $('#global-rating-count').html(`${details[0].product_rating_count}  global ratings`)
 
   category_data.forEach(function (v, i) {
     if (details[0].cat_id == v.cat_id) {
