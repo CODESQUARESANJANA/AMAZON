@@ -127,7 +127,7 @@ $(document).ready(function () {
   });
 
   $("#productRoute").html(
-    `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name} </b></a> </span>`
+    `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name}</b></a> </span>`
   );
   var addToCart_arr = [];
   $("#addToCart").click(() => {
