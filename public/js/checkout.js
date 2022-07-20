@@ -39,4 +39,35 @@ $(document).ready(function () {
     var totalQuant= quantity[0].quantity;
     $(`#totalProducts`).html(`<b> ${totalQuant}</b>`)
 
+
+        $('#placeOrder').click(()=>{
+            
+              swal({
+                title: "Sure want to place order?",
+                text: "Once ordered can placed can be modified lated!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+              })
+              .then((willDelete) => {
+                if (willDelete) {
+                  swal("Your order has been placed Successfully!", {
+                    icon: "success",
+                  });
+                } else {
+                  swal("Your imaginary file is safe!");
+                }
+              });
+              if(localStorage.getItem()==''){
+                swal("Please choose Explore FASHION to place order","","success")
+                console.log("done");
+              }
+            localStorage.clear('checkout') 
+            localStorage.clear('addresss')
+
+           window.location.href='index.html'
+          
+           
+        })
+
 });

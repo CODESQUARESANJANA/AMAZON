@@ -972,7 +972,7 @@ var Product_data = [
     product_rating_count: "101",
     product_img: "https://m.media-amazon.com/images/I/61eY2UrLGCL._SX679._SX._UX._SY._UY_.jpg",
     product_price: "3599.00",
-    product_discount_price: "1,799",
+    product_discount_price: "1799",
     product_discount_percenteage: "50",
     product_color: "Yellow",
     product_size: "Regular fit",
