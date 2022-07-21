@@ -194,3 +194,12 @@ border-radius: 10px;
         background-color: white !important;   
         margin-bottom: 0px !important; 
 }
+.jumbortron-review{
+    background-color: #f8f9fa !important;
+}
+.card-img-top{
+    max-width: 20%;
+    max-height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
