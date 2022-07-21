@@ -262,12 +262,16 @@ $(document).ready(function () {
 // 		$('#icon').css('display', 'none');
 // 	}
 // }
- let offer10Arr = [];
-Product_data.forEach(function (value, index)
- {
-	if (value.product_discount_percenteage <= "10" && value.cat_id =="3")
+ 
+$('.listValue').on('click' , function(){
+
+	Product_data.forEach(function(value , index){
+		var discount = $(this).attr('value')
+		// alert(discount);
+	if ((parseInt(value.product_discount_percenteage) <= parseInt(discount) || parseInt(value.product_discount_percenteage) >= (parseInt(discount) - 10)) && value.cat_id =="3")
 	{
-		offer10Arr.push(value);
+		console.log(value.product_discount_percenteage)
+		// offer10Arr.push(value);
 		$("#outerDiv").append(`
 
 		<div class="item" style="width:275px;display:inline-block;">
@@ -278,62 +282,14 @@ Product_data.forEach(function (value, index)
 						<p>₹ ${value.product_discount_price}</p>
 						<p>${value.product_description}</p>
                     </div>
-                </div>
-	`)
-		
-		
-	}else if ((value.product_discount_percenteage <= 25 && value.product_discount_percenteage >10) && value.cat_id == "3")
-	{
-		offer10Arr.push(value);
-		$("#outerDiv1").append(`
-		<div class="item" style="width:275px;display:inline-block;overflow:visible;">
-                    <div class="pad15">
-					<p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
-					<p><b>${value.product_name}</b></p>                        
-                        <p>${value.product_discount_percenteage}%</p>
-						<p>₹ ${value.product_discount_price}</p>
-						<p>${value.product_description}</p>
-                    </div>
-                </div>
-
-	`)
-		
-		
-	
-	} else if
-		((value.product_discount_percenteage <=50  && value.product_discount_percenteage >25) && value.cat_id == "3")
-	{
-		offer10Arr.push(value);
-		$("#outerDiv2").append(`
-		<div class="item" style="width:275px;display:inline-block;overflow:visible;">
-                    <div class="pad15">
-					<p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
-					<p><b>${value.product_name}</b></p>                        
-                        <p>${value.product_discount_percenteage}%</p>
-						<p>₹ ${value.product_discount_price}</p>
-						<p>${value.product_description}</p>
-                    </div>
-                </div>
-
-	`)
-	}else if((value.product_discount_percenteage <=75  && value.product_discount_percenteage >50) && value.cat_id == "3")
-	{
-		offer10Arr.push(value);
-		$("#outerDiv3").append(`
-		<div class="item" style="width:275px;display:inline-block;overflow:visible;">
-                    <div class="pad15">
-					<p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
-					<p><b>${value.product_name}</b></p>                        
-                        <p>${value.product_discount_percenteage}%</p>
-						<p>₹ ${value.product_discount_price}</p>
-						<p>${value.product_description}</p>
-                    </div>
-                </div>
-
-	`)
+                </div>`);
 	}
-});
 
+
+	})
+	
+
+});
 
 
 
