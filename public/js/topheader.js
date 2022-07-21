@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+        
+    
     var cart_data = JSON.parse(localStorage.getItem('add_to_cart'));
     var cart_count = 0;
     if(cart_data != null)
