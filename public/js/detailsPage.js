@@ -4,6 +4,7 @@ $(function () {
 });
 
 $(document).ready(function () {
+  $('#breadCrum').show();
   var details = [];
   var related_products = [];
   var _cat_name = "";
@@ -132,6 +133,7 @@ $(document).ready(function () {
       _sub_cat_name = v.sub_cat_name;
     }
   });
+ 
 
   $("#productRoute").html(
     `<span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}"><b>${_cat_name} ></b> </a> </span> <span class="_brod"><a href="product-listing.html?cat_id=${details[0].cat_id}&sub_cat_id=${details[0].sub_cat_id}"><b>${_sub_cat_name}</b></a> </span>`
