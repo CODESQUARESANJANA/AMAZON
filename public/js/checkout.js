@@ -75,12 +75,12 @@ $(document).ready(function () {
           var cart_index = value.checkout_index;
           
             
-              $('#fdetails').prepend(`<div class="card  ml-4 p-5" style="border:1px solid gray">
+              $('#fdetails').prepend(`<div class="card  ml-4 p-5" style="">
                  <span> <b>Product name:  </b>
-                <b style="font-size:small">${cartadded[cart_index].product_name}</b></span>
-                <span> <b>Quantity:   ${cartadded[cart_index].quantity}</b></span>
-                <span> <b>Description:  ${cartadded[cart_index].product_description}</b></span>
-                <b> Price:  ${cartadded[cart_index].product_price}
+                    ${cartadded[cart_index].product_name}</span>
+                <span> <b>Quantity:</b>   ${cartadded[cart_index].quantity}</span>
+                <span> <b>Description:</b>  ${cartadded[cart_index].product_description}</span>
+                <b> Price: ₹${cartadded[cart_index].product_price}</b>
               </div>`)
 
           totalPrice += parseInt(cartadded[cart_index].product_price) * parseInt(cartadded[cart_index].quantity);
