@@ -21,8 +21,8 @@ $(document).ready(function () {
     if (value.cat_id == param_cat_id && value.sub_cat_id == param_sub_category_id) {
       console.log(value.sub_cat_id);
       product_listing_details.push(value);
-      $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-        <img class="card-img-top" src="${value.product_img}"
+      $('#listing').append(`<a style="text-decoration: none; color: black" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+        <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.product_img}"
             alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">₹${value.product_price}</h5>
@@ -35,7 +35,7 @@ $(document).ready(function () {
                     style="font-size: smaller;"></i><i class="fa-regular fa-star"
                     style="font-size: smaller;"></i><br>${value.product_rating_count}</p>
         </div>
-    </div>`)
+    </div></a>`)
     }
 
   });
@@ -88,8 +88,8 @@ $(document).ready(function () {
         product_listing_details.forEach(function (value, index) {
           if (value.product_price <= ui.values[1] && value.product_price >= ui.values[0]) {
 
-            $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-                    <img class="card-img-top" src="${value.product_img}"
+            $('#listing').append(`<a style="text-decoration: none; color: black" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.product_img}"
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">₹${value.product_price}</h5>
@@ -101,7 +101,7 @@ $(document).ready(function () {
                                 style="font-size: smaller;"></i><i class="fa-regular fa-star"
                                 style="font-size: smaller;"></i><br>${value.product_rating_count}</p>
                     </div>
-                </div>`)
+                </div></a>`)
           }
 
         }
@@ -119,8 +119,8 @@ $(document).ready(function () {
       $('#listing').empty()
       product_listing_details.forEach(function (value, index) {
       if (parseInt(value.product_rating) == rating_cnt ) {
-      $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-                    <img class="card-img-top" src="${value.product_img}"
+      $('#listing').append(`<a style="text-decoration: none; color: black" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.product_img}"
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">₹${value.product_price}</h5>
@@ -132,7 +132,7 @@ $(document).ready(function () {
                                 style="font-size: smaller;"></i><i class="fa-regular fa-star"
                                 style="font-size: smaller;"></i>(${value.product_rating})</p>
                     </div>
-                </div>`)
+                </div></a>`)
 
     }
   })
@@ -146,18 +146,18 @@ $(document).ready(function () {
 
   });
     // for directing to the detail page
-    $(document).on('click', '.product-details-page' ,function () {
-      var p_id = $(this).attr('value');
-      window.location.href = `detailsPage.html?product_id=${p_id}`;
-    })
+    // $(document).on('click', '.product-details-page' ,function () {
+    //   var p_id = $(this).attr('value');
+    //   window.location.href = `detailsPage.html?product_id=${p_id}`;
+    // })
 
     $('.getColor').click(function(){
       var p_color = $(this).attr('value');
       $('#listing').empty()
       product_listing_details.forEach(function (value, index) {
         if ((value.product_color) == p_color ) {
-          $('#listing').append(`<div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-                        <img class="card-img-top" src="${value.product_img}"
+          $('#listing').append(`<a style="text-decoration: none; color: black" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                        <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.product_img}"
                             alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">₹${value.product_price}</h5>
@@ -170,7 +170,7 @@ $(document).ready(function () {
                                     style="font-size: smaller;"></i><i class="fa-regular fa-star"
                                     style="font-size: smaller;"></i>(${value.product_rating})</p>
                         </div>
-                    </div>`)
+                    </div></a>`)
     
         }
 
