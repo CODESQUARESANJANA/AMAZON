@@ -155,6 +155,8 @@ $(document).ready(function () {
                 
             $('#hiddenLi').css('display' , 'flex')
             $("#hiddenLi").show();
+            $("#hiddenLi2").hide();
+            $("#hiddenLi3").hide();
             // $("#hideenLi2, #hiddenLi3").hide();
     
             
@@ -199,12 +201,14 @@ $(document).ready(function () {
     
             $('#hiddenLi2').css('display' , 'flex')
             $("#hiddenLi2").show();
+            $('#hiddenLi1').hide()
+            $('#hiddenLi3').hide()
         })
     
     
         $("#hiddenLi2").mouseleave(function () {
     
-            $("#hiddenLi2").hide().fadeOut()
+            $("#hiddenLi2").hide().fadeIn()
     
         });
     
@@ -227,12 +231,14 @@ $(document).ready(function () {
     
             $('#hiddenLi3').css('display' , 'flex')
             $("#hiddenLi3").show();
+            $('#hiddenLi2').hide()
+            $('#hiddenLi1').hide()
         })
     
     
         $("#hiddenLi3").mouseleave(function () {
     
-            $("#hiddenLi3").hide().fadeOut()
+            $("#hiddenLi3").hide()
     
         });
     

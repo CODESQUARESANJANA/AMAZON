@@ -75,7 +75,7 @@ $(document).ready(function () {
           var cart_index = value.checkout_index;
           
             
-              $('#fdetails').prepend(`<div class="card  ml-4 p-5" style="">
+              $('#fdetails').prepend(`<div class="card  ml-4 p-2" style="">
                  <span> <b>Product name:  </b>
                     ${cartadded[cart_index].product_name}</span>
                 <span> <b>Quantity:</b>   ${cartadded[cart_index].quantity}</span>
@@ -87,7 +87,7 @@ $(document).ready(function () {
 
        })
 
-       $('#totalPay').html(`<b style="font-size:large ; border: 2px solid" class="ml-5">Total sum of money you need to pay  :₹${totalPrice}  for  ${checkProducts.length}   number of products</b>`)
+       $('#totalPay').html(`<b style="font-size:large ; border: 0.2px solid" class="ml-5 p-1">Total sum of money you need to pay  :₹${totalPrice}  for  ${checkProducts.length}   number of products</b>`)
        console.log(totalPrice);
         
         // $('#totalPrice').html(`<b>₹ ${final_price}</b>`);
