@@ -79,7 +79,7 @@ $(document).ready(function () {
             document.getElementById("titleChange").innerHTML=`Kid Category`;  
         }
         else if(m[0]=='index'){
-            document.getElementById("titleChange").innerHTML=`Amazon`;  
+            document.getElementById("titleChange").innerHTML=`Fashion.in`;  
         }
         else if(m[0]=='fashion'){
             document.getElementById("titleChange").innerHTML=`Fashion`;  

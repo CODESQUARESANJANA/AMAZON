@@ -19,7 +19,7 @@ $(document).ready(function () {
 
      details.push(myForms);
      count1++
-     localStorage.setItem('myForms',JSON.stringify(details)) 
+     localStorage.setItem('addresss',JSON.stringify(details)) 
      })
 
      
