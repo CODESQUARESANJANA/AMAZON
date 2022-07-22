@@ -88,9 +88,14 @@ $(document).ready(function () {
         {
             document.getElementById("titleChange").innerHTML=`Cart - Fashion.in`;
         }
+        else if(m[0] == 'checkout')
+        {
+            document.getElementById("titleChange").innerHTML=`Payment  - Fashion.in`;
+        }
         
         // console.log(m[1]);
             if(m[0]=="product-listing"){ 
+                $('#breadCrum').show();
                 category_data.forEach(function(val , index){
                     if(val.cat_id == param_cat_id1 ){
                         console.log(val.cat_name);
@@ -115,6 +120,12 @@ $(document).ready(function () {
                 })
     
              
+            }
+            else if(m[0]=="cart")
+            {
+                $('#breadCrum').show();
+                $('#toBreadCrum').append(`<span> > &nbspCART</span>`)
+
             }
     
            

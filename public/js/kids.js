@@ -207,26 +207,27 @@ function myFunction3() {
 
 let offer = [];
 
-	$('.listValue').click(function () {
-		alert('hello')
-		Product_data.forEach(function (value, index) {
-		const dataOffer = $(this).attr('DataItem');
+$(document).on('click' , '.listValue' , function(){
+	const dataOffer = $(this).attr('DataItem');
+	$('#outerDiv').empty();
+	$("#outerDiv").append(`<h1>off under ${(parseInt(dataOffer)-10)}% to ${dataOffer}% </h1>`)
+	Product_data.forEach(function (value, index) {
 		
-			if ((value.product_discount_percenteage <= dataOffer || value.product_discount_percenteage >=
-				 (dataOffer-10)) && value.cat_id == "3") {
-				offer.push(value);
-
+		
+			if ((parseInt(value.product_discount_percenteage) <= parseInt(dataOffer) && parseInt(value.product_discount_percenteage) >=
+				 (parseInt(dataOffer)-10)) && value.cat_id == "3") {
+				console.log(value.product_discount_percenteage);
+					
 				$("#outerDiv").append(`
 
-		<div class="item" style="width:275px;display:inline-block;cursor:pointer;">
+		<a style="text-decoration: none; color: black;" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div class="item" style="width:275px;display:inline-block;cursor:pointer;">
                     <div class="pad15">
 					<p class="lead"><img  style="width:100%;" src="${value.product_img}" alt=""></p>
 					<p><b>${value.product_name}</b></p>                        
                         <p>${value.product_discount_percenteage}% off</p>
 						<p>₹ ${value.product_discount_price}</p>
 						<p>${value.product_description}</p>
-                    </div>
-                </div>
+                    </div></a>
 	`)
 
 
@@ -238,19 +239,4 @@ let offer = [];
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
