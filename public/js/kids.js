@@ -2,27 +2,7 @@ $(document).ready(function () {
 	$('#header').load('topHeader.html');
 	$('#footer').load('footer.html');
 	let percentageArr = [];
-	// Product_data.forEach(function (value, index){
 
-	// 	if(value.cat_id==3){
-	// 		if(value.product_discount_percenteage>=10 && value.product_discount_percenteage<=25){
-	// 			console.log('value.product_id',value.product_id,value.product_discount_percenteage);
-	// 			percentageArr.push(value.product_id);
-	// 	// 		$('#percentageFilter').append(`
-	// 	// <li><a class="listValue" href="detailsPage.html?product_id=${value.product_id}">${value.product_discount_percenteage}</a></li>`)
-	// 		}
-	// 		else if(value.product_discount_percenteage>10 && value.product_discount_percenteage<25){
-	// 			console.log('value.product_id',value.product_id,value.product_discount_percenteage);
-	// 			percentageArr.push(value.product_id);
-	// 	// 		$('#percentageFilter').append(`
-	// 	// <li><a class="listValue" href="detailsPage.html?product_id=${value.product_id}">${value.product_discount_percenteage}</a></li>`)
-	// 		}
-	// 	}
-
-
-
-
-	// })
 })
 
 

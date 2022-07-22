@@ -466,7 +466,7 @@
             if (dropDon == 0) {
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter)) {
-                        $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.sub}">${v.product_name}</a></li>`)
+                        $('#search_list').append(`<li><a href = "detailsPage.html?productname=${v.product_name.split(" ").join("").trim()}&des=${v.product_description.split(" ").join("").trim()}&product_id=${v.product_id}">${v.product_name}</a></li>`)
                     }
                    
                 })
@@ -476,7 +476,7 @@
             else {
                 Product_data.forEach(function (v, i) {
                     if (v.product_name.toUpperCase().includes(filter) && v.cat_id == dropDon) {
-                        $('#search_list').append(`<li><a href="detailsPage.html?product_id=${v.product_id}">${v.product_name}</a></li>`)
+                        $('#search_list').append(`<li><a href = "detailsPage.html?productname=${v.product_name.split(" ").join("").trim()}&des=${v.product_description.split(" ").join("").trim()}&product_id=${v.product_id}">${v.product_name}</a></li>`)
                     } 
                  
 
