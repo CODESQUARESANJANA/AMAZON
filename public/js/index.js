@@ -4,7 +4,7 @@ $(document).ready(function () {
   $.ajax({
     url: url,
     type: 'GET',
-    headers: {'Access-Control-Allow-Origin': '*'  , "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT" , "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers" , "User-Agent": "PostmanRuntime/7.29.2"},
+    headers: {'Access-Control-Allow-Origin': '*'  , "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT" , "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers" },
     success: function(data){
       console.log(data);
     },
