@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   var product_listing_details = [];
   const queryString = window.location.search;
-  console.log(queryString);
+  // console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
 
   const param_cat_id = urlParams.get('cat_id');
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   Product_data.forEach(function (value, index) {
     if (value.cat_id == param_cat_id && value.sub_cat_id == param_sub_category_id) {
-      console.log(value.sub_cat_id);
+      // console.log(value.sub_cat_id);
       product_listing_details.push(value);
       $('#listing').append(`<a style="text-decoration: none; color: black" href = "detailsPage.html?productname=${value.product_name.split(" ").join("").trim()}&des=${value.product_description.split(" ").join("").trim()}&product_id=${value.product_id}"><div value = "${value.product_id}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
         <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.product_img}"
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
   // for showing all category
   for (let i = 0; i < subcategory_data.length; i++) {
-    console.log(subcategory_data[i])
+    // console.log(subcategory_data[i])
     // console.log("getting list", subcategory_data[i]);
     if (subcategory_data[i].cat_id == param_cat_id) {
       if (param_cat_id == 2) {

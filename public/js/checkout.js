@@ -48,8 +48,8 @@ $(document).ready(function () {
     var cartadded= localStorage.getItem('add_to_cart');
     cartadded= JSON.parse(cartadded);
 
-    console.log(cartadded);
-    console.log(checkProducts);
+    // console.log(cartadded);
+    // console.log(checkProducts);
 
     // var totalQuant= cartadded[0].quantity;
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
        })
 
        $('#totalPay').html(`<b style="font-size:large ; border: 0.2px solid" class="ml-5 p-1">Total sum of money you need to pay  :₹${totalPrice}  for  ${checkProducts.length}   number of products</b>`)
-       console.log(totalPrice);
+      //  console.log(totalPrice);
         
         // $('#totalPrice').html(`<b>₹ ${final_price}</b>`);
         // console.log(final_price);
