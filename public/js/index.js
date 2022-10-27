@@ -1,5 +1,23 @@
 $(document).ready(function () {
+  var url = 'https://bjxc-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArch-aashutosh/dw/shop/v22_10/product_search?client_id=88186553-367a-4c61-8161-992902296e76&refine=cgid=mens&expand=images,prices'
+  console.log(url);
+  $.ajax({
+    url: url,
+    type: 'GET',
+    crossDomain: true,
+    headers: {'Content-Type': 'application/json' ,  'Access-Control-Allow-Origin': '*'},
+    beforeSend: function(xhr){
+      xhr.withCredentials = true;
+    },
+    success: function(data){
+      console.log(data);
+    },
+    error: function(e){
+      console.log(e);
+    }
+  })
 
+  
     $('#topHeader').load('topHeader.html');
     $('#footer').load('footer.html');
     $('#my-carousel-header').load('responsive.html');
