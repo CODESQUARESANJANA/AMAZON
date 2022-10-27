@@ -13,7 +13,7 @@ $(document).ready(function () {
       console.log(data);
     },
     error: function(jqXHR, textStatus, errorThrown){
-      console.log(textStatus, errorThrown);
+      console.log(jqXHR, textStatus, errorThrown);
     }
   })
 
