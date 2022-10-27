@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  alert(1);
     $('#topHeader').load('topHeader.html');
     $('#footer').load('footer.html');
     $('#my-carousel-header').load('responsive.html');
