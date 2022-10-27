@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    getAccessToken('https://bjxc-002.sandbox.us01.dx.commercecloud.salesforce.com' , '88186553-367a-4c61-8161-992902296e76' , 'Basic YWFzaHV0b3NoLm5hbWRlb0Bjb2Rlc3F1YXJldGVjaC5jb206QWFzaHVAY29kZXNxdWFyZTEyMzpjb2Rlc3F1YXJlMjAyMg==');
     $('#topHeader').load('topHeader.html');
     $('#footer').load('footer.html');
     $('#my-carousel-header').load('responsive.html');
@@ -163,9 +162,29 @@ $(document).ready(function () {
   </div>
     </div>`);
     }
-  });
+});
 
-  
+
+
+function getAccessToken(baseUrl , clientId , basicToken){
+  var url = baseUrl+'/dw/oauth2/access_token?client_id='+clientId+'&grant_type=urn:demandware:params:oauth:grant-type:client-id:dwsid:dwsecuretoken';
+  console.log(url);
+  $.ajax({
+    url: url,
+    type: 'POST',
+    crossDomain: true,
+    headers: {'Authorization': basicToken , 'Content-Type': 'application/x-www-form-urlencoded' ,  'Access-Control-Allow-Origin': '*' , "Access-Control-Allow-Credentials" : "true" , "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT" , "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"},
+    beforeSend: function(xhr){
+      xhr.withCredentials = true;
+    },
+    success: function(data){
+      console.log(data);
+    },
+    error: function(e){
+      console.log(e);
+    }
+  })
+}
 
 
   function getAccessToken(baseUrl , clientId , basicToken){
