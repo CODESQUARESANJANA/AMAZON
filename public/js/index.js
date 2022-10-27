@@ -8,6 +8,9 @@ $(document).ready(function () {
     success: function(data){
       console.log(data);
     },
+    beforeSend: function(request) {
+      request.setRequestHeader("User-Agent","InsertUserAgentStringHere");
+    },
     error: function(jqXHR, textStatus, errorThrown){
       console.log(jqXHR, textStatus, errorThrown);
     }
