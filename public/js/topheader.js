@@ -6,14 +6,14 @@ $(document).ready(function () {
     var cart_count = 0;
     if(cart_data != null)
     {
-        console.log('cart_count--------',cart_data); 
+        // console.log('cart_count--------',cart_data); 
 
 
         cart_data.forEach(function(value,index){
             
             cart_count += value.quantity;
         })
-        console.log(cart_count);
+        // console.log(cart_count);
     
 
     }
@@ -56,10 +56,10 @@ $(document).ready(function () {
             var href = document.location.href;
             var s = href.split("/");
            
-            console.log(s);
+            // console.log(s);
             var m = s[3].split('.');
     
-        console.log(m[0])
+        // console.log(m[0])
         if(m[0]=='product-listing'){
             document.getElementById("titleChange").innerHTML=`Product Listing`;
             
@@ -98,14 +98,14 @@ $(document).ready(function () {
                 $('#breadCrum').show();
                 category_data.forEach(function(val , index){
                     if(val.cat_id == param_cat_id1 ){
-                        console.log(val.cat_name);
+                        // console.log(val.cat_name);
                         // console.log(val.sub_cat_name);
                         $('#toBreadCrum').append(`<span> > &nbsp <a href="product-listing.html?cat_id=param.cat_id1"  style="text-transform:uppercase; color:black; text-decoration:none"> > ${val.cat_name}</a></span>`)
                     }
                 })
                 subcategory_data.forEach(function(value,index){
                     if(value.sub_cat_id==param_sub_category_id1){
-                        console.log(value.sub_cat_name);
+                        // console.log(value.sub_cat_name);
                         // alert(value.sub_cat_name)
                         $('#toBreadCrum').append(`<span > > &nbsp <a href="${urlParams}" style="text-transform:uppercase;color:black; text-decoration:none"> > ${value.sub_cat_name}</a> </span>`)
                     }

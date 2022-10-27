@@ -8,7 +8,7 @@ $(document).ready(function () {
     var count = 0;
 
 
-    console.log(parse_1);
+    // console.log(parse_1);
     parse_1.forEach(function (value, index) {
         $("#cart-item").append(` <input class="item-checked" type="checkbox" value = "${index}" name="cart-item-check" id="cart-item${index}" checked>
     <label for="cart-item${index}"><div class="card mb-3" style="max-width: 100%;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -48,7 +48,7 @@ $(document).ready(function () {
         checkout_price += parseInt(value.product_price) * parseInt(value.quantity);
     })
 
-    console.log(total_price)
+    // console.log(total_price)
 
     $('#price').html(`<b>Subtotal</b> (${parse_1.length} item): ${checkout_price} (without select)`);
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
             }
             $('#price').html(`<b>Subtotal</b> (${count} item): ${checkout_price}`);
         }
-        console.log(checkout_price);
+        // console.log(checkout_price);
     });
 
     $('#checkout-btn').on('click', function () {

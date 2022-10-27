@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    getAccessToken('https://bjxc-002.sandbox.us01.dx.commercecloud.salesforce.com' , '88186553-367a-4c61-8161-992902296e76' , 'Basic YWFzaHV0b3NoLm5hbWRlb0Bjb2Rlc3F1YXJldGVjaC5jb206QWFzaHVAY29kZXNxdWFyZTEyMzpjb2Rlc3F1YXJlMjAyMg==');
     $('#topHeader').load('topHeader.html');
     $('#footer').load('footer.html');
     $('#my-carousel-header').load('responsive.html');
@@ -148,7 +148,7 @@ $(document).ready(function () {
     const image_url = [];
     // var img =0;
     for (let i = 0; i <carousel_data.length; i++) {
-      console.log("carousel-data", carousel_data)
+      // console.log("carousel-data", carousel_data)
       // const element = array[i];'
       // image_url.push(carousel_data[i]);
       $('#crousel-img').append(`<div class="carousel-item ${carousel_data[i]===carousel_data[0] ?"active":""}" >
@@ -163,8 +163,11 @@ $(document).ready(function () {
   </div>
     </div>`);
     }
+  });
 
-});
+  
+
+
 
 
 
