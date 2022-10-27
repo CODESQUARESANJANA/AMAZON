@@ -162,11 +162,7 @@ $(document).ready(function () {
   padding: 20px;">
   </div>
     </div>`);
-    
-      
     }
-// image_url.push()
-   
 
 });
 
