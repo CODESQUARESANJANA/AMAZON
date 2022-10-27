@@ -1,45 +1,45 @@
 $(document).ready(function () {
-  var details = localStorage.getItem('addresss')  || [] ;
+  // var details = localStorage.getItem('addresss')  || [] ;
   
-  $("#submission").click(()=>{
- var count1=0;
-     var myForms={
-     "country": $('#country').val(),
-     "fullname":$('#fullname').val(),
-     "mobile":$('#mobile').val(),
-     "pincode":$('#pincode').val(),
-     "flat":$('#flat').val(),
-     "warea":$('#warea').val(),
-     "landmark":$('#landmark').val(),
-     "town":$('#town').val(),
-     "state":$('#state').val(),
-     "my":$('#my').val(),
-     "addType":$('addType').val()
-     }
+//   $("#submission").click(()=>{
+//  var count1=0;
+//      var myForms={
+//      "country": $('#country').val(),
+//      "fullname":$('#fullname').val(),
+//      "mobile":$('#mobile').val(),
+//      "pincode":$('#pincode').val(),
+//      "flat":$('#flat').val(),
+//      "warea":$('#warea').val(),
+//      "landmark":$('#landmark').val(),
+//      "town":$('#town').val(),
+//      "state":$('#state').val(),
+//      "my":$('#my').val(),
+//      "addType":$('addType').val()
+//      }
 
-     details.push(myForms);
-     count1++
-     localStorage.setItem('addresss',JSON.stringify(details)) 
-     })
+//      details.push(myForms);
+//      count1++
+//      localStorage.setItem('addresss',JSON.stringify(details)) 
+//      })
 
      
-     var otherdetails=JSON.parse(details)
-     console.log(otherdetails);
-     otherdetails.forEach(function(value,index) {
-       $('#recentAddress').append(`
-           <div class="card d-flex m-3" style="font-size:small" >
-       <div class="card-body">
-         <h5 class="card-title"><label>Name : &nbsp</label>${value.fullname}</h5>
-         <h6> <label>Address : </label>&nbsp${value.flat},${value.warea},${value.landmark},${value.town}</br>${value.state},
-         </br>${value.addType},
-         ${value.my}
-         </h6>
-         <h6> <label>PIN : </label>&nbsp${value.pincode}</h6>
-         <button>Deliver here</button
-       </div>
-     </div>
-           `)
-     })
+//      var otherdetails=JSON.parse(details)
+//      console.log(otherdetails);
+//      otherdetails.forEach(function(value,index) {
+//        $('#recentAddress').append(`
+//            <div class="card d-flex m-3" style="font-size:small" >
+//        <div class="card-body">
+//          <h5 class="card-title"><label>Name : &nbsp</label>${value.fullname}</h5>
+//          <h6> <label>Address : </label>&nbsp${value.flat},${value.warea},${value.landmark},${value.town}</br>${value.state},
+//          </br>${value.addType},
+//          ${value.my}
+//          </h6>
+//          <h6> <label>PIN : </label>&nbsp${value.pincode}</h6>
+//          <button>Deliver here</button
+//        </div>
+//      </div>
+//            `)
+//      })
 
   
   var checkProducts = localStorage.getItem('checkout');

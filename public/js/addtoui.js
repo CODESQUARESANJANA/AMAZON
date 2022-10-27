@@ -87,8 +87,6 @@ $(document).ready(function () {
                 checkout_product = JSON.parse(checkout_product);
             }
             
-            
-
 
             var checked_item = document.getElementsByName('cart-item-check');
             for (checked_item of checked_item) {
