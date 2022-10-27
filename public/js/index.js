@@ -9,7 +9,7 @@ $(document).ready(function () {
       console.log(data);
     },
     beforeSend: function(request) {
-      request.setRequestHeader("User-Agent","InsertUserAgentStringHere");
+      request.setRequestHeader("User-Agent","PostmanRuntime/7.29.2");
     },
     error: function(jqXHR, textStatus, errorThrown){
       console.log(jqXHR, textStatus, errorThrown);
