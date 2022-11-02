@@ -191,7 +191,7 @@ function getAccessToken(baseUrl , clientId , basicToken){
     url: url,
     type: 'POST',
     crossDomain: true,
-    headers: {'Authorization': basicToken , 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: {'Authorization': basicToken , 'Content-Type': 'application/x-www-form-urlencoded' , 'Access-Control-Allow-Origin': '*' },
     beforeSend: function(xhr){
       xhr.withCredentials = true;
     },
