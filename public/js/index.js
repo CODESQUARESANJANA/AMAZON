@@ -4,7 +4,7 @@ $(document).ready(function () {
   $.ajax({
     url: url,
     type: 'GET',
-    headers: { "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers" },
+    headers: {"Content-Type": "application/json"},
     success: function(data){
       console.log(data);
     },
