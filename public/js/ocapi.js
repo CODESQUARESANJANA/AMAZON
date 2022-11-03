@@ -13,6 +13,7 @@ $(document).ready(function(){
           type:  $('#select-category-form').attr('method'),
           headers: {"Content-Type": "application/json"},
           success: function(data){
+            $('#product-result').empty()
             if (data.count > 0) {
                data.hits.forEach(value => {
                     $('#product-result').append(`<a style="text-decoration: none; color: black" href = "${value.link}"><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
