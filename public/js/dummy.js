@@ -1,53 +1,27 @@
 $(document).ready(function () {
-    // console.log(subcategory_data);
-        // console.log(window.location.href);
-             //breadcrum for navigation
-             
-    
-             //dynamic title
-    
-         
-    
-             
-         
-            
-    
-            //  $('document').attr("title",'${sub_cat_name}')
-    
-    
-             const queryString = window.location.search;
-            //  console.log(queryString);
-             const urlParams = new URLSearchParams(queryString);
-             const param_cat_id1 = urlParams.get('cat_id');
-             const param_sub_category_id1 = urlParams.get('sub_cat_id');
-             const param_product_name1 = urlParams.get("sub_cat_name");
-            const param_product_id= urlParams.get("product_id")
-            var path = "";
-            var toName='';
-       
-    
-            
-            var href = document.location.href;
-            var s = href.split("/");
-           
-            console.log(s);
-            var m = s[3].split('.');
-    
+    const queryString = window.location.search;
+//  console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const param_cat_id1 = urlParams.get('cat_id');
+    const param_sub_category_id1 = urlParams.get('sub_cat_id');
+    const param_product_name1 = urlParams.get("sub_cat_name");
+    const param_product_id= urlParams.get("product_id")
+    var path = "";
+    var toName='';
+    var href = document.location.href;
+    var s = href.split("/");
+    console.log(s);
+    var m = s[3].split('.');
         console.log(m[0])
         if(m[0]=='product-listing'){
             document.getElementById("titleChange").innerHTML=`Product Listing`;
-            
         }
-       
-    
-    
+
         if(m[0] == 'detailsPage'){
-    
                 document.getElementById("titleChange").innerHTML=`Product Details`;
         }
         else if(m[0]=='women-category'){
             document.getElementById("titleChange").innerHTML=`Women Category`;
-            
         }
         else if(m[0]=='kid'){
             document.getElementById("titleChange").innerHTML=`Kid Category`;  
