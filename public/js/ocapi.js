@@ -3,8 +3,8 @@ $(document).ready(function(){
     $("#header").load("/topHeader.html");
     $("#footer").load("/footer.html");
 
-    $('select-category-dropdown').on('change' , function(e){
-        e.preventDefault();
+    $('#select-category-dropdown').on('change' , function(e){
+        alert(1);
         var url = $(this).attr('action');
         var selectedCategory = $('#select-category-dropdown').val();
         url = url+`&refine=cgid=${selectedCategory}&expand=images,prices`
