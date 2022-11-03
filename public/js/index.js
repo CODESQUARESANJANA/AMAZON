@@ -191,7 +191,7 @@ function getAccessToken(baseUrl , clientId , basicToken){
     url: url,
     type: 'POST',
     crossDomain: true,
-    headers: {'Authorization': basicToken , 'Content-Type': 'application/x-www-form-urlencoded' , 'Access-Control-Allow-Origin': 'https://codesquareamazonclone.netlify.app' },
+    headers: {'Authorization': basicToken , 'Content-Type': 'application/x-www-form-urlencoded' , 'HOST': 'https://codesquareamazonclone.netlify.app' },
     beforeSend: function(xhr){
       xhr.withCredentials = true;
     },
