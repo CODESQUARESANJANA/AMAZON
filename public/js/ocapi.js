@@ -17,19 +17,19 @@ $(document).ready(function(){
             console.log(data);
             if (data.count > 0) {
                data.hits.forEach(value => {
-                    $('#product-result').append(`<a style="text-decoration: none; color: black" href = ""><div value = "${}" class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${}"
+                    $('#product-result').append(`<a style="text-decoration: none; color: black" href = ""><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src=""
                         alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">₹${}</h5>
+                        <h5 class="card-title">₹</h5>
                         <p class="card-text"><del>₹${value.product_name} </del> <br> 
-                        <div class="name"><b>${}</b></div><br>
-                        <div class="description">${}</div>
+                        <div class="name"><b></b></div><br>
+                        <div class="description"></div>
                           <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                 class="fa-solid fa-star" style="font-size: smaller;"></i>
                                 <i class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
                                 style="font-size: smaller;"></i><i class="fa-regular fa-star"
-                                style="font-size: smaller;"></i><br>${}</p>
+                                style="font-size: smaller;"></i><br></p>
                     </div>
                 </div></a>`);
                });
