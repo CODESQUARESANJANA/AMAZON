@@ -5,13 +5,13 @@ $(document).ready(function(){
 
     $('#select-category-dropdown').on('change' , function(e){
         alert(1);
-        var url = $(this).attr('action');
+        var url = $('#select-category-form').attr('action');
         var selectedCategory = $('#select-category-dropdown').val();
         url = url+`&refine=cgid=${selectedCategory}&expand=images,prices`
         console.log(url);
         $.ajax({
           url: url,
-          type:  $(this).attr('method'),
+          type:  $('#select-category-form').attr('method'),
           headers: {"Content-Type": "application/json"},
           success: function(data){
             console.log(data);
