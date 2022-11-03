@@ -1,20 +1,4 @@
 $(document).ready(function () {
-  var url = 'https://bjxc-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArch-aashutosh/dw/shop/v22_10/product_search?client_id=88186553-367a-4c61-8161-992902296e76&refine=cgid=mens&expand=images,prices'
-  console.log(url);
-  $.ajax({
-    url: url,
-    type: 'GET',
-    headers: {"Content-Type": "application/json"},
-    success: function(data){
-      console.log(data);
-    },
-    beforeSend: function(request) {
-      request.setRequestHeader("User-Agent","PostmanRuntime/7.29.2");
-    },
-    error: function(jqXHR, textStatus, errorThrown){
-      console.log(jqXHR, textStatus, errorThrown);
-    }
-  })
 
   getAccessToken('https://bjxc-002.sandbox.us01.dx.commercecloud.salesforce.com', '88186553-367a-4c61-8161-992902296e76' , 'Basic YWFzaHV0b3NoLm5hbWRlb0Bjb2Rlc3F1YXJldGVjaC5jb206QWFzaHVAY29kZXNxdWFyZTEyMzpjb2Rlc3F1YXJlMjAyMg==')
     $('#topHeader').load('topHeader.html');
