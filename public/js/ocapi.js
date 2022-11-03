@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#header").load("/topHeader.html");
     $("#footer").load("/footer.html");
 
-    $('select-category-form').on('submit' , function(e){
+    $('select-category-dropdown').on('change' , function(e){
         e.preventDefault();
         var url = $(this).attr('action');
         var selectedCategory = $('#select-category-dropdown').val();
