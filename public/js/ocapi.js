@@ -18,12 +18,12 @@ $(document).ready(function(){
             if (data.count > 0) {
                data.hits.forEach(value => {
                     $('#product-result').append(`<a style="text-decoration: none; color: black" href = ""><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
-                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src=""
+                    <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.image.link}"
                         alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">₹</h5>
-                        <p class="card-text"><del>₹${value.product_name} </del> <br> 
-                        <div class="name"><b></b></div><br>
+                        <h5 class="card-title">₹${value.price}</h5>
+                        <p class="card-text"><del>₹${value.price_max}</del> <br> 
+                        <div class="name"><b>${value.product_name}</b></div><br>
                         <div class="description"></div>
                           <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
                                 class="fa-solid fa-star" style="font-size: smaller;"></i>
