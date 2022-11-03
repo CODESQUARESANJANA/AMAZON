@@ -4,20 +4,18 @@ $(document).ready(function(){
     $("#footer").load("/footer.html");
 
     $('#select-category-dropdown').on('change' , function(e){
-        alert(1);
+
         var url = $('#select-category-form').attr('action');
         var selectedCategory = $('#select-category-dropdown').val();
         url = url+`&refine=cgid=${selectedCategory}&expand=images,prices`
-        console.log(url);
         $.ajax({
           url: url,
           type:  $('#select-category-form').attr('method'),
           headers: {"Content-Type": "application/json"},
           success: function(data){
-            console.log(data);
             if (data.count > 0) {
                data.hits.forEach(value => {
-                    $('#product-result').append(`<a style="text-decoration: none; color: black" href = ""><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    $('#product-result').append(`<a style="text-decoration: none; color: black" href = "${value.link}"><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
                     <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.image.link}"
                         alt="Card image cap">
                     <div class="card-body">
