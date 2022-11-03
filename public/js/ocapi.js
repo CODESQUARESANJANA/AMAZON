@@ -22,7 +22,7 @@ $(document).ready(function(){
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">₹${value.price}</h5>
-                        <p class="card-text"><del>₹${value.price_max}</del> <br> 
+                        <p class="card-text"><del>₹${value.price_max}</del> <br>
                         <div class="name"><b>${value.product_name}</b></div><br>
                         <div class="description"></div>
                           <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
