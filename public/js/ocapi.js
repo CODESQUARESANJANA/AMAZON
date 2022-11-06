@@ -28,9 +28,6 @@ $(document).ready(function(){
                });
             }
           },
-          beforeSend: function(request) {
-            request.setRequestHeader("User-Agent","PostmanRuntime/7.29.2");
-          },
           error: function(jqXHR, textStatus, errorThrown){
             console.log(jqXHR, textStatus, errorThrown);
           }
@@ -38,7 +35,7 @@ $(document).ready(function(){
     });
 
 
-    $('.product-div').on('click' , function(e){
+    $(document).on('click' ,'.product-div'  ,  function(e){
 
       var url = $(this).attr('data-href');
       url = url+`&expand=images,prices`
