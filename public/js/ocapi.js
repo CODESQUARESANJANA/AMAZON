@@ -72,7 +72,7 @@ $(document).ready(function(){
                   </div>
                   <div>
                     <h3>Details </h3>
-                    {data?.data?.short_description}
+                    ${data.short_description}
                   </div>
       
                   <div class="d-flex align-items-center mt-4">
