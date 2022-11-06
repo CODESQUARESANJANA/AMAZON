@@ -98,8 +98,7 @@ $(document).ready(function(){
                     </select>
                   </div>
                   <div class="d-flex align-items-center mt-4">
-                    <h6>Available : </h6>
-                    <h6 class="text-info">${data.inventory.stock_level} only</h6>
+                   
                   </div>
                   <button class="add-to-cart btn btn-primary mt-4">
                     <i class="fa fa-shopping-bag"></i>
