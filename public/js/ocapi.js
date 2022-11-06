@@ -21,14 +21,8 @@ $(document).ready(function(){
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">₹${value.price}</h5>
-                        <p class="card-text"></p> <br>
                         <div class="name"><b>${value.product_name}</b></div><br>
                         <div class="description"></div>
-                          <br><i class="fa-solid fa-star" style="font-size: smaller;"></i><i
-                                class="fa-solid fa-star" style="font-size: smaller;"></i>
-                                <i class="fa-solid fa-star" style="font-size: smaller;"></i><i class="fa-solid fa-star"
-                                style="font-size: smaller;"></i><i class="fa-regular fa-star"
-                                style="font-size: smaller;"></i><br></p>
                     </div>
                 </div></div>`);
                });
