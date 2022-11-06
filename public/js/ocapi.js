@@ -16,7 +16,7 @@ $(document).ready(function(){
             $('#product-result').empty()
             if (data.count > 0) {
                data.hits.forEach(value => {
-                    $('#product-result').append(`<a style="text-decoration: none; color: black" href = "${value.link}"><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
+                    $('#product-result').append(`<div style="text-decoration: none; color: black" data-href = "${value.link}"><div value = " class="card m-2 product-details-page" style="width: 15rem; margin-right:1%;">
                     <img style="max-height: 180px; max-width: 150px; margin-left: auto;margin-right: auto;" src="${value.image.link}"
                         alt="Card image cap">
                     <div class="card-body">
@@ -30,7 +30,7 @@ $(document).ready(function(){
                                 style="font-size: smaller;"></i><i class="fa-regular fa-star"
                                 style="font-size: smaller;"></i><br></p>
                     </div>
-                </div></a>`);
+                </div></div>`);
                });
             }
           },
