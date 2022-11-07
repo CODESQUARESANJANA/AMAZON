@@ -58,7 +58,7 @@ $(document).ready(function(){
                   <div class="d-flex flex-row justify-content-between">
                       <div class="product-number pull-left">
                         Item No.
-                        <span class="product-id">73910532-1M</span>
+                        <span class="product-id">${data.id}</span>
                       </div>
       
                       <div class="ratings pull-right">
@@ -98,7 +98,7 @@ $(document).ready(function(){
                     </select>
                   </div>
                   <div class="d-flex align-items-center mt-4">
-                   
+
                   </div>
                   <button class="add-to-cart btn btn-primary mt-4">
                     <i class="fa fa-shopping-bag"></i>
